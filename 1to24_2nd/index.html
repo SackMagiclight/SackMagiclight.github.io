@@ -24,8 +24,67 @@
 <meta name="twitter:image" content="http://www6.atpages.jp/japancoolfuku/1to24_2nd/logo.gif"" />
 <meta name="twitter:url" content="http://www6.atpages.jp/japancoolfuku/1to24_2nd/" />
 <!-- end twitter card -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/darkforce.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="darkforce.css">
+<style>
+#creater_1  a, #creater_2  a{
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+ 
+#creater_1 a:hover, #creater_2  a:hover{
+    -webkit-transform: scale(1.5,1.5);
+    -moz-transform: scale(1.5,1.5);
+    -o-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+}
+
+#chara img{
+    -moz-transition: 0.5s;
+    -webkit-transition:  0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+#chara:hover img{
+     -webkit-filter: invert(50%);
+     -moz-filter: invert(50%) ;
+     -o-filter: invert(50%);
+     -ms-filter: invert(50%);
+     filter: invert(50%);
+}
+
+#Caption{
+	color:#FFF;
+	padding:10px;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	-webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+	transition: 0.5s;
+	opacity:0;
+}
+#Caption p{
+	position:fixed;
+	top:50%;
+	width:100%;
+	font-size:60px;
+	font-family: Impact;
+}
+#Caption:hover{
+	opacity:1;
+}
+</style>
+
 </head>
 <body>
 	<div id="creater_1">
@@ -69,12 +128,15 @@
 			class="jp button" href="http://yumerusabun.web.fc2.com/nue.html"
 			target="_blank">夢瑠</a> <a>???</a>
 	</div>
-	<div id="chara">
-		<a target="_blank"> <img src="img/logo.gif?123456790" width="640">
-		</a>
-	</div>
-	<div id="text">
-		<a target="_blank"> <span>Package of Insane BMS Pattern</span>
+	<div id="logo">
+		<a href="list.html">
+			<div id="chara">
+				<img src="logo.gif?123456790" width="640">
+				<div id="Caption"><p>Go to Event page...</p></div>
+			</div>
+			<div id="text">
+				 <span>Package of Insane BMS Pattern</span>
+			</div>
 		</a>
 	</div>
 	<div id="d1">
@@ -83,14 +145,4 @@
 		</div>
 	</div>
 </body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-83617244-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </html>
