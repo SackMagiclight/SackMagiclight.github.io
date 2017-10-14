@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gaf Talk</title>
+    <description>ゲームとかガジェットとかその他好きなこと</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 14 Oct 2017 15:44:12 +0900</pubDate>
+    <lastBuildDate>Sat, 14 Oct 2017 15:44:12 +0900</lastBuildDate>
+    <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>移転しました</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/note/2017-10-14-welcome-to-jekyll/jekyll.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;というわけで、大体のフレームワークが完成したので仮公開。&lt;/p&gt;
+
+&lt;p&gt;当初の予定のMiddlemanではなく、&lt;strong&gt;jekyll+GithubPages&lt;/strong&gt; で作成。&lt;/p&gt;
+
+&lt;p&gt;テンプレートもそれっぽいのを利用しています。&lt;/p&gt;
+
+&lt;p&gt;Markdownでかけるの便利ね。&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 14 Oct 2017 13:46:17 +0900</pubDate>
+        <link>/2017/10/14/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">/2017/10/14/welcome-to-jekyll/</guid>
+        
+        
+        <category>雑記</category>
+        
+      </item>
+    
+  </channel>
+</rss>
