@@ -5,9 +5,209 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Oct 2017 16:04:45 +0900</pubDate>
-    <lastBuildDate>Sat, 14 Oct 2017 16:04:45 +0900</lastBuildDate>
+    <pubDate>Thu, 19 Oct 2017 00:53:34 +0900</pubDate>
+    <lastBuildDate>Thu, 19 Oct 2017 00:53:34 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>Ryzen Mobile 性能・発売時期のリーク -結局どのぐらい？-</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-10-19-ryzen_mobile_reeked.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;発売時期&quot;&gt;発売時期&lt;/h3&gt;
+
+&lt;p&gt;Zenコアを用いたグラフィック統合CPU(APU)であるRyzenMobileですが、大方の予想通り来年初めのようです&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;amd-has-made-a-big-impact-on-the-market-with-its-ryzen-architecture-and-the-platform-will-become-even-more-interesting-for-compact-htpc-builds-when-the-first-ryzen-based-apus-are-introduced-next-year&quot;&gt;AMD has made a big impact on the market with its Ryzen architecture and the platform will become even more interesting for compact HTPC builds when the first Ryzen-based APUs are introduced &lt;strong&gt;next year.&lt;/strong&gt;&lt;br /&gt;&lt;/h3&gt;
+  &lt;p&gt;(Ryzenアーキテクチャを採用したAMDは市場に大きな影響を与えており、&lt;strong&gt;来年初&lt;/strong&gt;のRyzenベースのAPUが導入されると、コンパクトなHTPCビルドのプラットフォームはさらに面白くなるでしょう)&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;http://noctua.at/en/noctua-presents-two-am4-compatible-low-profile-coolers&quot;&gt;Noctua presents two AM4-compatible low-profile coolers&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;発言者はRoland Mossig（Noctua CEO）です。
+CPUクーラーの長が言っているので、まあ間違いないでしょう。
+結局、Ryzen初登場から約10ヶ月ほど遅れての登場。だいぶ待たせますねぇ…。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;性能&quot;&gt;性能&lt;/h3&gt;
+
+&lt;p&gt;PC Perspectiveが3DMark11を用いた性能リークを行っています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.pcper.com/news/Graphics-Cards/AMD-Raven-Ridge-Performance-Leaks-APU-GeForce-MX150-Performance&quot;&gt;AMD Raven Ridge Performance Leaks - APU with GeForce MX150 Performance&lt;/a&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;CPU(+GPU)&lt;/th&gt;
+      &lt;th&gt;Graphics&lt;/th&gt;
+      &lt;th&gt;Physics&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ryzen 7 2700U&lt;/td&gt;
+      &lt;td&gt;4072&lt;/td&gt;
+      &lt;td&gt;6419&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ryzen 5 2500U&lt;/td&gt;
+      &lt;td&gt;3655&lt;/td&gt;
+      &lt;td&gt;6577&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Core i7 8550U + MX 150&lt;/td&gt;
+      &lt;td&gt;4570&lt;/td&gt;
+      &lt;td&gt;8278&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Core i7 8550U&lt;/td&gt;
+      &lt;td&gt;1772&lt;/td&gt;
+      &lt;td&gt;6627&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;
+これを見るとCPU性能はだいたい&lt;strong&gt;i7 8550U&lt;/strong&gt;と同等、GPU性能は&lt;strong&gt;Geforce MX 150&lt;/strong&gt;弱ぐらい といった形でしょうか。
+もう少し詳しく見ていきましょう。まずはCPUです。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Core/Thread&lt;/th&gt;
+      &lt;th&gt;Base Clock(GHz)&lt;/th&gt;
+      &lt;th&gt;Turbo Clock(GHz)&lt;/th&gt;
+      &lt;th&gt;Cache Memory(MB)&lt;/th&gt;
+      &lt;th&gt;価格(円)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ryzen 7 2700U&lt;/td&gt;
+      &lt;td&gt;4/8&lt;/td&gt;
+      &lt;td&gt;2.2&lt;/td&gt;
+      &lt;td&gt;3.8?&lt;/td&gt;
+      &lt;td&gt;6(L2+L3)&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ryzen 5 2500U&lt;/td&gt;
+      &lt;td&gt;4/8&lt;/td&gt;
+      &lt;td&gt;2.0&lt;/td&gt;
+      &lt;td&gt;3.6&lt;/td&gt;
+      &lt;td&gt;6(L2+L3)&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Core i7 8550U&lt;/td&gt;
+      &lt;td&gt;4/8&lt;/td&gt;
+      &lt;td&gt;1.8&lt;/td&gt;
+      &lt;td&gt;4.0(TB2.0)&lt;/td&gt;
+      &lt;td&gt;8(L3)&lt;/td&gt;
+      &lt;td&gt;46,200&lt;br /&gt;(1ロット[1000個])&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Ryzenはベースクロック、i7はブーストクロックとキャッシュメモリが対抗に対して優位と言えるでしょう。&lt;/p&gt;
+
+&lt;p&gt;全体性能としてはキャッシュメモリの多いi7側に分がありそうです。&lt;/p&gt;
+
+&lt;p&gt;ただし、デスクトップ版Ryzenと同様に価格性能比での勝負となるはずなので、今後の価格リークに注目です。&lt;br /&gt;
+(ちなみに、8550U搭載ASUS ZenBook 3 Deluxeは&lt;strong&gt;20万円&lt;/strong&gt;、ウルトラハイエンドでなければ&lt;strong&gt;10万円&lt;/strong&gt;の製品もあります)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+次はGPUです。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Compute Unit&lt;/th&gt;
+      &lt;th&gt;Base Clock(MHz)&lt;/th&gt;
+      &lt;th&gt;Boost Clock(MHz)&lt;/th&gt;
+      &lt;th&gt;3DMark11&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Radeon Vega M (2700U)&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;4072&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Radeon Vega M (2500U)&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;3655&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Geforce MX 150(2GB GDDR5)&lt;/td&gt;
+      &lt;td&gt;384&lt;/td&gt;
+      &lt;td&gt;384&lt;/td&gt;
+      &lt;td&gt;1468&lt;/td&gt;
+      &lt;td&gt;4570 &lt;br /&gt;(i7 8550U)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Intel UHD Graphics 620&lt;/td&gt;
+      &lt;td&gt;192?&lt;/td&gt;
+      &lt;td&gt;300&lt;/td&gt;
+      &lt;td&gt;1150&lt;/td&gt;
+      &lt;td&gt;1772 &lt;br /&gt;(i7 8550U)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;内蔵GPUでここまでの性能は素直に関心です。少なくとも、Intelはぶっちぎってますね。&lt;/p&gt;
+
+&lt;p&gt;MX150はラップトップ版GT1030です。PSO2やドラクエ10は余裕、FF14は画質落としてまあまあといったところでしょうか。
+内蔵GPUであるVega Mでも軽めの3Dゲームは問題なさそうです。&lt;/p&gt;
+
+&lt;p&gt;2700Uと2500Uの違いは搭載iGPUの動作周波数の違い、Compute Unit数の違いとも言われていますが、現時点でわかっている要素はありません。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+総評としては、モバイル向けCPUとしてかなりいい線いってる感じですね。&lt;/p&gt;
+
+&lt;p&gt;ゲームもまあまあ、コア数もある。&lt;/p&gt;
+
+&lt;p&gt;問題は&lt;strong&gt;価格&lt;/strong&gt;と、モバイル向けなので&lt;strong&gt;発熱（消費電力[TDP]）&lt;/strong&gt;でしょう。&lt;/p&gt;
+
+&lt;p&gt;2500Uが5万円台で出てくれば最強なんだけどなーないよなー…
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;TDPに関しては35W以下という噂もありますが、なんとも。&lt;/p&gt;
+
+&lt;p&gt;ただ、Vegaコアは低クロックでの性能がいいので、デスクトップ版みたいな爆熱電気食らいにはならなさそうです。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+以上、Ryzen Mobileの性能リークでした。&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#発売時期&quot; id=&quot;markdown-toc-発売時期&quot;&gt;発売時期&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#amd-has-made-a-big-impact-on-the-market-with-its-ryzen-architecture-and-the-platform-will-become-even-more-interesting-for-compact-htpc-builds-when-the-first-ryzen-based-apus-are-introduced-next-year&quot; id=&quot;markdown-toc-amd-has-made-a-big-impact-on-the-market-with-its-ryzen-architecture-and-the-platform-will-become-even-more-interesting-for-compact-htpc-builds-when-the-first-ryzen-based-apus-are-introduced-next-year&quot;&gt;AMD has made a big impact on the market with its Ryzen architecture and the platform will become even more interesting for compact HTPC builds when the first Ryzen-based APUs are introduced &lt;strong&gt;next year.&lt;/strong&gt;&lt;br /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#性能&quot; id=&quot;markdown-toc-性能&quot;&gt;性能&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 19 Oct 2017 00:30:00 +0900</pubDate>
+        <link>/2017/10/19/ryzen_mobile_reeked/</link>
+        <guid isPermaLink="true">/2017/10/19/ryzen_mobile_reeked/</guid>
+        
+        
+        <category>CPU</category>
+        
+        <category>Ryzen</category>
+        
+        <category>RyzenMobile</category>
+        
+        <category>Radeon</category>
+        
+        <category>AMD</category>
+        
+      </item>
     
       <item>
         <title>移転しました</title>
