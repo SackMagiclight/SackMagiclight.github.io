@@ -5,9 +5,229 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 Oct 2017 21:27:10 +0900</pubDate>
-    <lastBuildDate>Fri, 20 Oct 2017 21:27:10 +0900</lastBuildDate>
+    <pubDate>Fri, 20 Oct 2017 21:33:12 +0900</pubDate>
+    <lastBuildDate>Fri, 20 Oct 2017 21:33:12 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>GTX 1070 Ti はいくらならば「買い」なのか？</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-10-20-gtx1070ti_reeked.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;スペックリーク&quot;&gt;スペックリーク&lt;/h3&gt;
+
+&lt;p&gt;GTX1070Tiが出るかも？という話は多数のリークサイトが取り上げていましたが、大手リークサイトである&lt;a href=&quot;https://videocardz.com/&quot;&gt;videocardz.com&lt;/a&gt;が3DMarkベンチマークのスコアを公開しています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://videocardz.com/73395/nvidia-geforce-gtx-1070-ti-3dmark-performance&quot;&gt;NVIDIA GeForce GTX 1070 Ti 3DMark performance&lt;/a&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Graphics Card&lt;/th&gt;
+      &lt;th&gt;Fire Strike Extreme(対1070Ti比)&lt;/th&gt;
+      &lt;th&gt;Time Spy(対1070Ti比)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GeForce GTX 1080 MSI Gaming X+&lt;/td&gt;
+      &lt;td&gt;11241(118%)&lt;/td&gt;
+      &lt;td&gt;7817(115%)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Radeon RX Vega 64 @ Turbo&lt;/td&gt;
+      &lt;td&gt;10781(114%)&lt;/td&gt;
+      &lt;td&gt;7151(105%)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Radeon RX Vega 64 @ Balanced&lt;/td&gt;
+      &lt;td&gt;10517(110%)&lt;/td&gt;
+      &lt;td&gt;7046(104%)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Radeon RX Vega 56 @ Turbo&lt;/td&gt;
+      &lt;td&gt;9619  (101%)&lt;/td&gt;
+      &lt;td&gt;6423( 95%)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;font color=&quot;Red&quot;&gt;GeForce GTX 1070 Ti #1&lt;/font&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;9546&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;6816&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;font color=&quot;Red&quot;&gt;GeForce GTX 1070 Ti #2&lt;/font&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;9449&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;6777&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Radeon RX Vega 56 @ Balanced&lt;/td&gt;
+      &lt;td&gt;9340 ( 98%)&lt;/td&gt;
+      &lt;td&gt;6201( 91%)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GeForce GTX 1070 Colorful iGame XTOP&lt;/td&gt;
+      &lt;td&gt;8938 ( 94%)&lt;/td&gt;
+      &lt;td&gt;6130( 90%)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;概ね、1080の&lt;strong&gt;-15%&lt;/strong&gt;、1070の&lt;strong&gt;+10%&lt;/strong&gt;で、よく言われる「RX Vega 56対抗として出す」は正しそうです。&lt;/p&gt;
+
+&lt;p&gt;既に判明しているスペック情報を見る限り、&lt;strong&gt;GTX1080のメモリをGDDR5に置き換えたもの&lt;/strong&gt;と認識するべきですね。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;GTX 1080Ti&lt;/th&gt;
+      &lt;th&gt;GTX 1080&lt;/th&gt;
+      &lt;th&gt;&lt;font color=&quot;red&quot;&gt;GTX 1070Ti&lt;/font&gt;&lt;/th&gt;
+      &lt;th&gt;GTX 1070&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CUDA Core(Unit)&lt;/td&gt;
+      &lt;td&gt;3584&lt;/td&gt;
+      &lt;td&gt;2560&lt;/td&gt;
+      &lt;td&gt;2432&lt;/td&gt;
+      &lt;td&gt;1920&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Base Clock(MHz)&lt;/td&gt;
+      &lt;td&gt;1480&lt;/td&gt;
+      &lt;td&gt;1607&lt;/td&gt;
+      &lt;td&gt;1607&lt;/td&gt;
+      &lt;td&gt;1506&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Boost Clock(MHz)&lt;/td&gt;
+      &lt;td&gt;1582&lt;/td&gt;
+      &lt;td&gt;1733&lt;/td&gt;
+      &lt;td&gt;1683&lt;/td&gt;
+      &lt;td&gt;1683&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;メモリ規格&lt;/td&gt;
+      &lt;td&gt;GDDR5X&lt;/td&gt;
+      &lt;td&gt;GDDR5X&lt;/td&gt;
+      &lt;td&gt;GDDR5&lt;/td&gt;
+      &lt;td&gt;GDDR5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;メモリ容量(GB)&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;メモリ周波数(MHz)&lt;/td&gt;
+      &lt;td&gt;1375&lt;/td&gt;
+      &lt;td&gt;1375&lt;/td&gt;
+      &lt;td&gt;2000&lt;/td&gt;
+      &lt;td&gt;2000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;メモリ帯域(MHz)&lt;/td&gt;
+      &lt;td&gt;11000&lt;/td&gt;
+      &lt;td&gt;11000&lt;/td&gt;
+      &lt;td&gt;8000&lt;/td&gt;
+      &lt;td&gt;8000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;価格(円)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;コストパフォーマンスは&quot;&gt;コストパフォーマンスは？&lt;/h3&gt;
+&lt;p&gt;さて、気になるのは発売日と価格ですが、発売日については&lt;strong&gt;10/26(日本だと10/27)&lt;/strong&gt;にローンチ、発売は&lt;strong&gt;11/02(日本は不明)&lt;/strong&gt;との見方が強いようです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://videocardz.com/73052/nvidia-geforce-gtx-1070-ti-to-launch-on-october-26th&quot;&gt;NVIDIA GeForce GTX 1070 Ti to launch on October 26th&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;もう1週間ありませんね。期待しましょう。&lt;/p&gt;
+
+&lt;p&gt;価格は&lt;strong&gt;$429&lt;/strong&gt;が有力視されています。日本だと特殊税込みで5.5万円といったところでしょうか。&lt;br /&gt;
+問題はこの価格が「買い」なのかどうかですが、まず以下のグラフを見てください。&lt;br /&gt;
+3DMark Fire Strike Extreme、Time Spyのスコアと価格のグラフです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-10-20-gtx1070ti_value.png&quot; alt=&quot;性能価格グラフ&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;※横軸は各GPUのリファレンスの価格です。日本ではこの値段に一定のプラスですね。なお、GTX1070Tiに関してはリファレンスがない可能性があります。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;価格（ドル）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GTX1080Ti&lt;/td&gt;
+      &lt;td&gt;699&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RX Vega64&lt;/td&gt;
+      &lt;td&gt;599&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GTX1080&lt;/td&gt;
+      &lt;td&gt;499&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GTX1070Ti&lt;/td&gt;
+      &lt;td&gt;429(?)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RX Vega56&lt;/td&gt;
+      &lt;td&gt;399&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GTX1070&lt;/td&gt;
+      &lt;td&gt;379&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;
+これを見る限り、GTX1070Tiは安すぎず、高すぎずで絶妙な価格設定と言えるでしょう。&lt;/p&gt;
+
+&lt;p&gt;少なくとも、RX Vega64ほどのズレはなさそうです。&lt;br /&gt;
+丁度いい形で、GTX1070(RX Vega56)とGTX1080の間を埋める形に収まっており、RX Vega56対抗として成立しています。&lt;/p&gt;
+
+&lt;p&gt;このあたりのスペックを求めている人にとっては「買い」で良さそうです。&lt;br /&gt;
+ただし、GTX1070Ti発売に合わせて既存のカードの価格改定がなければ…の話ですが。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+以上、1070Tiについて、スペックリークと価格考察でした。&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#スペックリーク&quot; id=&quot;markdown-toc-スペックリーク&quot;&gt;スペックリーク&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#コストパフォーマンスは&quot; id=&quot;markdown-toc-コストパフォーマンスは&quot;&gt;コストパフォーマンスは？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 20 Oct 2017 21:30:00 +0900</pubDate>
+        <link>/2017/10/20/gtx1070ti_reeked/</link>
+        <guid isPermaLink="true">/2017/10/20/gtx1070ti_reeked/</guid>
+        
+        
+        <category>GPU</category>
+        
+        <category>NVIDIA</category>
+        
+        <category>GTX1070Ti</category>
+        
+        <category>リーク</category>
+        
+      </item>
     
       <item>
         <title>Ryzen Mobile 性能・発売時期のリーク -結局どのぐらい？-</title>
@@ -192,8 +412,8 @@ CPUクーラーの長が言っているので、まあ間違いないでしょ�
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 19 Oct 2017 00:30:00 +0900</pubDate>
-        <link>/2017/10/19/ryzen_mobile_reeked-%E3%82%B3%E3%83%94%E3%83%BC/</link>
-        <guid isPermaLink="true">/2017/10/19/ryzen_mobile_reeked-%E3%82%B3%E3%83%94%E3%83%BC/</guid>
+        <link>/2017/10/19/ryzen_mobile_reeked/</link>
+        <guid isPermaLink="true">/2017/10/19/ryzen_mobile_reeked/</guid>
         
         
         <category>CPU</category>
