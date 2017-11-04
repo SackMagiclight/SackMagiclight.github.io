@@ -5,9 +5,139 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 28 Oct 2017 21:56:34 +0900</pubDate>
-    <lastBuildDate>Sat, 28 Oct 2017 21:56:34 +0900</lastBuildDate>
+    <pubDate>Sat, 04 Nov 2017 22:48:35 +0900</pubDate>
+    <lastBuildDate>Sat, 04 Nov 2017 22:48:35 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>beatoraja ビルド＆デバッグ方法</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_b.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;わかってる人向け&quot;&gt;わかってる人向け&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Antビルドしてbat実行。デバッグはリモートデバッグで。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ビルド時に要debug属性付与。&lt;br /&gt;
+build.xml開いてdebugパラメータ付与するか、debug用ビルド設定個別に作る。&lt;br /&gt;
+bat起動時にリモートデバッグ用ポート設定必須。&lt;br /&gt;
+batファイル編集かdebug用bat作るのが良い。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;開発環境構築&quot;&gt;開発環境構築&lt;/h3&gt;
+
+&lt;p&gt;いろいろなIDE（統合開発環境）がありますが、一番楽そうなeclipseで進めます。&lt;/p&gt;
+
+&lt;p&gt;※Windows環境での実践です。Mac、Linux環境では適当に読み替えてください。
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;eclipseのダウンロード&quot;&gt;eclipseのダウンロード&lt;/h4&gt;
+
+&lt;p&gt;日本語化等ある程度整備された環境である&lt;strong&gt;&lt;a href=&quot;http://mergedoc.osdn.jp/index.html#/pleiades_distros4.7.html&quot;&gt;Pleiades All in One Eclipse&lt;/a&gt;&lt;/strong&gt;をダウンロードします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;beatorajaはJavaアプリケーションなので、JavaのFull Editionを選んでください。
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;git-clone&quot;&gt;git clone&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/exch-bms2/beatoraja&quot;&gt;beatorajaのgithub&lt;/a&gt;から最新のコードをcloneします。
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;eclipseへインポート&quot;&gt;eclipseへインポート&lt;/h4&gt;
+
+&lt;p&gt;ワークスペースを適当に作成(デフォルトは “../workspace”)して、eclipseを起動します。&lt;/p&gt;
+
+&lt;p&gt;[ファイル]-[インポート]を選択し、「フォルダまたはアーカイブからプロジェクト」を選択します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_2.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;インポート・ソースにcloneしたbeatorajaのフォルダを選択し、完了します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_3.png&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;buildの実行&quot;&gt;buildの実行&lt;/h4&gt;
+
+&lt;p&gt;build.xmlを右クリックして、[実行]-[Ant ビルド]を選択します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_4.png&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;実際の起動&quot;&gt;実際の起動&lt;/h4&gt;
+
+&lt;p&gt;cloneしたbeatorajaプロジェクトフォルダの中にある&lt;strong&gt;beatoraja-config.bat&lt;/strong&gt;ファイルを起動してください。
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;デバッグ&quot;&gt;デバッグ&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;build.xmlを編集し、debugパラメータを追加してantビルドします。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_5.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;beatoraja-config.bat ファイルを編集して、リモートデバッグ用オプションを追記します。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_6.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;beatoraja-config.bat ファイルを実行すると、リモートデバッグの接続を待ちます。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;eclipseで、beatorajaフォルダを右クリック-[デバッグ]-[デバッグの構成] を選択します。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_7.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;リモートJavaアプリケーションを選択し、新規ボタンを押します。&lt;/li&gt;
+  &lt;li&gt;適当に名前をつけて、ホスト：localhost,ポート8000とします。&lt;br /&gt;
+※ホストとポートはリモートデバッグ用オプションの記述と同じにすること。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_8.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;デバッグ ボタンを押してデバッグを開始します。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;意外とbeatorajaの使い方は書かれてるけど、デバッグとかそこら辺の情報がないので書きました。&lt;/p&gt;
+
+&lt;p&gt;オープンソースで、割りとわかりやすい作りしてるのでGit周りの練習に最適ですね。&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#わかってる人向け&quot; id=&quot;markdown-toc-わかってる人向け&quot;&gt;わかってる人向け&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#開発環境構築&quot; id=&quot;markdown-toc-開発環境構築&quot;&gt;開発環境構築&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#eclipseのダウンロード&quot; id=&quot;markdown-toc-eclipseのダウンロード&quot;&gt;eclipseのダウンロード&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#git-clone&quot; id=&quot;markdown-toc-git-clone&quot;&gt;git clone&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#eclipseへインポート&quot; id=&quot;markdown-toc-eclipseへインポート&quot;&gt;eclipseへインポート&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#buildの実行&quot; id=&quot;markdown-toc-buildの実行&quot;&gt;buildの実行&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#実際の起動&quot; id=&quot;markdown-toc-実際の起動&quot;&gt;実際の起動&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#デバッグ&quot; id=&quot;markdown-toc-デバッグ&quot;&gt;デバッグ&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 04 Nov 2017 22:30:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2017/11/04/beatoraja_build/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2017/11/04/beatoraja_build/</guid>
+        
+        
+        <category>bms</category>
+        
+        <category>java</category>
+        
+        <category>development</category>
+        
+      </item>
     
       <item>
         <title>GTX 1070 Tiは税込59,940円から。2,000円追加で1080買え。</title>
