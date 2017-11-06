@@ -5,9 +5,50 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 04 Nov 2017 22:48:35 +0900</pubDate>
-    <lastBuildDate>Sat, 04 Nov 2017 22:48:35 +0900</lastBuildDate>
+    <pubDate>Tue, 07 Nov 2017 00:10:58 +0900</pubDate>
+    <lastBuildDate>Tue, 07 Nov 2017 00:10:58 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>Intel、Coreプロセッサ + Radeon GPU の開発を発表</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-11-06-core_vega.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;※画像はプレスリリースより。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;今までさんざんリーク・噂されていた、Core+Radeon のグラフィック統合型CPUですが、どうやら本当に出るようです。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;New Intel Core Processor Combines High-Performance CPU with Custom Discrete Graphics from AMD to Enable Sleeker, Thinner Devices&lt;br /&gt;
+ (高性能CPUとAMDのカスタムGPUを組み合わせた新しいIntel Coreプロセッサにより、より洗練された薄型デバイスを実現)&lt;br /&gt;&lt;br /&gt;
+&lt;a href=&quot;https://newsroom.intel.com/editorials/new-intel-core-processor-combine-high-performance-cpu-discrete-graphics-sleek-thin-devices/&quot;&gt;プレスリリース全文はこちら&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;プレスリリースを見る限り、薄型化&amp;amp;省電力にするためにAMDと手を組んだ感じですね。&lt;br /&gt;
+とは言え、イメージCGを見る限り、薄いけど大型？な感じですね。&lt;/p&gt;
+
+&lt;p&gt;Ryzen Mobileとの違いは&lt;strong&gt;HBM2を組み込み搭載&lt;/strong&gt;することです。&lt;br /&gt;
+HBM2を用いる分だけ、消費電力が増える形になります。&lt;/p&gt;
+
+&lt;p&gt;おそらく、ハイエンドノートはこちら（Core+Radeon）で、ミドルスペック以下はRyzen Mobileということなのでしょう。&lt;br /&gt;
+&lt;strong&gt;搭載PCの発売日は2018年1-3月&lt;/strong&gt;らしいので、年末にはリークがありそうです。楽しみに待ちましょう。&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 06 Nov 2017 23:30:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2017/11/06/core_vega/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2017/11/06/core_vega/</guid>
+        
+        
+        <category>CPU</category>
+        
+        <category>Radeon</category>
+        
+        <category>AMD</category>
+        
+        <category>Intel</category>
+        
+      </item>
     
       <item>
         <title>beatoraja ビルド＆デバッグ方法</title>
