@@ -5,9 +5,125 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Nov 2017 00:10:58 +0900</pubDate>
-    <lastBuildDate>Tue, 07 Nov 2017 00:10:58 +0900</lastBuildDate>
+    <pubDate>Thu, 23 Nov 2017 14:03:21 +0900</pubDate>
+    <lastBuildDate>Thu, 23 Nov 2017 14:03:21 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>beatoraja トラブルシューティング</title>
+        <description>&lt;h3 id=&quot;これは何&quot;&gt;これは何？&lt;/h3&gt;
+
+&lt;p&gt;beatorajaのエゴサでよく見かけたトラブルのまとめ。&lt;br /&gt;
+2017/11/23現在最新の v0.5.1 が対象。&lt;/p&gt;
+
+&lt;h3 id=&quot;注意&quot;&gt;注意&lt;/h3&gt;
+&lt;p&gt;今後コンフィグ周りは大幅な変更が予定されているため、この記事の内容が細心でない可能性が大いにあります。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;qa&quot;&gt;Q&amp;amp;A&lt;/h3&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;q起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる&quot;&gt;Q:起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる…&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; を削除するか、手動で&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;playername&quot;: &quot;player1&quot;,&lt;/code&gt;を追記してください。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+&quot;playername&quot;: &quot;player1&quot;,
+&quot;fullscreen&quot;: true,
+&quot;resolution&quot;: &quot;FULLHD&quot;,
+&quot;inputduration&quot;: 45,
+
+(略)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;こんな感じになるはずです。&lt;br /&gt;
+因みに原因は&lt;strong&gt;beatorajaを初回起動時にjarファイルをダブルクリックで実行したため&lt;/strong&gt;です。&lt;br /&gt;
+ちゃんと&lt;code class=&quot;highlighter-rouge&quot;&gt;beatoraja-config.bat&lt;/code&gt;(64bitの場合)から起動しよう。&lt;/p&gt;
+
+&lt;p&gt;なお、0.5.2以降は修正済みです。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう&quot;&gt;Q:LR2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう…&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:選曲時にキーボードで選曲決定していませんか？&lt;/strong&gt;&lt;br /&gt;
+専コンで選曲決定しましょう。&lt;br /&gt;
+確か不正対策による仕様だったはず。&lt;br /&gt;
+（選曲時に利用した形式(コントローラorKB)以外は無効化される…はず）&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい&quot;&gt;Q:起動時に専コンが効かないんだけど… というかなんかキーアサインがおかしい？&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:0.5.1ではバグがあるため、以下を試そう&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;起動後キーコンフィグで[2]キー&lt;/li&gt;
+  &lt;li&gt;起動後キーコンフィグで適当にキーコンフィグする&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;症状としては、前回設定したキーコンフィグが起動時に反映されていません。（0.5.2で仮修正済み）&lt;br /&gt;
+再度キーコンフィグ画面に入って適当にいじることでそのキーコンフィグがロードされます。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qカスタムフォルダ無いの&quot;&gt;Q:カスタムフォルダ無いの？&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:あるよ&lt;/strong&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;folder\default.json&lt;/code&gt;を参考に真似して作ってみて、どうぞ。&lt;br /&gt;
+LR2と同じくSQL形式です。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない&quot;&gt;Q:&lt;code class=&quot;highlighter-rouge&quot;&gt;[リソース]-&amp;gt;[BMS Path]&lt;/code&gt;にフォルダ追加したけど、楽曲読み込んでくれない…&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;code class=&quot;highlighter-rouge&quot;&gt;起動直後にバックグラウンドで楽曲更新を実行&lt;/code&gt;にチェックを入れるか、手動で楽曲更新する&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qinfコンとかdaoのinfモードのコントローラ使えないの&quot;&gt;Q:INFコンとかDAOのINFモードのコントローラ使えないの？&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:0.5.2以降は使えるはずです&lt;/strong&gt;&lt;br /&gt;
+対応したのは&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;＼　 ヽ　 ｜　 /　　／
+　＼　ヽ　｜　/　 ／
+＼　　　　　　　　　／
+
+＿　わ た し で す　＿
+　　　　／￣＼
+―　　 ｜^ｏ^｜　　 ―
+　　　　＼＿／
+￣　　　　　　　　　￣
+／　　　　　　　　　＼
+　／　 /　｜　ヽ　＼
+／　　/　 ｜　 ヽ　 ＼
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/exch-bms2/beatoraja/pull/101&quot;&gt;Github - Pre Support IIDX Premium Controller&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[Input] -&amp;gt; アナログスクラッチ&lt;/code&gt; のチェックボックスをオンで対応します。&lt;br /&gt;
+コントローラー別の設定がないので、&lt;strong&gt;混ぜて利用できない&lt;/strong&gt;のは注意です。&lt;br /&gt;
+(例)：INFコンと虹コン、INFコンと専コンコンバータ など&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#これは何&quot; id=&quot;markdown-toc-これは何&quot;&gt;これは何？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#注意&quot; id=&quot;markdown-toc-注意&quot;&gt;注意&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#qa&quot; id=&quot;markdown-toc-qa&quot;&gt;Q&amp;amp;A&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#q起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる&quot; id=&quot;markdown-toc-q起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる&quot;&gt;Q:起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる…&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう&quot; id=&quot;markdown-toc-qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう&quot;&gt;Q:LR2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう…&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい&quot; id=&quot;markdown-toc-q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい&quot;&gt;Q:起動時に専コンが効かないんだけど… というかなんかキーアサインがおかしい？&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qカスタムフォルダ無いの&quot; id=&quot;markdown-toc-qカスタムフォルダ無いの&quot;&gt;Q:カスタムフォルダ無いの？&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない&quot; id=&quot;markdown-toc-qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない&quot;&gt;Q:&lt;code class=&quot;highlighter-rouge&quot;&gt;[リソース]-&amp;gt;[BMS Path]&lt;/code&gt;にフォルダ追加したけど、楽曲読み込んでくれない…&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qinfコンとかdaoのinfモードのコントローラ使えないの&quot; id=&quot;markdown-toc-qinfコンとかdaoのinfモードのコントローラ使えないの&quot;&gt;Q:INFコンとかDAOのINFモードのコントローラ使えないの？&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 23 Nov 2017 13:00:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2017/11/23/beatoraja_qa/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2017/11/23/beatoraja_qa/</guid>
+        
+        
+        <category>bms</category>
+        
+      </item>
     
       <item>
         <title>Intel、Coreプロセッサ + Radeon GPU の開発を発表</title>
