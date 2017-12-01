@@ -5,17 +5,22 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Dec 2017 21:48:28 +0900</pubDate>
-    <lastBuildDate>Fri, 01 Dec 2017 21:48:28 +0900</lastBuildDate>
+    <pubDate>Fri, 01 Dec 2017 22:01:57 +0900</pubDate>
+    <lastBuildDate>Fri, 01 Dec 2017 22:01:57 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
         <title>beatoraja 0.5.2 リリースノートもどき</title>
-        <description>&lt;p&gt;0.5.1 からの変更点です。&lt;br /&gt;
+        <description>&lt;p&gt;beatoraja 0.5.2 がリリースされました。&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;ja&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;We&amp;#39;ve released beatoraja 0.5.2. It supports 2dx premium controller, enhances rendering performance and response of loading skins, fixes many problems.&lt;a href=&quot;https://t.co/xG37VrY81A&quot;&gt;https://t.co/xG37VrY81A&lt;/a&gt;&lt;/p&gt;&amp;mdash; 両替侍 (@ryougae_samurai) &lt;a href=&quot;https://twitter.com/ryougae_samurai/status/936244061672955904?ref_src=twsrc%5Etfw&quot;&gt;2017年11月30日&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;以下は0.5.1 からの変更点です。&lt;br /&gt;
 Gitログから追ったのでちょっと間違ってるかも…&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;h2 id=&quot;beatomania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot;&gt;beatomania IIDX INFINITAS プレミアムコントローラーがサポートされました&lt;/h2&gt;
+&lt;h2 id=&quot;beatmania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot;&gt;beatmania IIDX INFINITAS プレミアムコントローラーがサポートされました&lt;/h2&gt;
 &lt;p&gt;オプションの[Input]-&amp;gt;[アナログスクラッチ] をチェックすることで動作します。&lt;br /&gt;
 &lt;strong&gt;アルゴリズムが異なるコントローラーを併用することはできません。&lt;/strong&gt;&lt;br /&gt;
 （例：INFコンと虹コン、DAO INFモードと専コンPADなど）&lt;/p&gt;
@@ -93,7 +98,7 @@ DPはスクラッチレーンに寄るようになりました。&lt;/p&gt;
 &lt;h2 id=&quot;その他軽微な不具合修正&quot;&gt;その他軽微な不具合修正&lt;/h2&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#beatomania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot; id=&quot;markdown-toc-beatomania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot;&gt;beatomania IIDX INFINITAS プレミアムコントローラーがサポートされました&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#beatmania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot; id=&quot;markdown-toc-beatmania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot;&gt;beatmania IIDX INFINITAS プレミアムコントローラーがサポートされました&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#検索バー追加&quot; id=&quot;markdown-toc-検索バー追加&quot;&gt;検索バー追加&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#irを正式にサポート&quot; id=&quot;markdown-toc-irを正式にサポート&quot;&gt;IRを正式にサポート&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#コースモードのゲージにlr2を追加&quot; id=&quot;markdown-toc-コースモードのゲージにlr2を追加&quot;&gt;コースモードのゲージに「LR2」を追加&lt;/a&gt;&lt;/li&gt;
