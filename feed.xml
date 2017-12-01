@@ -5,9 +5,118 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Nov 2017 14:03:21 +0900</pubDate>
-    <lastBuildDate>Thu, 23 Nov 2017 14:03:21 +0900</lastBuildDate>
+    <pubDate>Fri, 01 Dec 2017 21:48:28 +0900</pubDate>
+    <lastBuildDate>Fri, 01 Dec 2017 21:48:28 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>beatoraja 0.5.2 リリースノートもどき</title>
+        <description>&lt;p&gt;0.5.1 からの変更点です。&lt;br /&gt;
+Gitログから追ったのでちょっと間違ってるかも…&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;beatomania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot;&gt;beatomania IIDX INFINITAS プレミアムコントローラーがサポートされました&lt;/h2&gt;
+&lt;p&gt;オプションの[Input]-&amp;gt;[アナログスクラッチ] をチェックすることで動作します。&lt;br /&gt;
+&lt;strong&gt;アルゴリズムが異なるコントローラーを併用することはできません。&lt;/strong&gt;&lt;br /&gt;
+（例：INFコンと虹コン、DAO INFモードと専コンPADなど）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;検索バー追加&quot;&gt;検索バー追加&lt;/h2&gt;
+&lt;p&gt;(LITONE5の導入をおすすめします)&lt;br /&gt;
+楽曲検索バーが追加されました。 検索結果はフォルダにまとめられ、起動中はいつでも参照できます。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;irを正式にサポート&quot;&gt;IRを正式にサポート&lt;/h2&gt;
+&lt;p&gt;記述段階では Chroma IRがβテスト中です。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;コースモードのゲージにlr2を追加&quot;&gt;コースモードのゲージに「LR2」を追加&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gauge_lr2&lt;/code&gt;が追加されました。&lt;br /&gt;
+この制約で指定されたコースは、LR2のゲージで演奏されます。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;042以前で読めていたlr2互換のpmsスキンが読み込めなかったのを修正&quot;&gt;0.4.2以前で読めていたLR2互換のPMSスキンが読み込めなかったのを修正&lt;/h2&gt;
+&lt;p&gt;LPEX、Light Pop等。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;空poor範囲の修正&quot;&gt;空POOR範囲の修正&lt;/h2&gt;
+&lt;p&gt;0.5.1と比較して空POORが減少します。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;コンボ重視のアルゴリズムが変更されました&quot;&gt;&lt;strong&gt;コンボ重視&lt;/strong&gt;のアルゴリズムが変更されました&lt;/h2&gt;
+&lt;p&gt;0.5.1と比較して繋がるようになりました。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;all-scrのスクラッチ以外のノーツ配置が易しくなりました&quot;&gt;ALL-SCRのスクラッチ以外のノーツ配置が易しくなりました&lt;/h2&gt;
+&lt;p&gt;LR2みたいに128分皿とかはなくなりました。  &lt;br /&gt;
+DPはスクラッチレーンに寄るようになりました。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;選曲bgm決定音リザルトbgmのランダム再生が正式に可能になりました&quot;&gt;選曲BGM、決定音、リザルトBGMのランダム再生が正式に可能になりました&lt;/h2&gt;
+&lt;p&gt;手っ取り早く体験するのであればLITONE5(v0.7)の導入をおすすめします。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;スキンのlr2互換を向上&quot;&gt;スキンのLR2互換を向上&lt;/h2&gt;
+&lt;p&gt;OADX等の描画に関して修正されています。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;コンフィグ周りの不具合修正&quot;&gt;コンフィグ周りの不具合修正&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;起動時にキーコンフィグが読み込まれない問題&lt;/li&gt;
+  &lt;li&gt;初回起動時にjarファイルからの起動で2回目以降起動しない問題&lt;/li&gt;
+  &lt;li&gt;複数の外部コントローラー利用時の対応&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;操作性能の向上&quot;&gt;操作性能の向上&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;選曲画面のスクロール速度の改善&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;音声動画再生の不具合修正&quot;&gt;音声・動画再生の不具合修正&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;その他軽微な不具合修正&quot;&gt;その他軽微な不具合修正&lt;/h2&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#beatomania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot; id=&quot;markdown-toc-beatomania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot;&gt;beatomania IIDX INFINITAS プレミアムコントローラーがサポートされました&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#検索バー追加&quot; id=&quot;markdown-toc-検索バー追加&quot;&gt;検索バー追加&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#irを正式にサポート&quot; id=&quot;markdown-toc-irを正式にサポート&quot;&gt;IRを正式にサポート&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#コースモードのゲージにlr2を追加&quot; id=&quot;markdown-toc-コースモードのゲージにlr2を追加&quot;&gt;コースモードのゲージに「LR2」を追加&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#042以前で読めていたlr2互換のpmsスキンが読み込めなかったのを修正&quot; id=&quot;markdown-toc-042以前で読めていたlr2互換のpmsスキンが読み込めなかったのを修正&quot;&gt;0.4.2以前で読めていたLR2互換のPMSスキンが読み込めなかったのを修正&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#空poor範囲の修正&quot; id=&quot;markdown-toc-空poor範囲の修正&quot;&gt;空POOR範囲の修正&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#コンボ重視のアルゴリズムが変更されました&quot; id=&quot;markdown-toc-コンボ重視のアルゴリズムが変更されました&quot;&gt;&lt;strong&gt;コンボ重視&lt;/strong&gt;のアルゴリズムが変更されました&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#all-scrのスクラッチ以外のノーツ配置が易しくなりました&quot; id=&quot;markdown-toc-all-scrのスクラッチ以外のノーツ配置が易しくなりました&quot;&gt;ALL-SCRのスクラッチ以外のノーツ配置が易しくなりました&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#選曲bgm決定音リザルトbgmのランダム再生が正式に可能になりました&quot; id=&quot;markdown-toc-選曲bgm決定音リザルトbgmのランダム再生が正式に可能になりました&quot;&gt;選曲BGM、決定音、リザルトBGMのランダム再生が正式に可能になりました&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#スキンのlr2互換を向上&quot; id=&quot;markdown-toc-スキンのlr2互換を向上&quot;&gt;スキンのLR2互換を向上&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#コンフィグ周りの不具合修正&quot; id=&quot;markdown-toc-コンフィグ周りの不具合修正&quot;&gt;コンフィグ周りの不具合修正&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#操作性能の向上&quot; id=&quot;markdown-toc-操作性能の向上&quot;&gt;操作性能の向上&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#音声動画再生の不具合修正&quot; id=&quot;markdown-toc-音声動画再生の不具合修正&quot;&gt;音声・動画再生の不具合修正&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#その他軽微な不具合修正&quot; id=&quot;markdown-toc-その他軽微な不具合修正&quot;&gt;その他軽微な不具合修正&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 01 Dec 2017 21:30:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2017/12/01/beatoraja_0_5_2/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2017/12/01/beatoraja_0_5_2/</guid>
+        
+        
+        <category>bms</category>
+        
+      </item>
     
       <item>
         <title>beatoraja トラブルシューティング</title>

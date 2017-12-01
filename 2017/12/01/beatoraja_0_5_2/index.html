@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>beatoraja 0.5.2 リリースノートもどき</title>
+	<meta name="description" content="0.5.1 からの変更点です。Gitログから追ったのでちょっと間違ってるかも…">
+	
+	<link rel="canonical" href="https://www.gaftalk.com/2017/12/01/beatoraja_0_5_2/">
+	<link rel="alternate" type="application/rss+xml" title="Gaf Talk" href="https://www.gaftalk.com/feed.xml" />
+	
+	<!-- <link rel="stylesheet" href="/css/main.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/monokai_sublime.min.css">
+	<script type="text/javascript" src="/static/js/highlight.min.js"></script>
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="https://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+	<script type="text/javascript" src="https://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
+    -->
+    
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83617244-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-83617244-3');
+	</script>
+
+</head>
+  
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="beatoraja 0.5.2 リリースノートもどき - Gaf Talk">
+<meta name="twitter:url" content="https://www.gaftalk.com/2017/12/01/beatoraja_0_5_2/">
+<meta name="twitter:description" content="ゲームとかガジェットとかその他好きなこと">
+<meta name="twitter:image:src" content="https://www.gaftalk.com/postimg/bms/2017-11-04-beatoraja_build_b.png">
+
+ <!--  <body data-spy="scroll" data-target="#myAffix"> -->
+  <body>
+
+    <header>
+
+<!-- navbar -->
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/" style="padding:0">
+      <img src="/static/img/logo.png" style="max-height:-webkit-fill-available">
+      </a>
+      <p class="navbar-text">ゲームとかガジェットとかその他好きなこと</p>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        
+          <li>
+        
+        <a href="/">Home</a></li>
+
+        
+          
+        
+          
+            
+              <li>
+            
+            <a href="/projects/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</header>
+
+    <div id="main" class="container main">
+      <style>
+.list-share ul {
+  list-style: none;
+
+  font-size: 0;
+  padding-left:0px;
+}
+
+.list-share li {
+  font-size: 1em;
+}
+
+.list-share {
+  display: block;
+}
+
+.list-share .item {
+  display: inline-block;
+
+  vertical-align: top;
+}
+
+.list-share .item + .item {
+  margin-left: 10px;
+}
+</style>
+<div class="row">
+    <div id="myArticle" class="col-sm-9">
+        <div class="post-area post">
+            <header>
+                <h1>beatoraja 0.5.2 リリースノートもどき</h1>
+                <p>2017-12-01</p>
+            </header>
+            <hr>
+            <article><p>0.5.1 からの変更点です。<br />
+Gitログから追ったのでちょっと間違ってるかも…</p>
+
+<hr />
+<h2 id="beatomania-iidx-infinitas-プレミアムコントローラーがサポートされました">beatomania IIDX INFINITAS プレミアムコントローラーがサポートされました</h2>
+<p>オプションの[Input]-&gt;[アナログスクラッチ] をチェックすることで動作します。<br />
+<strong>アルゴリズムが異なるコントローラーを併用することはできません。</strong><br />
+（例：INFコンと虹コン、DAO INFモードと専コンPADなど）</p>
+
+<hr />
+
+<h2 id="検索バー追加">検索バー追加</h2>
+<p>(LITONE5の導入をおすすめします)<br />
+楽曲検索バーが追加されました。 検索結果はフォルダにまとめられ、起動中はいつでも参照できます。</p>
+
+<hr />
+
+<h2 id="irを正式にサポート">IRを正式にサポート</h2>
+<p>記述段階では Chroma IRがβテスト中です。</p>
+
+<hr />
+
+<h2 id="コースモードのゲージにlr2を追加">コースモードのゲージに「LR2」を追加</h2>
+<p><code class="highlighter-rouge">gauge_lr2</code>が追加されました。<br />
+この制約で指定されたコースは、LR2のゲージで演奏されます。</p>
+
+<hr />
+
+<h2 id="042以前で読めていたlr2互換のpmsスキンが読み込めなかったのを修正">0.4.2以前で読めていたLR2互換のPMSスキンが読み込めなかったのを修正</h2>
+<p>LPEX、Light Pop等。</p>
+
+<hr />
+
+<h2 id="空poor範囲の修正">空POOR範囲の修正</h2>
+<p>0.5.1と比較して空POORが減少します。</p>
+
+<hr />
+
+<h2 id="コンボ重視のアルゴリズムが変更されました"><strong>コンボ重視</strong>のアルゴリズムが変更されました</h2>
+<p>0.5.1と比較して繋がるようになりました。</p>
+
+<hr />
+
+<h2 id="all-scrのスクラッチ以外のノーツ配置が易しくなりました">ALL-SCRのスクラッチ以外のノーツ配置が易しくなりました</h2>
+<p>LR2みたいに128分皿とかはなくなりました。  <br />
+DPはスクラッチレーンに寄るようになりました。</p>
+
+<hr />
+
+<h2 id="選曲bgm決定音リザルトbgmのランダム再生が正式に可能になりました">選曲BGM、決定音、リザルトBGMのランダム再生が正式に可能になりました</h2>
+<p>手っ取り早く体験するのであればLITONE5(v0.7)の導入をおすすめします。</p>
+
+<hr />
+
+<h2 id="スキンのlr2互換を向上">スキンのLR2互換を向上</h2>
+<p>OADX等の描画に関して修正されています。</p>
+
+<hr />
+
+<h2 id="コンフィグ周りの不具合修正">コンフィグ周りの不具合修正</h2>
+<ul>
+  <li>起動時にキーコンフィグが読み込まれない問題</li>
+  <li>初回起動時にjarファイルからの起動で2回目以降起動しない問題</li>
+  <li>複数の外部コントローラー利用時の対応</li>
+</ul>
+
+<hr />
+
+<h2 id="操作性能の向上">操作性能の向上</h2>
+<ul>
+  <li>選曲画面のスクロール速度の改善</li>
+</ul>
+
+<hr />
+
+<h2 id="音声動画再生の不具合修正">音声・動画再生の不具合修正</h2>
+
+<hr />
+
+<h2 id="その他軽微な不具合修正">その他軽微な不具合修正</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#beatomania-iidx-infinitas-プレミアムコントローラーがサポートされました" id="markdown-toc-beatomania-iidx-infinitas-プレミアムコントローラーがサポートされました">beatomania IIDX INFINITAS プレミアムコントローラーがサポートされました</a></li>
+  <li><a href="#検索バー追加" id="markdown-toc-検索バー追加">検索バー追加</a></li>
+  <li><a href="#irを正式にサポート" id="markdown-toc-irを正式にサポート">IRを正式にサポート</a></li>
+  <li><a href="#コースモードのゲージにlr2を追加" id="markdown-toc-コースモードのゲージにlr2を追加">コースモードのゲージに「LR2」を追加</a></li>
+  <li><a href="#042以前で読めていたlr2互換のpmsスキンが読み込めなかったのを修正" id="markdown-toc-042以前で読めていたlr2互換のpmsスキンが読み込めなかったのを修正">0.4.2以前で読めていたLR2互換のPMSスキンが読み込めなかったのを修正</a></li>
+  <li><a href="#空poor範囲の修正" id="markdown-toc-空poor範囲の修正">空POOR範囲の修正</a></li>
+  <li><a href="#コンボ重視のアルゴリズムが変更されました" id="markdown-toc-コンボ重視のアルゴリズムが変更されました"><strong>コンボ重視</strong>のアルゴリズムが変更されました</a></li>
+  <li><a href="#all-scrのスクラッチ以外のノーツ配置が易しくなりました" id="markdown-toc-all-scrのスクラッチ以外のノーツ配置が易しくなりました">ALL-SCRのスクラッチ以外のノーツ配置が易しくなりました</a></li>
+  <li><a href="#選曲bgm決定音リザルトbgmのランダム再生が正式に可能になりました" id="markdown-toc-選曲bgm決定音リザルトbgmのランダム再生が正式に可能になりました">選曲BGM、決定音、リザルトBGMのランダム再生が正式に可能になりました</a></li>
+  <li><a href="#スキンのlr2互換を向上" id="markdown-toc-スキンのlr2互換を向上">スキンのLR2互換を向上</a></li>
+  <li><a href="#コンフィグ周りの不具合修正" id="markdown-toc-コンフィグ周りの不具合修正">コンフィグ周りの不具合修正</a></li>
+  <li><a href="#操作性能の向上" id="markdown-toc-操作性能の向上">操作性能の向上</a></li>
+  <li><a href="#音声動画再生の不具合修正" id="markdown-toc-音声動画再生の不具合修正">音声・動画再生の不具合修正</a></li>
+  <li><a href="#その他軽微な不具合修正" id="markdown-toc-その他軽微な不具合修正">その他軽微な不具合修正</a></li>
+</ul>
+ </article>
+            <hr>
+            <div id="fb-root"></div>
+            <script>
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <div class="wrapper">
+                <div class="list-share">
+                    <ul>
+                        <li class="item facebook">
+                            <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                        </li>
+                        <li class="item twitter">
+                            <p class="label">Twitter ツイート</p>
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </li>
+                        <li class="item hatena">
+                            <p class="label">はてなブックマーク</p>
+                            <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加">
+                                <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+                            </a>
+                            <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+                        </li>
+                        <li class="item line">
+                            <p class="label">LINE (SPのみ)</p>
+                            <span>
+                                <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+                                <script type="text/javascript">
+                                    new media_line_me.LineButton({"pc":false,"lang":"ja","type":"a"});
+                                </script>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+        </div>
+    <!-- duoshuo.com javascript include code. -->    
+    
+    <!-- disqus.com javascript include code. -->
+	
+    <div class="post-area post comment">
+        <div id="disqus_thread"></div>
+    </div>
+	<script>
+		var disqus_config = function () {
+			this.page.url = "https://www.gaftalk.com/2017/12/01/beatoraja_0_5_2/"; 
+			this.page.identifier = "/2017/12/01/beatoraja_0_5_2"; 
+		};
+		(function() {
+			var d = document, s = d.createElement('script');
+			s.src = '//gaftalk.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	
+     
+    </div>
+    <div id="content" class="col-sm-3">
+        <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
+        <div id="myAffix" class="shadow-bottom-center hidden-xs" >
+            <div class="categories-list-header">Content </div>
+            <div class="content-text"></div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    
+    <div id="top" data-toggle="tooltip" data-placement="left" title="back to top">
+      <a href="javascript:;">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+      </a>
+    </div>
+
+    <footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- <a href="mailto:"><span class="glyphicon glyphicon-envelope"></span> </a>
+        <span class="point"> · </span> -->
+        
+          <a href="https://github.com/SackMagiclight">
+            <span class="icon">
+              <svg viewBox="0 0 16 16">
+                <path fill="#aaa" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            Github
+            <!-- <span>SackMagiclight</span> -->
+          </a>
+          
+          <span class="point"> · </span>
+          
+          
+            <a href="https://twitter.com/sack_magiclight">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span>twitter</span>
+            </a>
+          
+          
+          <!-- <span class="point"> · </span>
+          <span><a href="_posts/bms/2017-12-01-beatoraja_0_5_2.markdown">View source</a></span>
+          <span class="point"> · </span>
+          <span><a class="newpost" href="javascript:;">New post</a></span> -->
+		  <span class="point"> · </span>
+          <span><a href="/feed.xml">RSS</a></span>
+          <span class="point"> · </span>
+          <span>&copy; 2017 海岸砂丘 powerd by Jekyll, theme by LiXizh</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="text/javascript">
+    function OnClickNewPost()
+    {
+        var title = prompt("Please enter title of your post");
+        if (title!=null){
+            title = title.replace(" ", "-");
+            var currentdate = new Date();
+            var urlNewPage = "?filename=_posts/" 
+                + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + title + ".md";
+                
+            var defaultText =  [
+                '---',
+                'layout: post',
+                'comments: true',
+                'categories: diary',
+                '---',
+                '## Title',
+                'text'
+                ].join('\n');
+            urlNewPage += "&value=" + encodeURIComponent(defaultText);
+            window.open(urlNewPage);
+        }
+    }
+    
+    $(function() {
+      // CreateNewPostLinks
+      $('.newpost').each(function(){
+          $(this).click(OnClickNewPost);
+      });
+    });
+</script>
+  
+  </body>
+</html>
