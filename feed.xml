@@ -5,9 +5,38 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Dec 2017 22:01:57 +0900</pubDate>
-    <lastBuildDate>Fri, 01 Dec 2017 22:01:57 +0900</lastBuildDate>
+    <pubDate>Wed, 27 Dec 2017 09:57:09 +0900</pubDate>
+    <lastBuildDate>Wed, 27 Dec 2017 09:57:09 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>NVIDIA GTX 1070 製造中止が確定。1070tiに置き換えへ</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-12-27-1070_discon.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;流通筋からの情報です。&lt;br /&gt;
+GTX1070は製造中止（ディスコン）が確定し、流通在庫のみの販売となります。&lt;br /&gt;
+欲しい方は年末・初売りで確保しておきましょう。&lt;/p&gt;
+
+&lt;p&gt;GTX1070tiに置き換わるようですが、正直1080買いますよね…&lt;br /&gt;
+1060との差が益々広がる形となりました。&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 27 Dec 2017 09:30:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2017/12/27/1070_discon/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2017/12/27/1070_discon/</guid>
+        
+        
+        <category>GPU</category>
+        
+        <category>NVIDIA</category>
+        
+        <category>GTX1070</category>
+        
+        <category>GTX1070ti</category>
+        
+      </item>
     
       <item>
         <title>beatoraja 0.5.2 リリースノートもどき</title>
