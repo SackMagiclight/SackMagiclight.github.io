@@ -5,8 +5,8 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Jan 2018 23:44:10 +0900</pubDate>
-    <lastBuildDate>Mon, 22 Jan 2018 23:44:10 +0900</lastBuildDate>
+    <pubDate>Mon, 22 Jan 2018 23:52:37 +0900</pubDate>
+    <lastBuildDate>Mon, 22 Jan 2018 23:52:37 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -121,7 +121,7 @@ FFXIVはHDなら快適そう。&lt;/p&gt;
 
 &lt;h3 id=&quot;価格に関して&quot;&gt;価格に関して&lt;/h3&gt;
 
-&lt;p&gt;単純にIntel+GeForseで対抗を建ててコストパフォーマンスを検証してみる。
+&lt;p&gt;単純にIntel(+GeForce)とのコストパフォーマンスを比較してみる。
 CPUの選択だが、Coffee Lake-Sには現状 4Core/8Thread のモデルがないので近いであろうi3-8300を選択。&lt;/p&gt;
 
 &lt;p&gt;GPUの性能は単純にGT1030で。&lt;/p&gt;
@@ -200,7 +200,7 @@ CPUの選択だが、Coffee Lake-Sには現状 4Core/8Thread のモデルがな�
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;M/B&lt;/td&gt;
-      &lt;td&gt;(\10,000ぐらいのB450チップセットマザーボード)&lt;/td&gt;
+      &lt;td&gt;(￥10,000ぐらいのB450チップセットマザーボード)&lt;/td&gt;
       &lt;td&gt;￥10,000&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
