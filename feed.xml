@@ -5,9 +5,269 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Dec 2017 09:57:09 +0900</pubDate>
-    <lastBuildDate>Wed, 27 Dec 2017 09:57:09 +0900</lastBuildDate>
+    <pubDate>Mon, 22 Jan 2018 23:44:10 +0900</pubDate>
+    <lastBuildDate>Mon, 22 Jan 2018 23:44:10 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>Ryzen 5 2400Gが思ったより安くて強そう</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/2018-01-22-ryzen5_2400g.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;AMD Ryzen™ 5 2400G&lt;/strong&gt; で組みたい。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;cpuの性能&quot;&gt;CPUの性能&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CPU Cores&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CPU Threads&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CPU Base Clock&lt;/td&gt;
+      &lt;td&gt;3.6GHz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CPU Boost Clock&lt;/td&gt;
+      &lt;td&gt;3.9GHz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CPU TDP&lt;/td&gt;
+      &lt;td&gt;65W&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;—————–&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;———-&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GPU Cores&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GPU Frequency&lt;/td&gt;
+      &lt;td&gt;1250 MHz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GPU TDP&lt;/td&gt;
+      &lt;td&gt;46-65W&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;—————–&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;———-&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Value&lt;/td&gt;
+      &lt;td&gt;$169&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;—————–&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;———-&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;思ったより安い。&lt;br /&gt;
+Ryzen 5 1500Xが3.5GHz-3.7GHzで$174なのでまさかの逆転現象が発生しています。&lt;br /&gt;
+GPU部分が実質無料ってすごい攻めだなぁ。&lt;/p&gt;
+
+&lt;p&gt;周波数が3.6GHz-3.9GHzで4Core/8Threadってそれ一昔前のCore i7やん… &lt;br /&gt;
+普段使いに関してなら十分すぎる。ゲーミングに関しても普通に中堅レベルの性能はあるねぇ。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;gpuの性能予想値&quot;&gt;GPUの性能（予想値）&lt;/h3&gt;
+&lt;p&gt;GPU Coreが11なので、単純にVega56の20％の性能とすると&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Ryzen 5 2400G&lt;/th&gt;
+      &lt;th&gt;GT 1030&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3DMark Fire Strike&lt;/td&gt;
+      &lt;td&gt;3400&lt;/td&gt;
+      &lt;td&gt;3700&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3DMark Time Spy&lt;/td&gt;
+      &lt;td&gt;1250&lt;/td&gt;
+      &lt;td&gt;1150&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FFXIV 紅蓮 FHD 最高&lt;/td&gt;
+      &lt;td&gt;3100&lt;/td&gt;
+      &lt;td&gt;3600&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;となる。リーク通り、概ねGT1030と考えて良さそうですね。&lt;br /&gt;
+ライトゲーミングに関してなら全く問題なさそう。&lt;br /&gt;
+FFXIVはHDなら快適そう。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;価格に関して&quot;&gt;価格に関して&lt;/h3&gt;
+
+&lt;p&gt;単純にIntel+GeForseで対抗を建ててコストパフォーマンスを検証してみる。
+CPUの選択だが、Coffee Lake-Sには現状 4Core/8Thread のモデルがないので近いであろうi3-8300を選択。&lt;/p&gt;
+
+&lt;p&gt;GPUの性能は単純にGT1030で。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Value&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Core i3 8300&lt;/td&gt;
+      &lt;td&gt;$169&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GT1030&lt;/td&gt;
+      &lt;td&gt;$80&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;TOTAL&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;$249&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;CPUの市場想定価格が$169で一緒なのでGPU分お得ですね。&lt;/p&gt;
+
+&lt;p&gt;CPU単体だけで買う場合の内蔵グラフィックスの差はどうだろうか。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;3DMark Fire Strike&lt;/th&gt;
+      &lt;th&gt;3DMark Time Spy&lt;/th&gt;
+      &lt;th&gt;FFXIV 紅蓮 FHD 最高&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Core i3 8300 (Intel UHD Graphics 630)&lt;/td&gt;
+      &lt;td&gt;1200&lt;/td&gt;
+      &lt;td&gt;400&lt;/td&gt;
+      &lt;td&gt;1200&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ryzen 5 2400G (Vega 11)&lt;/td&gt;
+      &lt;td&gt;3400&lt;/td&gt;
+      &lt;td&gt;1250&lt;/td&gt;
+      &lt;td&gt;3100&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;ぶっちぎりですわ。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;組むとしたらこんな構成&quot;&gt;組むとしたらこんな構成&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;価格（「税」込）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CPU&lt;/td&gt;
+      &lt;td&gt;Ryzen 5 2400G&lt;/td&gt;
+      &lt;td&gt;￥20,000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M/B&lt;/td&gt;
+      &lt;td&gt;(\10,000ぐらいのB450チップセットマザーボード)&lt;/td&gt;
+      &lt;td&gt;￥10,000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Memory&lt;/td&gt;
+      &lt;td&gt;crucial W4U2400CM-4G (4GB×2)&lt;/td&gt;
+      &lt;td&gt;￥11,000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SSD&lt;/td&gt;
+      &lt;td&gt;Palit UVS10AT-SSD120 (120GB)&lt;/td&gt;
+      &lt;td&gt;￥6,000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HDD&lt;/td&gt;
+      &lt;td&gt;東芝 DT01ACA100 [1TB SATA600 7200]&lt;/td&gt;
+      &lt;td&gt;￥4,500&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;電源&lt;/td&gt;
+      &lt;td&gt;Thermaltake PS-SPD-0350NPCWJP-W&lt;/td&gt;
+      &lt;td&gt;￥4,000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ケース&lt;/td&gt;
+      &lt;td&gt;Thermaltake Versa H26&lt;/td&gt;
+      &lt;td&gt;￥4,500&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;OS&lt;/td&gt;
+      &lt;td&gt;Windows 10 Home&lt;/td&gt;
+      &lt;td&gt;￥15,000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;￥75,000&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;十分だと思う。&lt;br /&gt;
+OS、SSD、HDD、ケース周りをなんとかできれば￥50,000以下での入れ替えも夢じゃない。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;というわけで、Ryzen5 2400Gの購入が確定しました。&lt;br /&gt;
+レビューも実施予定です。&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#cpuの性能&quot; id=&quot;markdown-toc-cpuの性能&quot;&gt;CPUの性能&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gpuの性能予想値&quot; id=&quot;markdown-toc-gpuの性能予想値&quot;&gt;GPUの性能（予想値）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#価格に関して&quot; id=&quot;markdown-toc-価格に関して&quot;&gt;価格に関して&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#組むとしたらこんな構成&quot; id=&quot;markdown-toc-組むとしたらこんな構成&quot;&gt;組むとしたらこんな構成&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 22 Jan 2018 22:30:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2018/01/22/planning_ryzen5_2400G_desktop/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2018/01/22/planning_ryzen5_2400G_desktop/</guid>
+        
+        
+        <category>AMD</category>
+        
+        <category>Ryzen</category>
+        
+        <category>CPU</category>
+        
+      </item>
     
       <item>
         <title>NVIDIA GTX 1070 製造中止が確定。1070tiに置き換えへ</title>
