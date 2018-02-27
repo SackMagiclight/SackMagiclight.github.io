@@ -146,12 +146,9 @@
 
 <h3 id="わかってる人向け">わかってる人向け</h3>
 
-<p><strong>Antビルドしてbat実行。デバッグはリモートデバッグで。</strong></p>
+<p><strong>Antビルドしてbat実行。デバッグはIDEから普通に。</strong></p>
 
-<p>ビルド時に要debug属性付与。<br />
-build.xml開いてdebugパラメータ付与するか、debug用ビルド設定個別に作る。<br />
-bat起動時にリモートデバッグ用ポート設定必須。<br />
-batファイル編集かdebug用bat作るのが良い。</p>
+<p>Antビルドしてデバッグ構成定義して実行でOK。</p>
 
 <hr />
 
@@ -199,43 +196,29 @@ batファイル編集かdebug用bat作るのが良い。</p>
 <h4 id="実際の起動">実際の起動</h4>
 
 <p>cloneしたbeatorajaプロジェクトフォルダの中にある<strong>beatoraja-config.bat</strong>ファイルを起動してください。
-<br /><br /></p>
+<br />
+もしくは下記デバッグ構成から起動できます。</p>
 
 <h4 id="デバッグ">デバッグ</h4>
 
 <ul>
-  <li>build.xmlを編集し、debugパラメータを追加してantビルドします。</li>
-</ul>
-
-<p><img src="/postimg/bms/2017-11-04-beatoraja_build_eclipse_5.png" alt="キャプション" /></p>
-
-<ul>
-  <li>beatoraja-config.bat ファイルを編集して、リモートデバッグ用オプションを追記します。</li>
-</ul>
-
-<p><img src="/postimg/bms/2017-11-04-beatoraja_build_eclipse_6.png" alt="キャプション" /></p>
-
-<ul>
-  <li>
-    <p>beatoraja-config.bat ファイルを実行すると、リモートデバッグの接続を待ちます。</p>
-  </li>
-  <li>
-    <p>eclipseで、beatorajaフォルダを右クリック-[デバッグ]-[デバッグの構成] を選択します。</p>
-  </li>
+  <li>eclipseで、beatorajaフォルダを右クリック-[デバッグ]-[デバッグの構成] を選択します。</li>
 </ul>
 
 <p><img src="/postimg/bms/2017-11-04-beatoraja_build_eclipse_7.png" alt="キャプション" /></p>
 
 <ul>
-  <li>リモートJavaアプリケーションを選択し、新規ボタンを押します。</li>
-  <li>適当に名前をつけて、ホスト：localhost,ポート8000とします。<br />
-※ホストとポートはリモートデバッグ用オプションの記述と同じにすること。</li>
+  <li>javaアプリケーションを選択し新規ボタンを押します。</li>
+  <li>下記画像のように設定します。</li>
 </ul>
 
-<p><img src="/postimg/bms/2017-11-04-beatoraja_build_eclipse_8.png" alt="キャプション" /></p>
+<p><img src="/postimg/bms/2017-11-04-beatoraja_build_eclipse_5.png" alt="キャプション" /></p>
+
+<p><img src="/postimg/bms/2017-11-04-beatoraja_build_eclipse_6.png" alt="キャプション" /></p>
 
 <ul>
   <li>デバッグ ボタンを押してデバッグを開始します。</li>
+  <li>beatorajaのコンフィグ画面が起動されるはずです。</li>
 </ul>
 
 <hr />

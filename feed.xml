@@ -5,8 +5,8 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Jan 2018 23:52:37 +0900</pubDate>
-    <lastBuildDate>Mon, 22 Jan 2018 23:52:37 +0900</lastBuildDate>
+    <pubDate>Tue, 27 Feb 2018 15:53:59 +0900</pubDate>
+    <lastBuildDate>Tue, 27 Feb 2018 15:53:59 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -575,12 +575,9 @@ HBM2を用いる分だけ、消費電力が増える形になります。&lt;/p&
 
 &lt;h3 id=&quot;わかってる人向け&quot;&gt;わかってる人向け&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Antビルドしてbat実行。デバッグはリモートデバッグで。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Antビルドしてbat実行。デバッグはIDEから普通に。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;ビルド時に要debug属性付与。&lt;br /&gt;
-build.xml開いてdebugパラメータ付与するか、debug用ビルド設定個別に作る。&lt;br /&gt;
-bat起動時にリモートデバッグ用ポート設定必須。&lt;br /&gt;
-batファイル編集かdebug用bat作るのが良い。&lt;/p&gt;
+&lt;p&gt;Antビルドしてデバッグ構成定義して実行でOK。&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -628,43 +625,29 @@ batファイル編集かdebug用bat作るのが良い。&lt;/p&gt;
 &lt;h4 id=&quot;実際の起動&quot;&gt;実際の起動&lt;/h4&gt;
 
 &lt;p&gt;cloneしたbeatorajaプロジェクトフォルダの中にある&lt;strong&gt;beatoraja-config.bat&lt;/strong&gt;ファイルを起動してください。
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;br /&gt;
+もしくは下記デバッグ構成から起動できます。&lt;/p&gt;
 
 &lt;h4 id=&quot;デバッグ&quot;&gt;デバッグ&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;build.xmlを編集し、debugパラメータを追加してantビルドします。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_5.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;beatoraja-config.bat ファイルを編集して、リモートデバッグ用オプションを追記します。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_6.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;beatoraja-config.bat ファイルを実行すると、リモートデバッグの接続を待ちます。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;eclipseで、beatorajaフォルダを右クリック-[デバッグ]-[デバッグの構成] を選択します。&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;eclipseで、beatorajaフォルダを右クリック-[デバッグ]-[デバッグの構成] を選択します。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_7.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;リモートJavaアプリケーションを選択し、新規ボタンを押します。&lt;/li&gt;
-  &lt;li&gt;適当に名前をつけて、ホスト：localhost,ポート8000とします。&lt;br /&gt;
-※ホストとポートはリモートデバッグ用オプションの記述と同じにすること。&lt;/li&gt;
+  &lt;li&gt;javaアプリケーションを選択し新規ボタンを押します。&lt;/li&gt;
+  &lt;li&gt;下記画像のように設定します。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_8.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_5.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_6.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;デバッグ ボタンを押してデバッグを開始します。&lt;/li&gt;
+  &lt;li&gt;beatorajaのコンフィグ画面が起動されるはずです。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
