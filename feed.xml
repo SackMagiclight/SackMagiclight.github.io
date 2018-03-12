@@ -5,8 +5,8 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Feb 2018 15:53:59 +0900</pubDate>
-    <lastBuildDate>Tue, 27 Feb 2018 15:53:59 +0900</lastBuildDate>
+    <pubDate>Mon, 12 Mar 2018 22:23:00 +0900</pubDate>
+    <lastBuildDate>Mon, 12 Mar 2018 22:23:00 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -417,35 +417,74 @@ DPはスクラッチレーンに寄るようになりました。&lt;/p&gt;
         <description>&lt;h3 id=&quot;これは何&quot;&gt;これは何？&lt;/h3&gt;
 
 &lt;p&gt;beatorajaのエゴサでよく見かけたトラブルのまとめ。&lt;br /&gt;
-2017/11/23現在最新の v0.5.1 が対象。&lt;/p&gt;
-
-&lt;h3 id=&quot;注意&quot;&gt;注意&lt;/h3&gt;
-&lt;p&gt;今後コンフィグ周りは大幅な変更が予定されているため、この記事の内容が細心でない可能性が大いにあります。&lt;/p&gt;
+v0.5.4 が対象。&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h3 id=&quot;qa&quot;&gt;Q&amp;amp;A&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;qぶっちゃけ重くね&quot;&gt;Q:ぶっちゃけ重くね？&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:下記の理由が考えられます&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;LITONE5を利用している
+    &lt;ul&gt;
+      &lt;li&gt;結構&lt;strong&gt;重い&lt;/strong&gt;スキンです&lt;/li&gt;
+      &lt;li&gt;特に、選曲画面の背景が動画だとつらい
+        &lt;ul&gt;
+          &lt;li&gt;背景を画像にするだけでかなり軽くなります&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://twitter.com/desout2_litone/status/972839623197048832&quot;&gt;今後改善予定らしい&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;メモリ搭載量が少ない
+    &lt;ul&gt;
+      &lt;li&gt;8GB以上を推奨します&lt;/li&gt;
+      &lt;li&gt;(Windowsの場合)&lt;code class=&quot;highlighter-rouge&quot;&gt;beatoraja-config.bat&lt;/code&gt;から起動しないと、メモリ周りの最適化がないので注意
+        &lt;ul&gt;
+          &lt;li&gt;興味があれば&lt;a href=&quot;http://d.hatena.ne.jp/ogin_s57/20120709/1341836704&quot;&gt;このあたり&lt;/a&gt;を参考にどうぞ&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ぶっちゃけAtomとかのモバイル向けCPUでなければ60FPS以上は問題なく出せるはず。&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;h4 id=&quot;q起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる&quot;&gt;Q:起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる…&lt;/h4&gt;
+&lt;h4 id=&quot;q選曲したらなんか画面いっぱいにコーヒー豆が&quot;&gt;Q:選曲したらなんか画面いっぱいにコーヒー豆が…&lt;/h4&gt;
 
-&lt;p&gt;&lt;strong&gt;A:&lt;code class=&quot;highlighter-rouge&quot;&gt;config.json&lt;/code&gt; を削除するか、手動で&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;playername&quot;: &quot;player1&quot;,&lt;/code&gt;を追記してください。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A:プレイスキンを設定していないのが理由です&lt;/strong&gt;&lt;br /&gt;
+起動時のコンフィグで[Skin]タブを確認してください。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-&quot;playername&quot;: &quot;player1&quot;,
-&quot;fullscreen&quot;: true,
-&quot;resolution&quot;: &quot;FULLHD&quot;,
-&quot;inputduration&quot;: 45,
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-23-beatoraja_qa1.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
 
-(略)
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;「スキン」欄が空欄であれば設定されていません。&lt;br /&gt;
+最低限下記のモードについて設定することをおすすめします。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;7KEYS&lt;/li&gt;
+  &lt;li&gt;5KEYS&lt;/li&gt;
+  &lt;li&gt;14KEYS&lt;/li&gt;
+  &lt;li&gt;MUSIC SELECT&lt;/li&gt;
+  &lt;li&gt;DESIDE (選曲決定時)&lt;/li&gt;
+  &lt;li&gt;RESULT&lt;/li&gt;
+  &lt;li&gt;COURCE RESULT&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;こんな感じになるはずです。&lt;br /&gt;
-因みに原因は&lt;strong&gt;beatorajaを初回起動時にjarファイルをダブルクリックで実行したため&lt;/strong&gt;です。&lt;br /&gt;
-ちゃんと&lt;code class=&quot;highlighter-rouge&quot;&gt;beatoraja-config.bat&lt;/code&gt;(64bitの場合)から起動しよう。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;q判定位置ノーツ表示時間って選曲画面とかで変えられないのいちいち再起動するの面倒なんだけど&quot;&gt;Q:判定位置、ノーツ表示時間って選曲画面とかで変えられないの？…いちいち再起動するの面倒なんだけど…&lt;/h4&gt;
 
-&lt;p&gt;なお、0.5.2以降は修正済みです。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A:START+SELECT同時長押し or 数字[5]キー長押し で詳細設定オプションが開きます&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-23-beatoraja_qa2.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DURATION : ノーツ表示時間&lt;/li&gt;
+  &lt;li&gt;JUDGE TIMING：判定位置&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;となります。&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;h4 id=&quot;qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう&quot;&gt;Q:LR2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう…&lt;/h4&gt;
@@ -458,14 +497,12 @@ DPはスクラッチレーンに寄るようになりました。&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h4 id=&quot;q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい&quot;&gt;Q:起動時に専コンが効かないんだけど… というかなんかキーアサインがおかしい？&lt;/h4&gt;
 
-&lt;p&gt;&lt;strong&gt;A:0.5.1ではバグがあるため、以下を試そう&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A:コントローラーごとのキーコンフィグが可能なので、まずそこを見直そう&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;起動後キーコンフィグで[2]キー&lt;/li&gt;
-  &lt;li&gt;起動後キーコンフィグで適当にキーコンフィグする&lt;/li&gt;
+  &lt;li&gt;キーコンフィグ([6]キー)を開く&lt;/li&gt;
+  &lt;li&gt;[2]キーで使用するデバイス（専コン）を選択できます&lt;/li&gt;
+  &lt;li&gt;複数コントローラーを挿している場合、動かしたいコントローラーが選択されているか確認してください&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;症状としては、前回設定したキーコンフィグが起動時に反映されていません。（0.5.2で仮修正済み）&lt;br /&gt;
-再度キーコンフィグ画面に入って適当にいじることでそのキーコンフィグがロードされます。&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;h4 id=&quot;qカスタムフォルダ無いの&quot;&gt;Q:カスタムフォルダ無いの？&lt;/h4&gt;
@@ -475,31 +512,34 @@ DPはスクラッチレーンに寄るようになりました。&lt;/p&gt;
 LR2と同じくSQL形式です。&lt;/p&gt;
 
 &lt;hr /&gt;
+&lt;h4 id=&quot;q楽曲追加の仕方は&quot;&gt;Q:楽曲追加の仕方は？&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:コンフィグ起動から&lt;code class=&quot;highlighter-rouge&quot;&gt;[リソース]-&amp;gt;[BMS Path]&lt;/code&gt;で[+]ボタンを押すか、フォルダをリスト領域にD&amp;amp;Dする&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 &lt;h4 id=&quot;qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない&quot;&gt;Q:&lt;code class=&quot;highlighter-rouge&quot;&gt;[リソース]-&amp;gt;[BMS Path]&lt;/code&gt;にフォルダ追加したけど、楽曲読み込んでくれない…&lt;/h4&gt;
 
-&lt;p&gt;&lt;strong&gt;A:&lt;code class=&quot;highlighter-rouge&quot;&gt;起動直後にバックグラウンドで楽曲更新を実行&lt;/code&gt;にチェックを入れるか、手動で楽曲更新する&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A1:&lt;code class=&quot;highlighter-rouge&quot;&gt;起動直後にバックグラウンドで楽曲更新を実行&lt;/code&gt;にチェックを入れるか、手動で楽曲更新する&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A2:起動後、選曲画面でフォルダ選択中に[F2]キーを押す&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;q357鍵盤で選曲するとなんかプレイできないんだけど&quot;&gt;Q:3,5,7鍵盤で選曲するとなんかプレイできないんだけど…&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:鍵盤の機能の割当がLR2とは異なります&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1鍵：プレイ&lt;/li&gt;
+  &lt;li&gt;3鍵：練習モード（Practice Mode)&lt;/li&gt;
+  &lt;li&gt;5鍵：オートプレイ&lt;/li&gt;
+  &lt;li&gt;7鍵：リプレイ&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 &lt;h4 id=&quot;qinfコンとかdaoのinfモードのコントローラ使えないの&quot;&gt;Q:INFコンとかDAOのINFモードのコントローラ使えないの？&lt;/h4&gt;
 
-&lt;p&gt;&lt;strong&gt;A:0.5.2以降は使えるはずです&lt;/strong&gt;&lt;br /&gt;
-対応したのは&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;＼　 ヽ　 ｜　 /　　／
-　＼　ヽ　｜　/　 ／
-＼　　　　　　　　　／
-
-＿　わ た し で す　＿
-　　　　／￣＼
-―　　 ｜^ｏ^｜　　 ―
-　　　　＼＿／
-￣　　　　　　　　　￣
-／　　　　　　　　　＼
-　／　 /　｜　ヽ　＼
-／　　/　 ｜　 ヽ　 ＼
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/exch-bms2/beatoraja/pull/101&quot;&gt;Github - Pre Support IIDX Premium Controller&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[Input] -&amp;gt; アナログスクラッチ&lt;/code&gt; のチェックボックスをオンで対応します。&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;A:使えるはずです&lt;/strong&gt;&lt;br /&gt;
+コンフィグ起動から&lt;code class=&quot;highlighter-rouge&quot;&gt;[Input] -&amp;gt; アナログスクラッチ&lt;/code&gt; のチェックボックスをオンで対応します。&lt;br /&gt;
 コントローラー別の設定がないので、&lt;strong&gt;混ぜて利用できない&lt;/strong&gt;のは注意です。&lt;br /&gt;
 (例)：INFコンと虹コン、INFコンと専コンコンバータ など&lt;/p&gt;
 
@@ -507,13 +547,16 @@ LR2と同じくSQL形式です。&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#これは何&quot; id=&quot;markdown-toc-これは何&quot;&gt;これは何？&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#注意&quot; id=&quot;markdown-toc-注意&quot;&gt;注意&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#qa&quot; id=&quot;markdown-toc-qa&quot;&gt;Q&amp;amp;A&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#q起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる&quot; id=&quot;markdown-toc-q起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる&quot;&gt;Q:起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる…&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qぶっちゃけ重くね&quot; id=&quot;markdown-toc-qぶっちゃけ重くね&quot;&gt;Q:ぶっちゃけ重くね？&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#q選曲したらなんか画面いっぱいにコーヒー豆が&quot; id=&quot;markdown-toc-q選曲したらなんか画面いっぱいにコーヒー豆が&quot;&gt;Q:選曲したらなんか画面いっぱいにコーヒー豆が…&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#q判定位置ノーツ表示時間って選曲画面とかで変えられないのいちいち再起動するの面倒なんだけど&quot; id=&quot;markdown-toc-q判定位置ノーツ表示時間って選曲画面とかで変えられないのいちいち再起動するの面倒なんだけど&quot;&gt;Q:判定位置、ノーツ表示時間って選曲画面とかで変えられないの？…いちいち再起動するの面倒なんだけど…&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう&quot; id=&quot;markdown-toc-qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう&quot;&gt;Q:LR2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう…&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい&quot; id=&quot;markdown-toc-q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい&quot;&gt;Q:起動時に専コンが効かないんだけど… というかなんかキーアサインがおかしい？&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#qカスタムフォルダ無いの&quot; id=&quot;markdown-toc-qカスタムフォルダ無いの&quot;&gt;Q:カスタムフォルダ無いの？&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#q楽曲追加の仕方は&quot; id=&quot;markdown-toc-q楽曲追加の仕方は&quot;&gt;Q:楽曲追加の仕方は？&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない&quot; id=&quot;markdown-toc-qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない&quot;&gt;Q:&lt;code class=&quot;highlighter-rouge&quot;&gt;[リソース]-&amp;gt;[BMS Path]&lt;/code&gt;にフォルダ追加したけど、楽曲読み込んでくれない…&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#q357鍵盤で選曲するとなんかプレイできないんだけど&quot; id=&quot;markdown-toc-q357鍵盤で選曲するとなんかプレイできないんだけど&quot;&gt;Q:3,5,7鍵盤で選曲するとなんかプレイできないんだけど…&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#qinfコンとかdaoのinfモードのコントローラ使えないの&quot; id=&quot;markdown-toc-qinfコンとかdaoのinfモードのコントローラ使えないの&quot;&gt;Q:INFコンとかDAOのINFモードのコントローラ使えないの？&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;

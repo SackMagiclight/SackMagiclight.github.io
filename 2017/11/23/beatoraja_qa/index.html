@@ -145,35 +145,74 @@
             <article><h3 id="これは何">これは何？</h3>
 
 <p>beatorajaのエゴサでよく見かけたトラブルのまとめ。<br />
-2017/11/23現在最新の v0.5.1 が対象。</p>
-
-<h3 id="注意">注意</h3>
-<p>今後コンフィグ周りは大幅な変更が予定されているため、この記事の内容が細心でない可能性が大いにあります。</p>
+v0.5.4 が対象。</p>
 
 <hr />
 
 <h3 id="qa">Q&amp;A</h3>
+<hr />
+<h4 id="qぶっちゃけ重くね">Q:ぶっちゃけ重くね？</h4>
+
+<p><strong>A:下記の理由が考えられます</strong></p>
+<ul>
+  <li>LITONE5を利用している
+    <ul>
+      <li>結構<strong>重い</strong>スキンです</li>
+      <li>特に、選曲画面の背景が動画だとつらい
+        <ul>
+          <li>背景を画像にするだけでかなり軽くなります</li>
+        </ul>
+      </li>
+      <li><a href="https://twitter.com/desout2_litone/status/972839623197048832">今後改善予定らしい</a></li>
+    </ul>
+  </li>
+  <li>メモリ搭載量が少ない
+    <ul>
+      <li>8GB以上を推奨します</li>
+      <li>(Windowsの場合)<code class="highlighter-rouge">beatoraja-config.bat</code>から起動しないと、メモリ周りの最適化がないので注意
+        <ul>
+          <li>興味があれば<a href="http://d.hatena.ne.jp/ogin_s57/20120709/1341836704">このあたり</a>を参考にどうぞ</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>ぶっちゃけAtomとかのモバイル向けCPUでなければ60FPS以上は問題なく出せるはず。</p>
 
 <hr />
-<h4 id="q起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる">Q:起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる…</h4>
+<h4 id="q選曲したらなんか画面いっぱいにコーヒー豆が">Q:選曲したらなんか画面いっぱいにコーヒー豆が…</h4>
 
-<p><strong>A:<code class="highlighter-rouge">config.json</code> を削除するか、手動で<code class="highlighter-rouge">"playername": "player1",</code>を追記してください。</strong></p>
+<p><strong>A:プレイスキンを設定していないのが理由です</strong><br />
+起動時のコンフィグで[Skin]タブを確認してください。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-"playername": "player1",
-"fullscreen": true,
-"resolution": "FULLHD",
-"inputduration": 45,
+<p><img src="/postimg/bms/2017-11-23-beatoraja_qa1.png" alt="キャプション" /></p>
 
-(略)
-}
-</code></pre></div></div>
+<p>「スキン」欄が空欄であれば設定されていません。<br />
+最低限下記のモードについて設定することをおすすめします。</p>
+<ul>
+  <li>7KEYS</li>
+  <li>5KEYS</li>
+  <li>14KEYS</li>
+  <li>MUSIC SELECT</li>
+  <li>DESIDE (選曲決定時)</li>
+  <li>RESULT</li>
+  <li>COURCE RESULT</li>
+</ul>
 
-<p>こんな感じになるはずです。<br />
-因みに原因は<strong>beatorajaを初回起動時にjarファイルをダブルクリックで実行したため</strong>です。<br />
-ちゃんと<code class="highlighter-rouge">beatoraja-config.bat</code>(64bitの場合)から起動しよう。</p>
+<hr />
+<h4 id="q判定位置ノーツ表示時間って選曲画面とかで変えられないのいちいち再起動するの面倒なんだけど">Q:判定位置、ノーツ表示時間って選曲画面とかで変えられないの？…いちいち再起動するの面倒なんだけど…</h4>
 
-<p>なお、0.5.2以降は修正済みです。</p>
+<p><strong>A:START+SELECT同時長押し or 数字[5]キー長押し で詳細設定オプションが開きます</strong></p>
+
+<p><img src="/postimg/bms/2017-11-23-beatoraja_qa2.png" alt="キャプション" /></p>
+
+<ul>
+  <li>DURATION : ノーツ表示時間</li>
+  <li>JUDGE TIMING：判定位置</li>
+</ul>
+
+<p>となります。</p>
 
 <hr />
 <h4 id="qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう">Q:LR2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう…</h4>
@@ -186,14 +225,12 @@
 <hr />
 <h4 id="q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい">Q:起動時に専コンが効かないんだけど… というかなんかキーアサインがおかしい？</h4>
 
-<p><strong>A:0.5.1ではバグがあるため、以下を試そう</strong></p>
+<p><strong>A:コントローラーごとのキーコンフィグが可能なので、まずそこを見直そう</strong></p>
 <ul>
-  <li>起動後キーコンフィグで[2]キー</li>
-  <li>起動後キーコンフィグで適当にキーコンフィグする</li>
+  <li>キーコンフィグ([6]キー)を開く</li>
+  <li>[2]キーで使用するデバイス（専コン）を選択できます</li>
+  <li>複数コントローラーを挿している場合、動かしたいコントローラーが選択されているか確認してください</li>
 </ul>
-
-<p>症状としては、前回設定したキーコンフィグが起動時に反映されていません。（0.5.2で仮修正済み）<br />
-再度キーコンフィグ画面に入って適当にいじることでそのキーコンフィグがロードされます。</p>
 
 <hr />
 <h4 id="qカスタムフォルダ無いの">Q:カスタムフォルダ無いの？</h4>
@@ -203,31 +240,34 @@
 LR2と同じくSQL形式です。</p>
 
 <hr />
+<h4 id="q楽曲追加の仕方は">Q:楽曲追加の仕方は？</h4>
+
+<p><strong>A:コンフィグ起動から<code class="highlighter-rouge">[リソース]-&gt;[BMS Path]</code>で[+]ボタンを押すか、フォルダをリスト領域にD&amp;Dする</strong></p>
+
+<hr />
 <h4 id="qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない">Q:<code class="highlighter-rouge">[リソース]-&gt;[BMS Path]</code>にフォルダ追加したけど、楽曲読み込んでくれない…</h4>
 
-<p><strong>A:<code class="highlighter-rouge">起動直後にバックグラウンドで楽曲更新を実行</code>にチェックを入れるか、手動で楽曲更新する</strong></p>
+<p><strong>A1:<code class="highlighter-rouge">起動直後にバックグラウンドで楽曲更新を実行</code>にチェックを入れるか、手動で楽曲更新する</strong></p>
+
+<p><strong>A2:起動後、選曲画面でフォルダ選択中に[F2]キーを押す</strong></p>
+
+<hr />
+<h4 id="q357鍵盤で選曲するとなんかプレイできないんだけど">Q:3,5,7鍵盤で選曲するとなんかプレイできないんだけど…</h4>
+
+<p><strong>A:鍵盤の機能の割当がLR2とは異なります</strong></p>
+
+<ul>
+  <li>1鍵：プレイ</li>
+  <li>3鍵：練習モード（Practice Mode)</li>
+  <li>5鍵：オートプレイ</li>
+  <li>7鍵：リプレイ</li>
+</ul>
 
 <hr />
 <h4 id="qinfコンとかdaoのinfモードのコントローラ使えないの">Q:INFコンとかDAOのINFモードのコントローラ使えないの？</h4>
 
-<p><strong>A:0.5.2以降は使えるはずです</strong><br />
-対応したのは</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>＼　 ヽ　 ｜　 /　　／
-　＼　ヽ　｜　/　 ／
-＼　　　　　　　　　／
-
-＿　わ た し で す　＿
-　　　　／￣＼
-―　　 ｜^ｏ^｜　　 ―
-　　　　＼＿／
-￣　　　　　　　　　￣
-／　　　　　　　　　＼
-　／　 /　｜　ヽ　＼
-／　　/　 ｜　 ヽ　 ＼
-</code></pre></div></div>
-<p><a href="https://github.com/exch-bms2/beatoraja/pull/101">Github - Pre Support IIDX Premium Controller</a></p>
-
-<p><code class="highlighter-rouge">[Input] -&gt; アナログスクラッチ</code> のチェックボックスをオンで対応します。<br />
+<p><strong>A:使えるはずです</strong><br />
+コンフィグ起動から<code class="highlighter-rouge">[Input] -&gt; アナログスクラッチ</code> のチェックボックスをオンで対応します。<br />
 コントローラー別の設定がないので、<strong>混ぜて利用できない</strong>のは注意です。<br />
 (例)：INFコンと虹コン、INFコンと専コンコンバータ など</p>
 
@@ -235,13 +275,16 @@ LR2と同じくSQL形式です。</p>
 
 <ul id="markdown-toc">
   <li><a href="#これは何" id="markdown-toc-これは何">これは何？</a></li>
-  <li><a href="#注意" id="markdown-toc-注意">注意</a></li>
   <li><a href="#qa" id="markdown-toc-qa">Q&amp;A</a>    <ul>
-      <li><a href="#q起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる" id="markdown-toc-q起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる">Q:起動ボタン押すまでは出来るけど起動ボタン押してウィンドウが出た途端ウィンドウが消えて実質落ちる…</a></li>
+      <li><a href="#qぶっちゃけ重くね" id="markdown-toc-qぶっちゃけ重くね">Q:ぶっちゃけ重くね？</a></li>
+      <li><a href="#q選曲したらなんか画面いっぱいにコーヒー豆が" id="markdown-toc-q選曲したらなんか画面いっぱいにコーヒー豆が">Q:選曲したらなんか画面いっぱいにコーヒー豆が…</a></li>
+      <li><a href="#q判定位置ノーツ表示時間って選曲画面とかで変えられないのいちいち再起動するの面倒なんだけど" id="markdown-toc-q判定位置ノーツ表示時間って選曲画面とかで変えられないのいちいち再起動するの面倒なんだけど">Q:判定位置、ノーツ表示時間って選曲画面とかで変えられないの？…いちいち再起動するの面倒なんだけど…</a></li>
       <li><a href="#qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう" id="markdown-toc-qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう">Q:LR2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう…</a></li>
       <li><a href="#q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい" id="markdown-toc-q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい">Q:起動時に専コンが効かないんだけど… というかなんかキーアサインがおかしい？</a></li>
       <li><a href="#qカスタムフォルダ無いの" id="markdown-toc-qカスタムフォルダ無いの">Q:カスタムフォルダ無いの？</a></li>
+      <li><a href="#q楽曲追加の仕方は" id="markdown-toc-q楽曲追加の仕方は">Q:楽曲追加の仕方は？</a></li>
       <li><a href="#qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない" id="markdown-toc-qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない">Q:<code class="highlighter-rouge">[リソース]-&gt;[BMS Path]</code>にフォルダ追加したけど、楽曲読み込んでくれない…</a></li>
+      <li><a href="#q357鍵盤で選曲するとなんかプレイできないんだけど" id="markdown-toc-q357鍵盤で選曲するとなんかプレイできないんだけど">Q:3,5,7鍵盤で選曲するとなんかプレイできないんだけど…</a></li>
       <li><a href="#qinfコンとかdaoのinfモードのコントローラ使えないの" id="markdown-toc-qinfコンとかdaoのinfモードのコントローラ使えないの">Q:INFコンとかDAOのINFモードのコントローラ使えないの？</a></li>
     </ul>
   </li>
