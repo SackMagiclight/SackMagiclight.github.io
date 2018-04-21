@@ -5,10 +5,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ryzen 5 2400Gが思ったより安くて強そう</title>
-	<meta name="description" content="">
+	<title>beatoraja Troubleshooting</title>
+	<meta name="description" content="What’s this?">
 	
-	<link rel="canonical" href="https://www.gaftalk.com/2018/01/22/planning_ryzen5_2400G_desktop/">
+	<link rel="canonical" href="https://www.gaftalk.com/2018/04/21/beatoraja_qa_en/">
 	<link rel="alternate" type="application/rss+xml" title="Gaf Talk" href="https://www.gaftalk.com/feed.xml" />
 	
 	<!-- <link rel="stylesheet" href="/css/main.css"> -->
@@ -47,10 +47,10 @@
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ryzen 5 2400Gが思ったより安くて強そう - Gaf Talk">
-<meta name="twitter:url" content="https://www.gaftalk.com/2018/01/22/planning_ryzen5_2400G_desktop/">
+<meta name="twitter:title" content="beatoraja Troubleshooting - Gaf Talk">
+<meta name="twitter:url" content="https://www.gaftalk.com/2018/04/21/beatoraja_qa_en/">
 <meta name="twitter:description" content="ゲームとかガジェットとかその他好きなこと">
-<meta name="twitter:image:src" content="https://www.gaftalk.com/postimg/pc/2018-01-22-ryzen5_2400g.png">
+<meta name="twitter:image:src" content="https://www.gaftalk.com/postimg/bms/2017-11-04-beatoraja_build_b.png">
 
  <!--  <body data-spy="scroll" data-target="#myAffix"> -->
   <body>
@@ -138,253 +138,143 @@
     <div id="myArticle" class="col-sm-9">
         <div class="post-area post">
             <header>
-                <h1>Ryzen 5 2400Gが思ったより安くて強そう</h1>
-                <p>2018-01-22</p>
+                <h1>beatoraja Troubleshooting</h1>
+                <p>2018-04-21</p>
             </header>
             <hr>
-            <article><p><img src="/postimg/pc/2018-01-22-ryzen5_2400g.png" alt="キャプション" /></p>
+            <article><h3 id="whats-this">What’s this?</h3>
+
+<p>Summary of problems in using beatoraja.<br />
+targeting “ver 0.5.5.”</p>
 
 <hr />
 
-<p><strong>AMD Ryzen™ 5 2400G</strong> で組みたい。</p>
+<h3 id="qa">Q&amp;A</h3>
+<hr />
+<h4 id="qfeel-heavy">Q:Feel heavy.</h4>
+
+<p><strong>A:The following reasons are conceivable.</strong></p>
+<ul>
+  <li>Using “LITONE5”
+    <ul>
+      <li>It’s <strong>heavy</strong> Skin.</li>
+      <li>Use of background video is <strong>very heavy</strong> at music select.
+        <ul>
+          <li>We recommend changing to an image.</li>
+        </ul>
+      </li>
+      <li><a href="https://twitter.com/desout2_litone/status/972839623197048832">Will To be improved…?</a></li>
+    </ul>
+  </li>
+  <li>Low-memory.
+    <ul>
+      <li>Recommend : 8GB over.</li>
+      <li>(At Windows) Should be start at <code class="highlighter-rouge">beatoraja-config.bat</code>.</li>
+    </ul>
+  </li>
+</ul>
 
 <hr />
+<h4 id="qafter-selection-coffee-beans-appear-on-the-screen">Q:After selection, “coffee beans” appear on the screen…</h4>
 
-<h3 id="cpuの性能">CPUの性能</h3>
+<p><strong>A:Please select skin.</strong><br />
+Check the [Skin] tab in the configuration at startup.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>CPU Cores</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>CPU Threads</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td>CPU Base Clock</td>
-      <td>3.6GHz</td>
-    </tr>
-    <tr>
-      <td>CPU Boost Clock</td>
-      <td>3.9GHz</td>
-    </tr>
-    <tr>
-      <td>CPU TDP</td>
-      <td>65W</td>
-    </tr>
-    <tr>
-      <td><strong>—————–</strong></td>
-      <td><strong>———-</strong></td>
-    </tr>
-    <tr>
-      <td>GPU Cores</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>GPU Frequency</td>
-      <td>1250 MHz</td>
-    </tr>
-    <tr>
-      <td>GPU TDP</td>
-      <td>46-65W</td>
-    </tr>
-    <tr>
-      <td><strong>—————–</strong></td>
-      <td><strong>———-</strong></td>
-    </tr>
-    <tr>
-      <td>Value</td>
-      <td>$169</td>
-    </tr>
-    <tr>
-      <td><strong>—————–</strong></td>
-      <td><strong>———-</strong></td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/postimg/bms/2017-11-23-beatoraja_qa1.png" alt="キャプション" /></p>
 
-<p>思ったより安い。<br />
-Ryzen 5 1500Xが3.5GHz-3.7GHzで$174なのでまさかの逆転現象が発生しています。<br />
-GPU部分が実質無料ってすごい攻めだなぁ。</p>
-
-<p>周波数が3.6GHz-3.9GHzで4Core/8Threadってそれ一昔前のCore i7やん… <br />
-普段使いに関してなら十分すぎる。ゲーミングに関しても普通に中堅レベルの性能はあるねぇ。</p>
+<p>If the “skin” field is blank, it was not set.<br />
+Please setting at least the following modes.</p>
+<ul>
+  <li>7KEYS</li>
+  <li>5KEYS</li>
+  <li>14KEYS</li>
+  <li>MUSIC SELECT</li>
+  <li>DESIDE</li>
+  <li>RESULT</li>
+  <li>COURCE RESULT</li>
+</ul>
 
 <hr />
+<h4 id="qi-want-to-change-judgment-timing-and-notes-display-time-in-game">Q:I want to change judgment timing and Notes display time in game.</h4>
 
-<h3 id="gpuの性能予想値">GPUの性能（予想値）</h3>
-<p>GPU Coreが11なので、単純にVega56の20％の性能とすると</p>
+<p><strong>A:”Simultaneously press and hold START + SELECT” or “Press and hold Numeric[5]Key”</strong></p>
 
-<table>
-  <thead>
-    <tr>
-      <th> </th>
-      <th>Ryzen 5 2400G</th>
-      <th>GT 1030</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>3DMark Fire Strike</td>
-      <td>3400</td>
-      <td>3700</td>
-    </tr>
-    <tr>
-      <td>3DMark Time Spy</td>
-      <td>1250</td>
-      <td>1150</td>
-    </tr>
-    <tr>
-      <td>FFXIV 紅蓮 FHD 最高</td>
-      <td>3100</td>
-      <td>3600</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="/postimg/bms/2017-11-23-beatoraja_qa2.png" alt="キャプション" /></p>
 
-<p>となる。リーク通り、概ねGT1030と考えて良さそうですね。<br />
-ライトゲーミングに関してなら全く問題なさそう。<br />
-FFXIVはHDなら快適そう。</p>
+<ul>
+  <li>DURATION : Displayed notes time.</li>
+  <li>JUDGE TIMING</li>
+</ul>
 
 <hr />
+<h4 id="qit-moves-in-lr2-and-beatoraja-also-moves-until-the-song-selection-but-at-the-moment-when-it-becomes-the-play-screen-it-will-become-ineffective-except-the-start-button">Q:It moves in LR2 and beatoraja also moves until the song selection but at the moment when it becomes the play screen, it will become ineffective except the start button…</h4>
 
-<h3 id="価格に関して">価格に関して</h3>
-
-<p>単純にIntel(+GeForce)とのコストパフォーマンスを比較してみる。
-CPUの選択だが、Coffee Lake-Sには現状 4Core/8Thread のモデルがないので近いであろうi3-8300を選択。</p>
-
-<p>GPUの性能は単純にGT1030で。</p>
-
-<table>
-  <thead>
-    <tr>
-      <th> </th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Core i3 8300</td>
-      <td>$169</td>
-    </tr>
-    <tr>
-      <td>GT1030</td>
-      <td>$80</td>
-    </tr>
-    <tr>
-      <td><strong>TOTAL</strong></td>
-      <td><strong>$249</strong></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>CPUの市場想定価格が$169で一緒なのでGPU分お得ですね。</p>
-
-<p>CPU単体だけで買う場合の内蔵グラフィックスの差はどうだろうか。</p>
-
-<table>
-  <thead>
-    <tr>
-      <th> </th>
-      <th>3DMark Fire Strike</th>
-      <th>3DMark Time Spy</th>
-      <th>FFXIV 紅蓮 FHD 最高</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Core i3 8300 (Intel UHD Graphics 630)</td>
-      <td>1200</td>
-      <td>400</td>
-      <td>1200</td>
-    </tr>
-    <tr>
-      <td>Ryzen 5 2400G (Vega 11)</td>
-      <td>3400</td>
-      <td>1250</td>
-      <td>3100</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>ぶっちぎりですわ。</strong></p>
+<p><strong>A:Have you decided on music selection with the keyboard during selection?</strong><br />
+Please select the music selection using the dedicated controller.</p>
 
 <hr />
+<h4 id="qthe-dedicated-controllers-key-assignment-is-wrong">Q:The dedicated controller’s key assignment is wrong…？</h4>
 
-<h3 id="組むとしたらこんな構成">組むとしたらこんな構成</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th> </th>
-      <th> </th>
-      <th>価格（「税」込）</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>CPU</td>
-      <td>Ryzen 5 2400G</td>
-      <td>￥20,000</td>
-    </tr>
-    <tr>
-      <td>M/B</td>
-      <td>(￥10,000ぐらいのB450チップセットマザーボード)</td>
-      <td>￥10,000</td>
-    </tr>
-    <tr>
-      <td>Memory</td>
-      <td>crucial W4U2400CM-4G (4GB×2)</td>
-      <td>￥11,000</td>
-    </tr>
-    <tr>
-      <td>SSD</td>
-      <td>Palit UVS10AT-SSD120 (120GB)</td>
-      <td>￥6,000</td>
-    </tr>
-    <tr>
-      <td>HDD</td>
-      <td>東芝 DT01ACA100 [1TB SATA600 7200]</td>
-      <td>￥4,500</td>
-    </tr>
-    <tr>
-      <td>電源</td>
-      <td>Thermaltake PS-SPD-0350NPCWJP-W</td>
-      <td>￥4,000</td>
-    </tr>
-    <tr>
-      <td>ケース</td>
-      <td>Thermaltake Versa H26</td>
-      <td>￥4,500</td>
-    </tr>
-    <tr>
-      <td>OS</td>
-      <td>Windows 10 Home</td>
-      <td>￥15,000</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td><strong>￥75,000</strong></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>十分だと思う。<br />
-OS、SSD、HDD、ケース周りをなんとかできれば￥50,000以下での入れ替えも夢じゃない。</p>
+<p><strong>A:Key configuration for each controller is possible, so please review it.</strong></p>
+<ul>
+  <li>Open key config. (pless [6]key)</li>
+  <li>You can select the controller to use with the [2] key</li>
+  <li>When multiple controllers are inserted, please make sure that the controller you want to move is selected.</li>
+</ul>
 
 <hr />
+<h4 id="qwhere-custom-folder">Q:Where “Custom Folder”…?</h4>
 
-<p>というわけで、Ryzen5 2400Gの購入が確定しました。<br />
-<del>レビューも実施予定です。</del></p>
+<p><strong>A:<code class="highlighter-rouge">folder\default.json</code>.</strong><br />
+It’s SQL style.</p>
+
+<hr />
+<h4 id="qplease-tell-me-how-to-add-songs">Q:Please tell me how to add songs.</h4>
+
+<p><strong>A:Move to <code class="highlighter-rouge">[Resource]-&gt;[BMS Path]</code> and press [+] button or Drag and drop the folder into the list area</strong></p>
+
+<hr />
+<h4 id="qi-added-a-folder-but-it-does-not-load-songs">Q:I added a folder, but it does not load songs.</h4>
+
+<p><strong>A1:<code class="highlighter-rouge">Run song update in the background immediately after startup</code> or check the song update manually.</strong></p>
+
+<p><strong>A2:Press the [F2] key while selecting a folder on the music selection screen after startup.</strong></p>
+
+<hr />
+<h4 id="qi-do-not-play-if-i-select-songs-using-controller3-5-7-key">Q:I do not play if I select songs using (Controller)3, 5, 7 key.</h4>
+
+<p><strong>A:Key function assignment is different from LR2.</strong></p>
+
+<ul>
+  <li>button No.1：Play</li>
+  <li>button No.3：Practice Mode</li>
+  <li>button No.5：Auto play</li>
+  <li>button No.7：Replay</li>
+</ul>
+
+<hr />
+<h4 id="qcan-i-use-infinitas-controllers-inf-premium-controller--dao-controller-inf-mode-style-">Q:Can I use INFINITAS controllers? (INF Premium Controller , DAO Controller INF mode style, …)</h4>
+
+<p><strong>A:You should be able to use it.</strong><br />
+Move to <code class="highlighter-rouge">[Input] -&gt; Analog Scratch</code>, and select the check box.</p>
+
+<hr />
 
 <ul id="markdown-toc">
-  <li><a href="#cpuの性能" id="markdown-toc-cpuの性能">CPUの性能</a></li>
-  <li><a href="#gpuの性能予想値" id="markdown-toc-gpuの性能予想値">GPUの性能（予想値）</a></li>
-  <li><a href="#価格に関して" id="markdown-toc-価格に関して">価格に関して</a></li>
-  <li><a href="#組むとしたらこんな構成" id="markdown-toc-組むとしたらこんな構成">組むとしたらこんな構成</a></li>
+  <li><a href="#whats-this" id="markdown-toc-whats-this">What’s this?</a></li>
+  <li><a href="#qa" id="markdown-toc-qa">Q&amp;A</a>    <ul>
+      <li><a href="#qfeel-heavy" id="markdown-toc-qfeel-heavy">Q:Feel heavy.</a></li>
+      <li><a href="#qafter-selection-coffee-beans-appear-on-the-screen" id="markdown-toc-qafter-selection-coffee-beans-appear-on-the-screen">Q:After selection, “coffee beans” appear on the screen…</a></li>
+      <li><a href="#qi-want-to-change-judgment-timing-and-notes-display-time-in-game" id="markdown-toc-qi-want-to-change-judgment-timing-and-notes-display-time-in-game">Q:I want to change judgment timing and Notes display time in game.</a></li>
+      <li><a href="#qit-moves-in-lr2-and-beatoraja-also-moves-until-the-song-selection-but-at-the-moment-when-it-becomes-the-play-screen-it-will-become-ineffective-except-the-start-button" id="markdown-toc-qit-moves-in-lr2-and-beatoraja-also-moves-until-the-song-selection-but-at-the-moment-when-it-becomes-the-play-screen-it-will-become-ineffective-except-the-start-button">Q:It moves in LR2 and beatoraja also moves until the song selection but at the moment when it becomes the play screen, it will become ineffective except the start button…</a></li>
+      <li><a href="#qthe-dedicated-controllers-key-assignment-is-wrong" id="markdown-toc-qthe-dedicated-controllers-key-assignment-is-wrong">Q:The dedicated controller’s key assignment is wrong…？</a></li>
+      <li><a href="#qwhere-custom-folder" id="markdown-toc-qwhere-custom-folder">Q:Where “Custom Folder”…?</a></li>
+      <li><a href="#qplease-tell-me-how-to-add-songs" id="markdown-toc-qplease-tell-me-how-to-add-songs">Q:Please tell me how to add songs.</a></li>
+      <li><a href="#qi-added-a-folder-but-it-does-not-load-songs" id="markdown-toc-qi-added-a-folder-but-it-does-not-load-songs">Q:I added a folder, but it does not load songs.</a></li>
+      <li><a href="#qi-do-not-play-if-i-select-songs-using-controller3-5-7-key" id="markdown-toc-qi-do-not-play-if-i-select-songs-using-controller3-5-7-key">Q:I do not play if I select songs using (Controller)3, 5, 7 key.</a></li>
+      <li><a href="#qcan-i-use-infinitas-controllers-inf-premium-controller--dao-controller-inf-mode-style-" id="markdown-toc-qcan-i-use-infinitas-controllers-inf-premium-controller--dao-controller-inf-mode-style-">Q:Can I use INFINITAS controllers? (INF Premium Controller , DAO Controller INF mode style, …)</a></li>
+    </ul>
+  </li>
 </ul>
  </article>
             <hr>
@@ -441,8 +331,8 @@ OS、SSD、HDD、ケース周りをなんとかできれば￥50,000以下での
     </div>
 	<script>
 		var disqus_config = function () {
-			this.page.url = "https://www.gaftalk.com/2018/01/22/planning_ryzen5_2400G_desktop/"; 
-			this.page.identifier = "/2018/01/22/planning_ryzen5_2400G_desktop"; 
+			this.page.url = "https://www.gaftalk.com/2018/04/21/beatoraja_qa_en/"; 
+			this.page.identifier = "/2018/04/21/beatoraja_qa_en"; 
 		};
 		(function() {
 			var d = document, s = d.createElement('script');
@@ -505,7 +395,7 @@ OS、SSD、HDD、ケース周りをなんとかできれば￥50,000以下での
           
           
           <!-- <span class="point"> · </span>
-          <span><a href="_posts/pc/2018-01-22-planning_ryzen5_2400G_desktop.markdown">View source</a></span>
+          <span><a href="_posts/bms/2017-11-23-beatoraja_qa_en.markdown">View source</a></span>
           <span class="point"> · </span>
           <span><a class="newpost" href="javascript:;">New post</a></span> -->
 		  <span class="point"> · </span>

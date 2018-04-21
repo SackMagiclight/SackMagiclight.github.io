@@ -5,9 +5,462 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Mar 2018 22:23:00 +0900</pubDate>
-    <lastBuildDate>Mon, 12 Mar 2018 22:23:00 +0900</lastBuildDate>
+    <pubDate>Sun, 22 Apr 2018 01:14:08 +0900</pubDate>
+    <lastBuildDate>Sun, 22 Apr 2018 01:14:08 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>【簡易レビュー】Ryzen 7 2700X はX370マザーボードでも性能を発揮できるのか</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbN7cyqUQAA5lZy.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;というわけで、&lt;strong&gt;Ryzen 7 2700X&lt;/strong&gt; を買いました。&lt;br /&gt;
+X470チップセットを搭載したマザーボードも同時発売されましたが、スルーしました。&lt;br /&gt;
+&lt;strong&gt;X370マザーボードで満足行く性能が出れば不要と思ったからです。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;果たしてこの判断は正しかったのか。&lt;br /&gt;
+換装前の1700Xと比較した簡易レビューを交えつつ、判定します。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;事前知識-cpuの性能&quot;&gt;(事前知識) CPUの性能&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;———————–&lt;/th&gt;
+      &lt;th&gt;2700X&lt;/th&gt;
+      &lt;th&gt;(参考)1800X&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Cores&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Threads&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Base Clock&lt;/td&gt;
+      &lt;td&gt;3.7GHz&lt;/td&gt;
+      &lt;td&gt;3.6GHz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Boost Clock&lt;/td&gt;
+      &lt;td&gt;4.3GHz&lt;/td&gt;
+      &lt;td&gt;4.0GHz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;TDP&lt;/td&gt;
+      &lt;td&gt;105W&lt;/td&gt;
+      &lt;td&gt;95W&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;最大温度&lt;/td&gt;
+      &lt;td&gt;85℃&lt;/td&gt;
+      &lt;td&gt;95℃&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;付属クーラー&lt;/td&gt;
+      &lt;td&gt;あり&lt;/td&gt;
+      &lt;td&gt;なし&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CMOS&lt;/td&gt;
+      &lt;td&gt;12nm&lt;/td&gt;
+      &lt;td&gt;14nm&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ソケット&lt;/td&gt;
+      &lt;td&gt;AM4&lt;/td&gt;
+      &lt;td&gt;AM4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;——————-&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;——&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;——-&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Value(2018/04/21現在)&lt;/td&gt;
+      &lt;td&gt;¥41,018&lt;/td&gt;
+      &lt;td&gt;¥36,709&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;——————-&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;——&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;——–&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;一言で言うなら「微細化した分盛ったよ！」なCPUです。（その分TDPも増えていますが…）&lt;br /&gt;
+製造プロセスが14nmから12nmになりました。&lt;/p&gt;
+
+&lt;p&gt;ソケットはAM4を継続して利用しています。&lt;br /&gt;
+&lt;strong&gt;マザボ変えなくて良いの大きい。&lt;/strong&gt;&lt;br /&gt;
+また、1800Xと違ってリテールクーラー&lt;code class=&quot;highlighter-rouge&quot;&gt;Wraith Prism&lt;/code&gt;が付属しています。AMDCPUのリテールクーラーの中では最上位となります。&lt;/p&gt;
+
+&lt;p&gt;気になるのは最大温度が10℃下がっている点です。&lt;br /&gt;
+今までよりマージンを多く取ったのか…謎です。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;外観中身&quot;&gt;外観・中身&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbOZj67VwAA8ItX.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbOZkUMV4AExUmp.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;特筆することなく、リテールクーラー、CPUといつもの感じです。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;3dmark-ベンチ-physical-score&quot;&gt;3DMark ベンチ Physical Score&lt;/h3&gt;
+
+&lt;p&gt;定番ベンチマークソフト3DMark系ベンチマークのPhysical Scoreを比較します。&lt;br /&gt;
+なおCPU以外の共通構成は以下の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Motherboard&lt;/td&gt;
+      &lt;td&gt;Asrock Fatal1ty X370 Gaming K4 (UEFI 4.60)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Memory&lt;/td&gt;
+      &lt;td&gt;Samsung M378A1K43BB2-CRC 8G × 2 (DDR4-2400)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GPU&lt;/td&gt;
+      &lt;td&gt;MSI GTX 1080 GAMING X 8G&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PSU&lt;/td&gt;
+      &lt;td&gt;HX750 CP-9020031-JP&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CPU Cooler&lt;/td&gt;
+      &lt;td&gt;Corsair H100i&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;fire-strike-extream&quot;&gt;Fire Strike Extream&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbOxaELVwAAMzgy.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;1700X : 17887&lt;br /&gt;
+2700X : &lt;strong&gt;20770&lt;/strong&gt; (+16.1%)&lt;/p&gt;
+
+&lt;p&gt;大手メディアのスコアが大体21000前後なので、正しそうです。&lt;br /&gt;
+&lt;strong&gt;X370マザーボードでも問題なくその性能を発揮していますね。&lt;/strong&gt;&lt;br /&gt;
+21000に届かないのはDDR4-2400を利用しているからだと思われます。&lt;/p&gt;
+
+&lt;h4 id=&quot;time-spy&quot;&gt;Time Spy&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbO0OUTV4AAD9zK.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;1700X : 7301&lt;br /&gt;
+2700X : &lt;strong&gt;8400&lt;/strong&gt; (+15.1%)&lt;/p&gt;
+
+&lt;p&gt;こちらも大手メディアのスコアが大体8800前後なので、正しそうです。&lt;/p&gt;
+
+&lt;p&gt;数値を見る限り、大体15％ほどのスペックアップでしょうか。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;cinebench-r15&quot;&gt;CineBench r15&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbO3skmUQAAk3KG.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;1700X : 1505&lt;br /&gt;
+2700X : &lt;strong&gt;1750&lt;/strong&gt; (+16.3%)&lt;/p&gt;
+
+&lt;p&gt;前述した通り15％ほどのスペックアップで間違いなさそうです。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;mining-criptonight-v7&quot;&gt;Mining CriptoNight v7&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbOqFTaU8AANpXH.jpg&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbOqFgAU8AAo9kx.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;1700X : 353.9H/s&lt;br /&gt;
+2700X : &lt;strong&gt;474.5H/s&lt;/strong&gt; (+34.3%)&lt;/p&gt;
+
+&lt;p&gt;増えすぎなような気がする（1700Xが小さすぎる？）&lt;/p&gt;
+
+&lt;p&gt;因みに、特にOCせず、&lt;strong&gt;デフォルトで4.0GHzまで全コアブースト&lt;/strong&gt;するようです。&lt;br /&gt;
+やばくね？ X370でも問題なくね？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbOprJwUQAEXC4G.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;消費電力&quot;&gt;消費電力&lt;/h3&gt;
+
+&lt;p&gt;アイドル時：131W&lt;br /&gt;
+&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbOnP8FU0AAcwWy.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;マイニング時：219W (+88W)&lt;br /&gt;
+&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbOu3pjVwAA-dYv.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;全コアフルロード時(CineBench)：264W (+133W)&lt;br /&gt;
+&lt;img src=&quot;/postimg/pc/ryzen7_2700X/DbO3Tu5U0AE31y8.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;CPU単体だと145W程度の消費でしょうか。&lt;br /&gt;
+TDP105Wですが、最大性能発揮時はオーバーするようですね。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;総評&quot;&gt;総評&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;X370マザボでもいけるやん！&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;2700X やばくね？&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;安いX370マザボと2700Xがかなり強い組み合わせになりそうです。&lt;br /&gt;
+少なくとも、ハイエンドRyzen環境を安く構築したい場合はこれでいいのでは？&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;価格（税込）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CPU&lt;/td&gt;
+      &lt;td&gt;Ryzen 7 2700X&lt;/td&gt;
+      &lt;td&gt;¥41,018&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;M/B&lt;/td&gt;
+      &lt;td&gt;Asrock Fatal1ty X370 Gaming K4&lt;/td&gt;
+      &lt;td&gt;¥15,119&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Memory&lt;/td&gt;
+      &lt;td&gt;Corsair CMK16GX4M2A2666C16  (8GB×2)&lt;/td&gt;
+      &lt;td&gt;¥21,980&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GPU&lt;/td&gt;
+      &lt;td&gt;Palit  NE5107T015P2-1041J&lt;/td&gt;
+      &lt;td&gt;¥58,980&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SSD&lt;/td&gt;
+      &lt;td&gt;crucial MX500 CT500MX500SSD1/JP (500GB)&lt;/td&gt;
+      &lt;td&gt;¥15,670&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HDD&lt;/td&gt;
+      &lt;td&gt;東芝 MD05ACA600  (6TB)&lt;/td&gt;
+      &lt;td&gt;¥13,737&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;電源&lt;/td&gt;
+      &lt;td&gt;Corsair CX650M CP-9020103-JP&lt;/td&gt;
+      &lt;td&gt;¥6,908&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ケース&lt;/td&gt;
+      &lt;td&gt;Fractal Design Define R5&lt;/td&gt;
+      &lt;td&gt;¥11,858&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;OS&lt;/td&gt;
+      &lt;td&gt;Windows 10 Home&lt;/td&gt;
+      &lt;td&gt;¥15,000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;¥200,270&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;OS込20万ドンピシャ構成です。
+OSをごにょごにょしたり流用できるところは流用すればもっといい感じになりそうです。&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#事前知識-cpuの性能&quot; id=&quot;markdown-toc-事前知識-cpuの性能&quot;&gt;(事前知識) CPUの性能&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#外観中身&quot; id=&quot;markdown-toc-外観中身&quot;&gt;外観・中身&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#3dmark-ベンチ-physical-score&quot; id=&quot;markdown-toc-3dmark-ベンチ-physical-score&quot;&gt;3DMark ベンチ Physical Score&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#fire-strike-extream&quot; id=&quot;markdown-toc-fire-strike-extream&quot;&gt;Fire Strike Extream&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#time-spy&quot; id=&quot;markdown-toc-time-spy&quot;&gt;Time Spy&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#cinebench-r15&quot; id=&quot;markdown-toc-cinebench-r15&quot;&gt;CineBench r15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#mining-criptonight-v7&quot; id=&quot;markdown-toc-mining-criptonight-v7&quot;&gt;Mining CriptoNight v7&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#消費電力&quot; id=&quot;markdown-toc-消費電力&quot;&gt;消費電力&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#総評&quot; id=&quot;markdown-toc-総評&quot;&gt;総評&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 22 Apr 2018 00:00:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2018/04/22/review_ryzen7_2700X/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2018/04/22/review_ryzen7_2700X/</guid>
+        
+        
+        <category>AMD</category>
+        
+        <category>Ryzen</category>
+        
+        <category>CPU</category>
+        
+      </item>
+    
+      <item>
+        <title>beatoraja Troubleshooting</title>
+        <description>&lt;h3 id=&quot;whats-this&quot;&gt;What’s this?&lt;/h3&gt;
+
+&lt;p&gt;Summary of problems in using beatoraja.&lt;br /&gt;
+targeting “ver 0.5.5.”&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;qa&quot;&gt;Q&amp;amp;A&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;h4 id=&quot;qfeel-heavy&quot;&gt;Q:Feel heavy.&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:The following reasons are conceivable.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Using “LITONE5”
+    &lt;ul&gt;
+      &lt;li&gt;It’s &lt;strong&gt;heavy&lt;/strong&gt; Skin.&lt;/li&gt;
+      &lt;li&gt;Use of background video is &lt;strong&gt;very heavy&lt;/strong&gt; at music select.
+        &lt;ul&gt;
+          &lt;li&gt;We recommend changing to an image.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://twitter.com/desout2_litone/status/972839623197048832&quot;&gt;Will To be improved…?&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Low-memory.
+    &lt;ul&gt;
+      &lt;li&gt;Recommend : 8GB over.&lt;/li&gt;
+      &lt;li&gt;(At Windows) Should be start at &lt;code class=&quot;highlighter-rouge&quot;&gt;beatoraja-config.bat&lt;/code&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qafter-selection-coffee-beans-appear-on-the-screen&quot;&gt;Q:After selection, “coffee beans” appear on the screen…&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:Please select skin.&lt;/strong&gt;&lt;br /&gt;
+Check the [Skin] tab in the configuration at startup.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-23-beatoraja_qa1.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If the “skin” field is blank, it was not set.&lt;br /&gt;
+Please setting at least the following modes.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;7KEYS&lt;/li&gt;
+  &lt;li&gt;5KEYS&lt;/li&gt;
+  &lt;li&gt;14KEYS&lt;/li&gt;
+  &lt;li&gt;MUSIC SELECT&lt;/li&gt;
+  &lt;li&gt;DESIDE&lt;/li&gt;
+  &lt;li&gt;RESULT&lt;/li&gt;
+  &lt;li&gt;COURCE RESULT&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qi-want-to-change-judgment-timing-and-notes-display-time-in-game&quot;&gt;Q:I want to change judgment timing and Notes display time in game.&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:”Simultaneously press and hold START + SELECT” or “Press and hold Numeric[5]Key”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-23-beatoraja_qa2.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DURATION : Displayed notes time.&lt;/li&gt;
+  &lt;li&gt;JUDGE TIMING&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qit-moves-in-lr2-and-beatoraja-also-moves-until-the-song-selection-but-at-the-moment-when-it-becomes-the-play-screen-it-will-become-ineffective-except-the-start-button&quot;&gt;Q:It moves in LR2 and beatoraja also moves until the song selection but at the moment when it becomes the play screen, it will become ineffective except the start button…&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:Have you decided on music selection with the keyboard during selection?&lt;/strong&gt;&lt;br /&gt;
+Please select the music selection using the dedicated controller.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qthe-dedicated-controllers-key-assignment-is-wrong&quot;&gt;Q:The dedicated controller’s key assignment is wrong…？&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:Key configuration for each controller is possible, so please review it.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Open key config. (pless [6]key)&lt;/li&gt;
+  &lt;li&gt;You can select the controller to use with the [2] key&lt;/li&gt;
+  &lt;li&gt;When multiple controllers are inserted, please make sure that the controller you want to move is selected.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qwhere-custom-folder&quot;&gt;Q:Where “Custom Folder”…?&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;code class=&quot;highlighter-rouge&quot;&gt;folder\default.json&lt;/code&gt;.&lt;/strong&gt;&lt;br /&gt;
+It’s SQL style.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qplease-tell-me-how-to-add-songs&quot;&gt;Q:Please tell me how to add songs.&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:Move to &lt;code class=&quot;highlighter-rouge&quot;&gt;[Resource]-&amp;gt;[BMS Path]&lt;/code&gt; and press [+] button or Drag and drop the folder into the list area&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qi-added-a-folder-but-it-does-not-load-songs&quot;&gt;Q:I added a folder, but it does not load songs.&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A1:&lt;code class=&quot;highlighter-rouge&quot;&gt;Run song update in the background immediately after startup&lt;/code&gt; or check the song update manually.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A2:Press the [F2] key while selecting a folder on the music selection screen after startup.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qi-do-not-play-if-i-select-songs-using-controller3-5-7-key&quot;&gt;Q:I do not play if I select songs using (Controller)3, 5, 7 key.&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:Key function assignment is different from LR2.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;button No.1：Play&lt;/li&gt;
+  &lt;li&gt;button No.3：Practice Mode&lt;/li&gt;
+  &lt;li&gt;button No.5：Auto play&lt;/li&gt;
+  &lt;li&gt;button No.7：Replay&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h4 id=&quot;qcan-i-use-infinitas-controllers-inf-premium-controller--dao-controller-inf-mode-style-&quot;&gt;Q:Can I use INFINITAS controllers? (INF Premium Controller , DAO Controller INF mode style, …)&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;A:You should be able to use it.&lt;/strong&gt;&lt;br /&gt;
+Move to &lt;code class=&quot;highlighter-rouge&quot;&gt;[Input] -&amp;gt; Analog Scratch&lt;/code&gt;, and select the check box.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#whats-this&quot; id=&quot;markdown-toc-whats-this&quot;&gt;What’s this?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#qa&quot; id=&quot;markdown-toc-qa&quot;&gt;Q&amp;amp;A&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#qfeel-heavy&quot; id=&quot;markdown-toc-qfeel-heavy&quot;&gt;Q:Feel heavy.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qafter-selection-coffee-beans-appear-on-the-screen&quot; id=&quot;markdown-toc-qafter-selection-coffee-beans-appear-on-the-screen&quot;&gt;Q:After selection, “coffee beans” appear on the screen…&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qi-want-to-change-judgment-timing-and-notes-display-time-in-game&quot; id=&quot;markdown-toc-qi-want-to-change-judgment-timing-and-notes-display-time-in-game&quot;&gt;Q:I want to change judgment timing and Notes display time in game.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qit-moves-in-lr2-and-beatoraja-also-moves-until-the-song-selection-but-at-the-moment-when-it-becomes-the-play-screen-it-will-become-ineffective-except-the-start-button&quot; id=&quot;markdown-toc-qit-moves-in-lr2-and-beatoraja-also-moves-until-the-song-selection-but-at-the-moment-when-it-becomes-the-play-screen-it-will-become-ineffective-except-the-start-button&quot;&gt;Q:It moves in LR2 and beatoraja also moves until the song selection but at the moment when it becomes the play screen, it will become ineffective except the start button…&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qthe-dedicated-controllers-key-assignment-is-wrong&quot; id=&quot;markdown-toc-qthe-dedicated-controllers-key-assignment-is-wrong&quot;&gt;Q:The dedicated controller’s key assignment is wrong…？&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qwhere-custom-folder&quot; id=&quot;markdown-toc-qwhere-custom-folder&quot;&gt;Q:Where “Custom Folder”…?&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qplease-tell-me-how-to-add-songs&quot; id=&quot;markdown-toc-qplease-tell-me-how-to-add-songs&quot;&gt;Q:Please tell me how to add songs.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qi-added-a-folder-but-it-does-not-load-songs&quot; id=&quot;markdown-toc-qi-added-a-folder-but-it-does-not-load-songs&quot;&gt;Q:I added a folder, but it does not load songs.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qi-do-not-play-if-i-select-songs-using-controller3-5-7-key&quot; id=&quot;markdown-toc-qi-do-not-play-if-i-select-songs-using-controller3-5-7-key&quot;&gt;Q:I do not play if I select songs using (Controller)3, 5, 7 key.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#qcan-i-use-infinitas-controllers-inf-premium-controller--dao-controller-inf-mode-style-&quot; id=&quot;markdown-toc-qcan-i-use-infinitas-controllers-inf-premium-controller--dao-controller-inf-mode-style-&quot;&gt;Q:Can I use INFINITAS controllers? (INF Premium Controller , DAO Controller INF mode style, …)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 21 Apr 2018 12:00:10 +0900</pubDate>
+        <link>https://www.gaftalk.com/2018/04/21/beatoraja_qa_en/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2018/04/21/beatoraja_qa_en/</guid>
+        
+        
+        <category>bms</category>
+        
+      </item>
     
       <item>
         <title>Ryzen 5 2400Gが思ったより安くて強そう</title>
@@ -247,7 +700,7 @@ OS、SSD、HDD、ケース周りをなんとかできれば￥50,000以下での
 &lt;hr /&gt;
 
 &lt;p&gt;というわけで、Ryzen5 2400Gの購入が確定しました。&lt;br /&gt;
-レビューも実施予定です。&lt;/p&gt;
+&lt;del&gt;レビューも実施予定です。&lt;/del&gt;&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#cpuの性能&quot; id=&quot;markdown-toc-cpuの性能&quot;&gt;CPUの性能&lt;/a&gt;&lt;/li&gt;
@@ -1009,227 +1462,6 @@ HBM2を用いる分だけ、消費電力が増える形になります。&lt;/p&
         <category>GTX1070Ti</category>
         
         <category>リーク</category>
-        
-      </item>
-    
-      <item>
-        <title>Ryzen Mobile 性能・発売時期のリーク -結局どのぐらい？-</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-10-19-ryzen_mobile_reeked.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;発売時期&quot;&gt;発売時期&lt;/h3&gt;
-
-&lt;p&gt;Zenコアを用いたグラフィック統合CPU(APU)であるRyzenMobileですが、大方の予想通り来年初めのようです&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;AMD has made a big impact on the market with its Ryzen architecture and the platform will become even more interesting for compact HTPC builds when the first Ryzen-based APUs are introduced &lt;strong&gt;next year.&lt;/strong&gt;&lt;br /&gt;
- (Ryzenアーキテクチャを採用したAMDは市場に大きな影響を与えており、&lt;strong&gt;来年初&lt;/strong&gt;のRyzenベースのAPUが導入されると、コンパクトなHTPCビルドのプラットフォームはさらに面白くなるでしょう)&lt;br /&gt;&lt;br /&gt;
-&lt;a href=&quot;http://noctua.at/en/noctua-presents-two-am4-compatible-low-profile-coolers&quot;&gt;Noctua presents two AM4-compatible low-profile coolers&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;発言者はRoland Mossig（Noctua CEO）です。
-CPUクーラーの長が言っているので、まあ間違いないでしょう。
-結局、Ryzen初登場から約10ヶ月ほど遅れての登場。だいぶ待たせますねぇ…。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;性能&quot;&gt;性能&lt;/h3&gt;
-
-&lt;p&gt;PC Perspectiveが3DMark11を用いた性能リークを行っています。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.pcper.com/news/Graphics-Cards/AMD-Raven-Ridge-Performance-Leaks-APU-GeForce-MX150-Performance&quot;&gt;AMD Raven Ridge Performance Leaks - APU with GeForce MX150 Performance&lt;/a&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;CPU(+GPU)&lt;/th&gt;
-      &lt;th&gt;Graphics&lt;/th&gt;
-      &lt;th&gt;Physics&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Ryzen 7 2700U&lt;/td&gt;
-      &lt;td&gt;4072&lt;/td&gt;
-      &lt;td&gt;6419&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Ryzen 5 2500U&lt;/td&gt;
-      &lt;td&gt;3655&lt;/td&gt;
-      &lt;td&gt;6577&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Core i7 8550U + MX 150&lt;/td&gt;
-      &lt;td&gt;4570&lt;/td&gt;
-      &lt;td&gt;8278&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Core i7 8550U&lt;/td&gt;
-      &lt;td&gt;1772&lt;/td&gt;
-      &lt;td&gt;6627&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;
-これを見るとCPU性能はだいたい&lt;strong&gt;i7 8550U&lt;/strong&gt;と同等、GPU性能は&lt;strong&gt;Geforce MX 150&lt;/strong&gt;弱ぐらい といった形でしょうか。
-もう少し詳しく見ていきましょう。まずはCPUです。&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;Core/Thread&lt;/th&gt;
-      &lt;th&gt;Base Clock(GHz)&lt;/th&gt;
-      &lt;th&gt;Turbo Clock(GHz)&lt;/th&gt;
-      &lt;th&gt;Cache Memory(MB)&lt;/th&gt;
-      &lt;th&gt;価格(円)&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Ryzen 7 2700U&lt;/td&gt;
-      &lt;td&gt;4/8&lt;/td&gt;
-      &lt;td&gt;2.2&lt;/td&gt;
-      &lt;td&gt;3.8?&lt;/td&gt;
-      &lt;td&gt;6(L2+L3)&lt;/td&gt;
-      &lt;td&gt;?&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Ryzen 5 2500U&lt;/td&gt;
-      &lt;td&gt;4/8&lt;/td&gt;
-      &lt;td&gt;2.0&lt;/td&gt;
-      &lt;td&gt;3.6&lt;/td&gt;
-      &lt;td&gt;6(L2+L3)&lt;/td&gt;
-      &lt;td&gt;?&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Core i7 8550U&lt;/td&gt;
-      &lt;td&gt;4/8&lt;/td&gt;
-      &lt;td&gt;1.8&lt;/td&gt;
-      &lt;td&gt;4.0(TB2.0)&lt;/td&gt;
-      &lt;td&gt;8(L3)&lt;/td&gt;
-      &lt;td&gt;46,200&lt;br /&gt;(1ロット[1000個])&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Ryzenはベースクロック、i7はブーストクロックとキャッシュメモリが対抗に対して優位と言えるでしょう。&lt;/p&gt;
-
-&lt;p&gt;全体性能としてはキャッシュメモリの多いi7側に分がありそうです。&lt;/p&gt;
-
-&lt;p&gt;ただし、デスクトップ版Ryzenと同様に価格性能比での勝負となるはずなので、今後の価格リークに注目です。&lt;br /&gt;
-(ちなみに、8550U搭載ASUS ZenBook 3 Deluxeは&lt;strong&gt;20万円&lt;/strong&gt;、ウルトラハイエンドでなければ&lt;strong&gt;10万円&lt;/strong&gt;の製品もあります)&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-次はGPUです。&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;Compute Unit&lt;/th&gt;
-      &lt;th&gt;Base Clock(MHz)&lt;/th&gt;
-      &lt;th&gt;Boost Clock(MHz)&lt;/th&gt;
-      &lt;th&gt;3DMark11&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Radeon Vega M (2700U)&lt;/td&gt;
-      &lt;td&gt;?&lt;/td&gt;
-      &lt;td&gt;?&lt;/td&gt;
-      &lt;td&gt;?&lt;/td&gt;
-      &lt;td&gt;4072&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Radeon Vega M (2500U)&lt;/td&gt;
-      &lt;td&gt;?&lt;/td&gt;
-      &lt;td&gt;?&lt;/td&gt;
-      &lt;td&gt;?&lt;/td&gt;
-      &lt;td&gt;3655&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Geforce MX 150(2GB GDDR5)&lt;/td&gt;
-      &lt;td&gt;384&lt;/td&gt;
-      &lt;td&gt;384&lt;/td&gt;
-      &lt;td&gt;1468&lt;/td&gt;
-      &lt;td&gt;4570 &lt;br /&gt;(i7 8550U)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Intel UHD Graphics 620&lt;/td&gt;
-      &lt;td&gt;192?&lt;/td&gt;
-      &lt;td&gt;300&lt;/td&gt;
-      &lt;td&gt;1150&lt;/td&gt;
-      &lt;td&gt;1772 &lt;br /&gt;(i7 8550U)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;内蔵GPUでここまでの性能は素直に関心です。少なくとも、Intelはぶっちぎってますね。&lt;/p&gt;
-
-&lt;p&gt;MX150はラップトップ版GT1030です。PSO2やドラクエ10は余裕、FF14は画質落としてまあまあといったところでしょうか。
-内蔵GPUであるVega Mでも軽めの3Dゲームは問題なさそうです。&lt;/p&gt;
-
-&lt;p&gt;2700Uと2500Uの違いは搭載iGPUの動作周波数の違い、Compute Unit数の違いとも言われていますが、現時点でわかっている要素はありません。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-総評としては、モバイル向けCPUとしてかなりいい線いってる感じですね。&lt;/p&gt;
-
-&lt;p&gt;ゲームもまあまあ、コア数もある。&lt;/p&gt;
-
-&lt;p&gt;問題は&lt;strong&gt;価格&lt;/strong&gt;と、モバイル向けなので&lt;strong&gt;発熱（消費電力[TDP]）&lt;/strong&gt;でしょう。&lt;/p&gt;
-
-&lt;p&gt;2500Uが5万円台で出てくれば最強なんだけどなーないよなー…
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;TDPに関しては35W以下という噂もありますが、なんとも。&lt;/p&gt;
-
-&lt;p&gt;ただ、Vegaコアは低クロックでの性能がいいので、デスクトップ版みたいな爆熱電気食らいにはならなさそうです。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-以上、Ryzen Mobileの性能リークでした。&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#発売時期&quot; id=&quot;markdown-toc-発売時期&quot;&gt;発売時期&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#性能&quot; id=&quot;markdown-toc-性能&quot;&gt;性能&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 19 Oct 2017 00:30:00 +0900</pubDate>
-        <link>https://www.gaftalk.com/2017/10/19/ryzen_mobile_reeked/</link>
-        <guid isPermaLink="true">https://www.gaftalk.com/2017/10/19/ryzen_mobile_reeked/</guid>
-        
-        
-        <category>CPU</category>
-        
-        <category>Ryzen</category>
-        
-        <category>RyzenMobile</category>
-        
-        <category>Radeon</category>
-        
-        <category>AMD</category>
-        
-      </item>
-    
-      <item>
-        <title>移転しました</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/postimg/note/2017-10-14-welcome-to-jekyll/jekyll.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;というわけで、大体のフレームワークが完成したので仮公開。&lt;/p&gt;
-
-&lt;p&gt;当初の予定のMiddlemanではなく、&lt;strong&gt;jekyll+GithubPages&lt;/strong&gt; で作成。&lt;/p&gt;
-
-&lt;p&gt;テンプレートもそれっぽいのを利用しています。&lt;/p&gt;
-
-&lt;p&gt;Markdownでかけるの便利ね。&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 14 Oct 2017 13:46:17 +0900</pubDate>
-        <link>https://www.gaftalk.com/2017/10/14/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">https://www.gaftalk.com/2017/10/14/welcome-to-jekyll/</guid>
-        
-        
-        <category>雑記</category>
         
       </item>
     
