@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MinIRはどのように作られたか</title>
+	<meta name="description" content="はじめに">
+	
+	<link rel="canonical" href="https://www.gaftalk.com/2018/06/16/development_of_minir/">
+	<link rel="alternate" type="application/rss+xml" title="Gaf Talk" href="https://www.gaftalk.com/feed.xml" />
+	
+	<!-- <link rel="stylesheet" href="/css/main.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/monokai_sublime.min.css">
+	<script type="text/javascript" src="/static/js/highlight.min.js"></script>
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="https://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+	<script type="text/javascript" src="https://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
+    -->
+    
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83617244-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-83617244-3');
+	</script>
+
+</head>
+  
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MinIRはどのように作られたか - Gaf Talk">
+<meta name="twitter:url" content="https://www.gaftalk.com/2018/06/16/development_of_minir/">
+<meta name="twitter:description" content="ゲームとかガジェットとかその他好きなこと">
+<meta name="twitter:image:src" content="https://www.gaftalk.com/postimg/bms/minir/2018-06-16/minir.png">
+
+ <!--  <body data-spy="scroll" data-target="#myAffix"> -->
+  <body>
+
+    <header>
+
+<!-- navbar -->
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/" style="padding:0">
+      <img src="/static/img/logo.png" style="max-height:-webkit-fill-available">
+      </a>
+      <p class="navbar-text">ゲームとかガジェットとかその他好きなこと</p>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        
+          <li>
+        
+        <a href="/">Home</a></li>
+
+        
+          
+        
+          
+            
+              <li>
+            
+            <a href="/projects/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</header>
+
+    <div id="main" class="container main">
+      <style>
+.list-share ul {
+  list-style: none;
+
+  font-size: 0;
+  padding-left:0px;
+}
+
+.list-share li {
+  font-size: 1em;
+}
+
+.list-share {
+  display: block;
+}
+
+.list-share .item {
+  display: inline-block;
+
+  vertical-align: top;
+}
+
+.list-share .item + .item {
+  margin-left: 10px;
+}
+</style>
+<div class="row">
+    <div id="myArticle" class="col-sm-9">
+        <div class="post-area post">
+            <header>
+                <h1>MinIRはどのように作られたか</h1>
+                <p>2018-06-16</p>
+            </header>
+            <hr>
+            <article><h2 id="はじめに">はじめに</h2>
+
+<p>beatorajaの認知度が高まっていくに連れて、<strong>IRがない</strong> という声を多く目にするようになりました。<br />
+正確に言えばIRがないというのは誤りで、<code class="highlighter-rouge">Chroma IR</code>が存在していましたが、広く公開されているIRではありませんでした。</p>
+
+<p>というわけで、「ないなら作ればいい」のノリで作成したのが現在稼働中の<code class="highlighter-rouge">MinIR</code>です。<br />
+本記事では、このMinIRがどのようにして作られたかを解説します。</p>
+
+<hr />
+
+<h2 id="やることはそんなに多くない">やることはそんなに多くない</h2>
+
+<p>さて、そもそもIRはどのような仕組みなのでしょうか。</p>
+
+<p>やることは「データを送り、保存する」「データを取得し、表示する」の2つです。<br />
+<img src="/postimg/bms/minir/2018-06-16/server1.png" alt="キャプション" /></p>
+
+<p>必要なのは</p>
+<ul>
+  <li>IRのデータの受け口</li>
+  <li>IRのデータを保存するための場所</li>
+  <li>IRデータの送信機構</li>
+  <li>IRデータの表示機構</li>
+</ul>
+
+<p>の4つです。<br />
+そんなに多くありません。</p>
+
+<hr />
+
+<h2 id="必要なものを具体的に">必要なものを具体的に</h2>
+
+<p>必要な「機能」を抽出したところで、具体的に何が必要かを考えていきます。
+<br /><br /></p>
+<h4 id="irのデータの受け口">IRのデータの受け口</h4>
+<p>データを受け取る「サーバー」が必要です。</p>
+
+<h4 id="irのデータを保存するための場所">IRのデータを保存するための場所</h4>
+<p>保存箇所である「データベース」が必要です。</p>
+
+<h4 id="irデータの送信機構">IRデータの送信機構</h4>
+<p>同じく、データ取得命令を処理する「サーバー」が必要です。</p>
+
+<h4 id="irデータの表示機構">IRデータの表示機構</h4>
+<p>表示用に「Webページ」が必要です。</p>
+
+<p><br />
+こうしてみると、レンタルサーバを借りて、内部にデータベースとWebページ機構を組み込めば良さそうですが…</p>
+
+<hr />
+
+<h2 id="サーバーレスという選択---amazon-web-service">サーバーレスという選択 - Amazon Web Service</h2>
+
+<p>レンタルサーバを借りてどうこうするのは、意外と管理・維持が面倒です。<br />
+死活監視やリソース監視、パッチの適用など、サーバーを正常に動作させ続けるためにさまざまな作業が必要です。</p>
+
+<p>そのため、MinIRでは、「サーバーレスアーキテクチャ」を採用しています。</p>
+
+<p><br /></p>
+<h4 id="サーバーレスアーキテクチャ">サーバーレスアーキテクチャ</h4>
+<p><strong>サーバを自前で用意せず</strong>、サーバーを持つ事業者が提供するサービスを活用してシステムを構築します。</p>
+
+<p>MinIRでは「サーバーを持つ事業者」は<code class="highlighter-rouge">Amazon</code>、「サーバーを持つ事業者が提供するサービス」は<a href="https://aws.amazon.com/jp/">Amazon Web Service</a>です。</p>
+
+<p><br /></p>
+<h4 id="amazon-web-service-aws">Amazon Web Service (AWS)</h4>
+
+<p><img src="/postimg/bms/minir/2018-06-16/aws.png" alt="キャプション" /></p>
+
+<blockquote>
+  <p>アマゾン ウェブ サービスでは、コンピューティング、ストレージ、データベース、分析、ネットワーキング、モバイル、開発者用ツール、管理ツール、IoT、セキュリティ、エンタープライズアプリケーションなど、グローバルなクラウドベース製品を幅広く利用できます。これらのサービスを使用すると、企業や組織はより迅速かつ低い IT コストでスケールすることができます。AWS は最大規模の企業と注目を集めている新興企業から信頼されており、ウェブアプリケーション、モバイルアプリケーション、ゲーム開発、データ処理、データウェアハウス、ストレージ、アーカイブなど多様なワークロードを支援しています。</p>
+
+  <p>製品ページより引用 <a href="https://aws.amazon.com/jp/products/">(https://aws.amazon.com/jp/products/)</a></p>
+</blockquote>
+
+<p>簡単言えば<strong>いろんなサービスがあるから、それらをうまく組み合わせて活用してね！</strong>でしょうか。<br />
+実際、その通りなので、MinIRで利用しているサービスを解説します。</p>
+
+<hr />
+
+<h2 id="minirで利用するawsサービス">MinIRで利用するAWSサービス</h2>
+
+<p>MinIRで利用するサービスは主に下記の3つです。</p>
+
+<ul>
+  <li>AWS Lambda (lambda)</li>
+  <li>Amazon DynamoDB (DynamoDB)</li>
+  <li>Amazon Cognito (Cognito)</li>
+</ul>
+
+<p><br /></p>
+<h4 id="aws-lambda">AWS Lambda</h4>
+
+<p><img src="/postimg/bms/minir/2018-06-16/lambda.png" alt="キャプション" /></p>
+
+<p>(「ラムダ」って読みます)<br />
+イベントに対してコードを実行するサービスです。<br />
+「データを受け取る」「データ要求に対して送信する」の2つの役割に対してこのサービスを使います。</p>
+
+<p>具体的には</p>
+<ul>
+  <li>データを受け取る
+    <ul>
+      <li>受け取ったスコア・譜面データを<code class="highlighter-rouge">DynamoDB</code>に保存する</li>
+    </ul>
+  </li>
+  <li>データ要求に対して送信する
+    <ul>
+      <li>要求に沿う形でスコア・譜面データを<code class="highlighter-rouge">DynamoDB</code>から取得し、返却する</li>
+    </ul>
+  </li>
+</ul>
+
+<p>を行います。</p>
+
+<p>コードは<code class="highlighter-rouge">Node.js</code>、<code class="highlighter-rouge">Java</code>、<code class="highlighter-rouge">C#</code>、<code class="highlighter-rouge">Go</code>、<code class="highlighter-rouge">Python</code>が選択できますが、MinIRでは<code class="highlighter-rouge">Node.js</code>を採用しています。
+（<code class="highlighter-rouge">Node.js</code>の説明は<a href="https://eng-entrance.com/what-is-nodejs">この辺</a>とかかな？）</p>
+
+<p><br />
+ひと月あたり</p>
+<ul>
+  <li>1,000,000回（100万回）の呼び出し</li>
+  <li>メモリを400,000GB（40万GB）秒利用する
+    <ul>
+      <li>例1：256MBの処理を4秒で1GB秒</li>
+      <li>例2：1GBの処理を0.5秒で0.5GB秒</li>
+    </ul>
+  </li>
+</ul>
+
+<p>を満たすまでは<strong>無料</strong>です。</p>
+
+<p>(<a href="https://aws.amazon.com/jp/lambda/pricing/">AWS Lambda 料金</a>)</p>
+
+<p><br /></p>
+<h4 id="amazon-dynamodb">Amazon DynamoDB</h4>
+
+<p><img src="/postimg/bms/minir/2018-06-16/dynamodb.png" alt="キャプション" /></p>
+
+<p>(「ダイナモDB」って読みます)  <br />
+データベースサービスですが、一般的な<a href="https://aws.amazon.com/jp/relational-database/">リレーショナルデータベース (RDB)</a>ではありません。<br />
+<a href="https://aws.amazon.com/jp/nosql/">NoSQL データベース (NoSQL)</a>と呼ばれる非リレーショナルデータベースです。</p>
+
+<p>NoSQL データベースとは<strong>一意キー</strong>と<strong>値</strong>の単純な組み合わせを格納したデータベースです。<br />
+以下は簡単な例です。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>一意キー</th>
+      <th>値</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ユーザーID + 譜面ID</td>
+      <td>スコア、記録日時 …</td>
+    </tr>
+    <tr>
+      <td>譜面ID</td>
+      <td>タイトル、BPM、総ノーツ数 …</td>
+    </tr>
+    <tr>
+      <td>ユーザーID</td>
+      <td>bio、ライバル情報 …</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>※MinIRが上記の例の通りに作られているわけではありません</p>
+
+<p><br />
+キーと値のペアのため、RDBとは違ったメリット、デメリットが存在します。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>RDB</th>
+      <th>NoSQL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>データ参照</td>
+      <td>複数の表と関係性を持ち、SQLを用いて、高度な条件でのデータを取得できる</td>
+      <td>他のデータとの関係性がないため、複雑な参照には不向き</td>
+    </tr>
+    <tr>
+      <td>トランザクション</td>
+      <td>データの不整合は起こらない</td>
+      <td>結果整合性を持つ（即座にデータの変更が反映されるとは限らない）</td>
+    </tr>
+    <tr>
+      <td>処理速度</td>
+      <td>強固なトランザクション処理を行うため、それほど速くはない</td>
+      <td>大量のデータを扱うサービスで参照や追加処理が主な処理である場合、高速</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>上記だけ見ると、IRのようなデータ保存・更新サービスではNoSQLは不向きなのでは？と思われると思います。<br />
+<strong>その通りです。</strong><br />
+ユーザー・スコア・譜面 など、リレーショナルなデータ参照があるのでRDBのほうが向いているのですが…。</p>
+
+<p><br />
+<strong>残念ながら、RDBは無料で運用できません。</strong>
+<br /></p>
+
+<p>AWSにも<code class="highlighter-rouge">Amazon Relational Database Service (RDS)</code>というサービスがありますが、無料で利用することはできません。<br />
+Amazon以外のサービスも同様です。</p>
+
+<p><code class="highlighter-rouge">DynamoDB</code>は料金体系が複雑ですが、IRのような単純なWebサービス構築ならば無料で運用できるはずです。</p>
+<ul>
+  <li>25 GB の保管は無料</li>
+  <li>読み込み/書き込み容量が少なければ無料</li>
+</ul>
+
+<p>(<a href="https://aws.amazon.com/jp/dynamodb/pricing/">Amazon DynamoDB 料金</a>)</p>
+
+<p><br />
+MinIRでは前述した<code class="highlighter-rouge">lambda</code>と連携して、データの書き込み、読み込みを行います。</p>
+
+<p><br /></p>
+<h4 id="amazon-cognito">Amazon Cognito</h4>
+
+<p><img src="/postimg/bms/minir/2018-06-16/cognito.png" alt="キャプション" /></p>
+
+<p>(「コグニト」って読みます) <br />
+ユーザー認証や情報を取り扱うサービスです。</p>
+
+<ul>
+  <li>パスワードや個人情報の管理</li>
+  <li>(自前でやろうとすると大変な)2段階認証</li>
+  <li>自前の認証サービス</li>
+</ul>
+
+<p>と、ユーザー管理・運用に最低限必要なのが揃ってます。<strong>めっちゃ楽です。</strong><br />
+（やろうと思えばtwitterでのログインも実装できますが、MinIRでは採用してません。）</p>
+
+<p>同じく、<code class="highlighter-rouge">lambda</code>と連携して、ログイン処理、ユーザーデータの追加・取得を行います。</p>
+
+<p><br />
+ひと月あたり5万ユーザーまでは<strong>無料</strong>です。<br />
+(<a href="https://aws.amazon.com/jp/cognito/pricing/">AWS Cognito 料金</a>)</p>
+
+<hr />
+
+<h2 id="サービスを組み合わせる">サービスを組み合わせる</h2>
+
+<p>上記で紹介したAWSサービスを組み合わせるとこんな感じになります</p>
+
+<ul>
+  <li>ログイン処理
+    <ol>
+      <li>lambdaにログイン情報送信</li>
+      <li>lambdaからCognitoに情報問い合せ</li>
+      <li>Cognitoからlambdaに結果返却</li>
+      <li>lambdaから結果返却</li>
+    </ol>
+  </li>
+  <li>スコア送信処理
+    <ol>
+      <li>lambdaにスコア情報送信</li>
+      <li>lambdaからDynamoDBに書き込み</li>
+      <li>（必要なら）lambdaから処理結果を返却</li>
+    </ol>
+  </li>
+</ul>
+
+<p>なんとかうまくいきそうです。<br />
+残りは保存されたスコアを表示するIRページの作成です。</p>
+
+<hr />
+
+<h2 id="webページも無料で作る--github-pages-">Webページも無料で作る -Github Pages-</h2>
+
+<p><a href="https://pages.github.com/">GitHub Pages</a> とは、<a href="https://github.com/">GitHub</a>による、静的サイトのホスティングサービスです。<br />
+<code class="highlighter-rouge">GitHub</code>のアカウントがあればすぐに公開できるので、非常に手軽です。</p>
+
+<ul>
+  <li>静的サイト (HTML や CSS, 画像など) を公開できます</li>
+  <li>JavaScriptが動作します</li>
+  <li>独自ドメインOK</li>
+  <li><strong>無料</strong></li>
+</ul>
+
+<p>htmlをうまーく配置すれば、それだけでサイトが公開できます。<br />
+データの取得（lambdaの呼び出し）には<code class="highlighter-rouge">javascript</code>を用います。</p>
+
+<p>サイトのソースコードは<a href="https://github.com/SackMagiclight/minir">こちら</a>です。<br />
+静的サイトなので、基本全公開です。</p>
+
+<p>MinIRのデザインには<a href="https://getmdl.io/">Material Design Lite</a>、テンプレートエンジンには<a href="https://reactjs.org/">React</a>を利用しています。<br />
+（詳細情報は各公式ページへ。）</p>
+
+<p>というわけで、スコアビューワーもできました。
+<img src="/postimg/bms/minir/2018-06-16/minir_score.png" alt="キャプション" /></p>
+
+<hr />
+
+<h2 id="まとめシステム全体像">まとめ（システム全体像）</h2>
+
+<p><img src="/postimg/bms/minir/2018-06-16/minir_system.png" alt="キャプション" /></p>
+
+<p>こんな感じになりました。<br />
+基本的にはlambdaを経由して、データの流れを作ります。</p>
+
+<hr />
+
+<h2 id="おわりに">おわりに</h2>
+
+<p>というわけで、このような流れがあってMinIRは作られました。<br />
+無料でクラウドサービスを利用でき、サービス開発ができるなんていい時代だぁ…<br />
+AWS便利だからみんな使おうね！<br />
+IRを新しく作るのもいいぞ。</p>
+
+<hr />
+
+<ul id="markdown-toc">
+  <li><a href="#はじめに" id="markdown-toc-はじめに">はじめに</a></li>
+  <li><a href="#やることはそんなに多くない" id="markdown-toc-やることはそんなに多くない">やることはそんなに多くない</a></li>
+  <li><a href="#必要なものを具体的に" id="markdown-toc-必要なものを具体的に">必要なものを具体的に</a>    <ul>
+      <li><a href="#irのデータの受け口" id="markdown-toc-irのデータの受け口">IRのデータの受け口</a></li>
+      <li><a href="#irのデータを保存するための場所" id="markdown-toc-irのデータを保存するための場所">IRのデータを保存するための場所</a></li>
+      <li><a href="#irデータの送信機構" id="markdown-toc-irデータの送信機構">IRデータの送信機構</a></li>
+      <li><a href="#irデータの表示機構" id="markdown-toc-irデータの表示機構">IRデータの表示機構</a></li>
+    </ul>
+  </li>
+  <li><a href="#サーバーレスという選択---amazon-web-service" id="markdown-toc-サーバーレスという選択---amazon-web-service">サーバーレスという選択 - Amazon Web Service</a>    <ul>
+      <li><a href="#サーバーレスアーキテクチャ" id="markdown-toc-サーバーレスアーキテクチャ">サーバーレスアーキテクチャ</a></li>
+      <li><a href="#amazon-web-service-aws" id="markdown-toc-amazon-web-service-aws">Amazon Web Service (AWS)</a></li>
+    </ul>
+  </li>
+  <li><a href="#minirで利用するawsサービス" id="markdown-toc-minirで利用するawsサービス">MinIRで利用するAWSサービス</a>    <ul>
+      <li><a href="#aws-lambda" id="markdown-toc-aws-lambda">AWS Lambda</a></li>
+      <li><a href="#amazon-dynamodb" id="markdown-toc-amazon-dynamodb">Amazon DynamoDB</a></li>
+      <li><a href="#amazon-cognito" id="markdown-toc-amazon-cognito">Amazon Cognito</a></li>
+    </ul>
+  </li>
+  <li><a href="#サービスを組み合わせる" id="markdown-toc-サービスを組み合わせる">サービスを組み合わせる</a></li>
+  <li><a href="#webページも無料で作る--github-pages-" id="markdown-toc-webページも無料で作る--github-pages-">Webページも無料で作る -Github Pages-</a></li>
+  <li><a href="#まとめシステム全体像" id="markdown-toc-まとめシステム全体像">まとめ（システム全体像）</a></li>
+  <li><a href="#おわりに" id="markdown-toc-おわりに">おわりに</a></li>
+</ul>
+ </article>
+            <hr>
+            <div id="fb-root"></div>
+            <script>
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <div class="wrapper">
+                <div class="list-share">
+                    <ul>
+                        <li class="item facebook">
+                            <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                        </li>
+                        <li class="item twitter">
+                            <p class="label">Twitter ツイート</p>
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </li>
+                        <li class="item hatena">
+                            <p class="label">はてなブックマーク</p>
+                            <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加">
+                                <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+                            </a>
+                            <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+                        </li>
+                        <li class="item line">
+                            <p class="label">LINE (SPのみ)</p>
+                            <span>
+                                <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+                                <script type="text/javascript">
+                                    new media_line_me.LineButton({"pc":false,"lang":"ja","type":"a"});
+                                </script>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+        </div>
+    <!-- duoshuo.com javascript include code. -->    
+    
+    <!-- disqus.com javascript include code. -->
+	
+    <div class="post-area post comment">
+        <div id="disqus_thread"></div>
+    </div>
+	<script>
+		var disqus_config = function () {
+			this.page.url = "https://www.gaftalk.com/2018/06/16/development_of_minir/"; 
+			this.page.identifier = "/2018/06/16/development_of_minir"; 
+		};
+		(function() {
+			var d = document, s = d.createElement('script');
+			s.src = '//gaftalk.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	
+     
+    </div>
+    <div id="content" class="col-sm-3">
+        <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
+        <div id="myAffix" class="shadow-bottom-center hidden-xs" >
+            <div class="categories-list-header">Content </div>
+            <div class="content-text"></div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    
+    <div id="top" data-toggle="tooltip" data-placement="left" title="back to top">
+      <a href="javascript:;">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+      </a>
+    </div>
+
+    <footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- <a href="mailto:"><span class="glyphicon glyphicon-envelope"></span> </a>
+        <span class="point"> · </span> -->
+        
+          <a href="https://github.com/SackMagiclight">
+            <span class="icon">
+              <svg viewBox="0 0 16 16">
+                <path fill="#aaa" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            Github
+            <!-- <span>SackMagiclight</span> -->
+          </a>
+          
+          <span class="point"> · </span>
+          
+          
+            <a href="https://twitter.com/sack_magiclight">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span>twitter</span>
+            </a>
+          
+          
+          <!-- <span class="point"> · </span>
+          <span><a href="_posts/bms/2018-06-16-development_of_minir.markdown">View source</a></span>
+          <span class="point"> · </span>
+          <span><a class="newpost" href="javascript:;">New post</a></span> -->
+		  <span class="point"> · </span>
+          <span><a href="/feed.xml">RSS</a></span>
+          <span class="point"> · </span>
+          <span>&copy; 2017 海岸砂丘 powerd by Jekyll, theme by LiXizh</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="text/javascript">
+    function OnClickNewPost()
+    {
+        var title = prompt("Please enter title of your post");
+        if (title!=null){
+            title = title.replace(" ", "-");
+            var currentdate = new Date();
+            var urlNewPage = "?filename=_posts/" 
+                + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + title + ".md";
+                
+            var defaultText =  [
+                '---',
+                'layout: post',
+                'comments: true',
+                'categories: diary',
+                '---',
+                '## Title',
+                'text'
+                ].join('\n');
+            urlNewPage += "&value=" + encodeURIComponent(defaultText);
+            window.open(urlNewPage);
+        }
+    }
+    
+    $(function() {
+      // CreateNewPostLinks
+      $('.newpost').each(function(){
+          $(this).click(OnClickNewPost);
+      });
+    });
+</script>
+  
+  </body>
+</html>

@@ -5,9 +5,370 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Apr 2018 01:14:08 +0900</pubDate>
-    <lastBuildDate>Sun, 22 Apr 2018 01:14:08 +0900</lastBuildDate>
+    <pubDate>Sun, 17 Jun 2018 03:19:46 +0900</pubDate>
+    <lastBuildDate>Sun, 17 Jun 2018 03:19:46 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>MinIRはどのように作られたか</title>
+        <description>&lt;h2 id=&quot;はじめに&quot;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;beatorajaの認知度が高まっていくに連れて、&lt;strong&gt;IRがない&lt;/strong&gt; という声を多く目にするようになりました。&lt;br /&gt;
+正確に言えばIRがないというのは誤りで、&lt;code class=&quot;highlighter-rouge&quot;&gt;Chroma IR&lt;/code&gt;が存在していましたが、広く公開されているIRではありませんでした。&lt;/p&gt;
+
+&lt;p&gt;というわけで、「ないなら作ればいい」のノリで作成したのが現在稼働中の&lt;code class=&quot;highlighter-rouge&quot;&gt;MinIR&lt;/code&gt;です。&lt;br /&gt;
+本記事では、このMinIRがどのようにして作られたかを解説します。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;やることはそんなに多くない&quot;&gt;やることはそんなに多くない&lt;/h2&gt;
+
+&lt;p&gt;さて、そもそもIRはどのような仕組みなのでしょうか。&lt;/p&gt;
+
+&lt;p&gt;やることは「データを送り、保存する」「データを取得し、表示する」の2つです。&lt;br /&gt;
+&lt;img src=&quot;/postimg/bms/minir/2018-06-16/server1.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;必要なのは&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;IRのデータの受け口&lt;/li&gt;
+  &lt;li&gt;IRのデータを保存するための場所&lt;/li&gt;
+  &lt;li&gt;IRデータの送信機構&lt;/li&gt;
+  &lt;li&gt;IRデータの表示機構&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;の4つです。&lt;br /&gt;
+そんなに多くありません。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;必要なものを具体的に&quot;&gt;必要なものを具体的に&lt;/h2&gt;
+
+&lt;p&gt;必要な「機能」を抽出したところで、具体的に何が必要かを考えていきます。
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;irのデータの受け口&quot;&gt;IRのデータの受け口&lt;/h4&gt;
+&lt;p&gt;データを受け取る「サーバー」が必要です。&lt;/p&gt;
+
+&lt;h4 id=&quot;irのデータを保存するための場所&quot;&gt;IRのデータを保存するための場所&lt;/h4&gt;
+&lt;p&gt;保存箇所である「データベース」が必要です。&lt;/p&gt;
+
+&lt;h4 id=&quot;irデータの送信機構&quot;&gt;IRデータの送信機構&lt;/h4&gt;
+&lt;p&gt;同じく、データ取得命令を処理する「サーバー」が必要です。&lt;/p&gt;
+
+&lt;h4 id=&quot;irデータの表示機構&quot;&gt;IRデータの表示機構&lt;/h4&gt;
+&lt;p&gt;表示用に「Webページ」が必要です。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+こうしてみると、レンタルサーバを借りて、内部にデータベースとWebページ機構を組み込めば良さそうですが…&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;サーバーレスという選択---amazon-web-service&quot;&gt;サーバーレスという選択 - Amazon Web Service&lt;/h2&gt;
+
+&lt;p&gt;レンタルサーバを借りてどうこうするのは、意外と管理・維持が面倒です。&lt;br /&gt;
+死活監視やリソース監視、パッチの適用など、サーバーを正常に動作させ続けるためにさまざまな作業が必要です。&lt;/p&gt;
+
+&lt;p&gt;そのため、MinIRでは、「サーバーレスアーキテクチャ」を採用しています。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;サーバーレスアーキテクチャ&quot;&gt;サーバーレスアーキテクチャ&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;サーバを自前で用意せず&lt;/strong&gt;、サーバーを持つ事業者が提供するサービスを活用してシステムを構築します。&lt;/p&gt;
+
+&lt;p&gt;MinIRでは「サーバーを持つ事業者」は&lt;code class=&quot;highlighter-rouge&quot;&gt;Amazon&lt;/code&gt;、「サーバーを持つ事業者が提供するサービス」は&lt;a href=&quot;https://aws.amazon.com/jp/&quot;&gt;Amazon Web Service&lt;/a&gt;です。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;amazon-web-service-aws&quot;&gt;Amazon Web Service (AWS)&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/minir/2018-06-16/aws.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;アマゾン ウェブ サービスでは、コンピューティング、ストレージ、データベース、分析、ネットワーキング、モバイル、開発者用ツール、管理ツール、IoT、セキュリティ、エンタープライズアプリケーションなど、グローバルなクラウドベース製品を幅広く利用できます。これらのサービスを使用すると、企業や組織はより迅速かつ低い IT コストでスケールすることができます。AWS は最大規模の企業と注目を集めている新興企業から信頼されており、ウェブアプリケーション、モバイルアプリケーション、ゲーム開発、データ処理、データウェアハウス、ストレージ、アーカイブなど多様なワークロードを支援しています。&lt;/p&gt;
+
+  &lt;p&gt;製品ページより引用 &lt;a href=&quot;https://aws.amazon.com/jp/products/&quot;&gt;(https://aws.amazon.com/jp/products/)&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;簡単言えば&lt;strong&gt;いろんなサービスがあるから、それらをうまく組み合わせて活用してね！&lt;/strong&gt;でしょうか。&lt;br /&gt;
+実際、その通りなので、MinIRで利用しているサービスを解説します。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;minirで利用するawsサービス&quot;&gt;MinIRで利用するAWSサービス&lt;/h2&gt;
+
+&lt;p&gt;MinIRで利用するサービスは主に下記の3つです。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AWS Lambda (lambda)&lt;/li&gt;
+  &lt;li&gt;Amazon DynamoDB (DynamoDB)&lt;/li&gt;
+  &lt;li&gt;Amazon Cognito (Cognito)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;aws-lambda&quot;&gt;AWS Lambda&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/minir/2018-06-16/lambda.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(「ラムダ」って読みます)&lt;br /&gt;
+イベントに対してコードを実行するサービスです。&lt;br /&gt;
+「データを受け取る」「データ要求に対して送信する」の2つの役割に対してこのサービスを使います。&lt;/p&gt;
+
+&lt;p&gt;具体的には&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;データを受け取る
+    &lt;ul&gt;
+      &lt;li&gt;受け取ったスコア・譜面データを&lt;code class=&quot;highlighter-rouge&quot;&gt;DynamoDB&lt;/code&gt;に保存する&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;データ要求に対して送信する
+    &lt;ul&gt;
+      &lt;li&gt;要求に沿う形でスコア・譜面データを&lt;code class=&quot;highlighter-rouge&quot;&gt;DynamoDB&lt;/code&gt;から取得し、返却する&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;を行います。&lt;/p&gt;
+
+&lt;p&gt;コードは&lt;code class=&quot;highlighter-rouge&quot;&gt;Node.js&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Java&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;C#&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Go&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Python&lt;/code&gt;が選択できますが、MinIRでは&lt;code class=&quot;highlighter-rouge&quot;&gt;Node.js&lt;/code&gt;を採用しています。
+（&lt;code class=&quot;highlighter-rouge&quot;&gt;Node.js&lt;/code&gt;の説明は&lt;a href=&quot;https://eng-entrance.com/what-is-nodejs&quot;&gt;この辺&lt;/a&gt;とかかな？）&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+ひと月あたり&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;1,000,000回（100万回）の呼び出し&lt;/li&gt;
+  &lt;li&gt;メモリを400,000GB（40万GB）秒利用する
+    &lt;ul&gt;
+      &lt;li&gt;例1：256MBの処理を4秒で1GB秒&lt;/li&gt;
+      &lt;li&gt;例2：1GBの処理を0.5秒で0.5GB秒&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;を満たすまでは&lt;strong&gt;無料&lt;/strong&gt;です。&lt;/p&gt;
+
+&lt;p&gt;(&lt;a href=&quot;https://aws.amazon.com/jp/lambda/pricing/&quot;&gt;AWS Lambda 料金&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;amazon-dynamodb&quot;&gt;Amazon DynamoDB&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/minir/2018-06-16/dynamodb.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(「ダイナモDB」って読みます)  &lt;br /&gt;
+データベースサービスですが、一般的な&lt;a href=&quot;https://aws.amazon.com/jp/relational-database/&quot;&gt;リレーショナルデータベース (RDB)&lt;/a&gt;ではありません。&lt;br /&gt;
+&lt;a href=&quot;https://aws.amazon.com/jp/nosql/&quot;&gt;NoSQL データベース (NoSQL)&lt;/a&gt;と呼ばれる非リレーショナルデータベースです。&lt;/p&gt;
+
+&lt;p&gt;NoSQL データベースとは&lt;strong&gt;一意キー&lt;/strong&gt;と&lt;strong&gt;値&lt;/strong&gt;の単純な組み合わせを格納したデータベースです。&lt;br /&gt;
+以下は簡単な例です。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;一意キー&lt;/th&gt;
+      &lt;th&gt;値&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ユーザーID + 譜面ID&lt;/td&gt;
+      &lt;td&gt;スコア、記録日時 …&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;譜面ID&lt;/td&gt;
+      &lt;td&gt;タイトル、BPM、総ノーツ数 …&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ユーザーID&lt;/td&gt;
+      &lt;td&gt;bio、ライバル情報 …&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;※MinIRが上記の例の通りに作られているわけではありません&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+キーと値のペアのため、RDBとは違ったメリット、デメリットが存在します。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;RDB&lt;/th&gt;
+      &lt;th&gt;NoSQL&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;データ参照&lt;/td&gt;
+      &lt;td&gt;複数の表と関係性を持ち、SQLを用いて、高度な条件でのデータを取得できる&lt;/td&gt;
+      &lt;td&gt;他のデータとの関係性がないため、複雑な参照には不向き&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;トランザクション&lt;/td&gt;
+      &lt;td&gt;データの不整合は起こらない&lt;/td&gt;
+      &lt;td&gt;結果整合性を持つ（即座にデータの変更が反映されるとは限らない）&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;処理速度&lt;/td&gt;
+      &lt;td&gt;強固なトランザクション処理を行うため、それほど速くはない&lt;/td&gt;
+      &lt;td&gt;大量のデータを扱うサービスで参照や追加処理が主な処理である場合、高速&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;上記だけ見ると、IRのようなデータ保存・更新サービスではNoSQLは不向きなのでは？と思われると思います。&lt;br /&gt;
+&lt;strong&gt;その通りです。&lt;/strong&gt;&lt;br /&gt;
+ユーザー・スコア・譜面 など、リレーショナルなデータ参照があるのでRDBのほうが向いているのですが…。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;残念ながら、RDBは無料で運用できません。&lt;/strong&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;AWSにも&lt;code class=&quot;highlighter-rouge&quot;&gt;Amazon Relational Database Service (RDS)&lt;/code&gt;というサービスがありますが、無料で利用することはできません。&lt;br /&gt;
+Amazon以外のサービスも同様です。&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DynamoDB&lt;/code&gt;は料金体系が複雑ですが、IRのような単純なWebサービス構築ならば無料で運用できるはずです。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;25 GB の保管は無料&lt;/li&gt;
+  &lt;li&gt;読み込み/書き込み容量が少なければ無料&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(&lt;a href=&quot;https://aws.amazon.com/jp/dynamodb/pricing/&quot;&gt;Amazon DynamoDB 料金&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+MinIRでは前述した&lt;code class=&quot;highlighter-rouge&quot;&gt;lambda&lt;/code&gt;と連携して、データの書き込み、読み込みを行います。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;amazon-cognito&quot;&gt;Amazon Cognito&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/minir/2018-06-16/cognito.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(「コグニト」って読みます) &lt;br /&gt;
+ユーザー認証や情報を取り扱うサービスです。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;パスワードや個人情報の管理&lt;/li&gt;
+  &lt;li&gt;(自前でやろうとすると大変な)2段階認証&lt;/li&gt;
+  &lt;li&gt;自前の認証サービス&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;と、ユーザー管理・運用に最低限必要なのが揃ってます。&lt;strong&gt;めっちゃ楽です。&lt;/strong&gt;&lt;br /&gt;
+（やろうと思えばtwitterでのログインも実装できますが、MinIRでは採用してません。）&lt;/p&gt;
+
+&lt;p&gt;同じく、&lt;code class=&quot;highlighter-rouge&quot;&gt;lambda&lt;/code&gt;と連携して、ログイン処理、ユーザーデータの追加・取得を行います。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+ひと月あたり5万ユーザーまでは&lt;strong&gt;無料&lt;/strong&gt;です。&lt;br /&gt;
+(&lt;a href=&quot;https://aws.amazon.com/jp/cognito/pricing/&quot;&gt;AWS Cognito 料金&lt;/a&gt;)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;サービスを組み合わせる&quot;&gt;サービスを組み合わせる&lt;/h2&gt;
+
+&lt;p&gt;上記で紹介したAWSサービスを組み合わせるとこんな感じになります&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ログイン処理
+    &lt;ol&gt;
+      &lt;li&gt;lambdaにログイン情報送信&lt;/li&gt;
+      &lt;li&gt;lambdaからCognitoに情報問い合せ&lt;/li&gt;
+      &lt;li&gt;Cognitoからlambdaに結果返却&lt;/li&gt;
+      &lt;li&gt;lambdaから結果返却&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;スコア送信処理
+    &lt;ol&gt;
+      &lt;li&gt;lambdaにスコア情報送信&lt;/li&gt;
+      &lt;li&gt;lambdaからDynamoDBに書き込み&lt;/li&gt;
+      &lt;li&gt;（必要なら）lambdaから処理結果を返却&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;なんとかうまくいきそうです。&lt;br /&gt;
+残りは保存されたスコアを表示するIRページの作成です。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;webページも無料で作る--github-pages-&quot;&gt;Webページも無料で作る -Github Pages-&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; とは、&lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;による、静的サイトのホスティングサービスです。&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;GitHub&lt;/code&gt;のアカウントがあればすぐに公開できるので、非常に手軽です。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;静的サイト (HTML や CSS, 画像など) を公開できます&lt;/li&gt;
+  &lt;li&gt;JavaScriptが動作します&lt;/li&gt;
+  &lt;li&gt;独自ドメインOK&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;無料&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;htmlをうまーく配置すれば、それだけでサイトが公開できます。&lt;br /&gt;
+データの取得（lambdaの呼び出し）には&lt;code class=&quot;highlighter-rouge&quot;&gt;javascript&lt;/code&gt;を用います。&lt;/p&gt;
+
+&lt;p&gt;サイトのソースコードは&lt;a href=&quot;https://github.com/SackMagiclight/minir&quot;&gt;こちら&lt;/a&gt;です。&lt;br /&gt;
+静的サイトなので、基本全公開です。&lt;/p&gt;
+
+&lt;p&gt;MinIRのデザインには&lt;a href=&quot;https://getmdl.io/&quot;&gt;Material Design Lite&lt;/a&gt;、テンプレートエンジンには&lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt;を利用しています。&lt;br /&gt;
+（詳細情報は各公式ページへ。）&lt;/p&gt;
+
+&lt;p&gt;というわけで、スコアビューワーもできました。
+&lt;img src=&quot;/postimg/bms/minir/2018-06-16/minir_score.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;まとめシステム全体像&quot;&gt;まとめ（システム全体像）&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/bms/minir/2018-06-16/minir_system.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;こんな感じになりました。&lt;br /&gt;
+基本的にはlambdaを経由して、データの流れを作ります。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;おわりに&quot;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;というわけで、このような流れがあってMinIRは作られました。&lt;br /&gt;
+無料でクラウドサービスを利用でき、サービス開発ができるなんていい時代だぁ…&lt;br /&gt;
+AWS便利だからみんな使おうね！&lt;br /&gt;
+IRを新しく作るのもいいぞ。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#はじめに&quot; id=&quot;markdown-toc-はじめに&quot;&gt;はじめに&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#やることはそんなに多くない&quot; id=&quot;markdown-toc-やることはそんなに多くない&quot;&gt;やることはそんなに多くない&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#必要なものを具体的に&quot; id=&quot;markdown-toc-必要なものを具体的に&quot;&gt;必要なものを具体的に&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#irのデータの受け口&quot; id=&quot;markdown-toc-irのデータの受け口&quot;&gt;IRのデータの受け口&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#irのデータを保存するための場所&quot; id=&quot;markdown-toc-irのデータを保存するための場所&quot;&gt;IRのデータを保存するための場所&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#irデータの送信機構&quot; id=&quot;markdown-toc-irデータの送信機構&quot;&gt;IRデータの送信機構&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#irデータの表示機構&quot; id=&quot;markdown-toc-irデータの表示機構&quot;&gt;IRデータの表示機構&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#サーバーレスという選択---amazon-web-service&quot; id=&quot;markdown-toc-サーバーレスという選択---amazon-web-service&quot;&gt;サーバーレスという選択 - Amazon Web Service&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#サーバーレスアーキテクチャ&quot; id=&quot;markdown-toc-サーバーレスアーキテクチャ&quot;&gt;サーバーレスアーキテクチャ&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#amazon-web-service-aws&quot; id=&quot;markdown-toc-amazon-web-service-aws&quot;&gt;Amazon Web Service (AWS)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#minirで利用するawsサービス&quot; id=&quot;markdown-toc-minirで利用するawsサービス&quot;&gt;MinIRで利用するAWSサービス&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#aws-lambda&quot; id=&quot;markdown-toc-aws-lambda&quot;&gt;AWS Lambda&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#amazon-dynamodb&quot; id=&quot;markdown-toc-amazon-dynamodb&quot;&gt;Amazon DynamoDB&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#amazon-cognito&quot; id=&quot;markdown-toc-amazon-cognito&quot;&gt;Amazon Cognito&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#サービスを組み合わせる&quot; id=&quot;markdown-toc-サービスを組み合わせる&quot;&gt;サービスを組み合わせる&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#webページも無料で作る--github-pages-&quot; id=&quot;markdown-toc-webページも無料で作る--github-pages-&quot;&gt;Webページも無料で作る -Github Pages-&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#まとめシステム全体像&quot; id=&quot;markdown-toc-まとめシステム全体像&quot;&gt;まとめ（システム全体像）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#おわりに&quot; id=&quot;markdown-toc-おわりに&quot;&gt;おわりに&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 16 Jun 2018 23:00:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2018/06/16/development_of_minir/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2018/06/16/development_of_minir/</guid>
+        
+        
+        <category>bms</category>
+        
+        <category>beatoraja</category>
+        
+        <category>MinIR</category>
+        
+      </item>
     
       <item>
         <title>【簡易レビュー】Ryzen 7 2700X はX370マザーボードでも性能を発揮できるのか</title>
@@ -1242,226 +1603,6 @@ HBM2を用いる分だけ、消費電力が増える形になります。&lt;/p&
         <category>NVIDIA</category>
         
         <category>GTX1070Ti</category>
-        
-      </item>
-    
-      <item>
-        <title>GTX 1070 Ti はいくらならば「買い」なのか？</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-10-20-gtx1070ti_reeked.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;スペックリーク&quot;&gt;スペックリーク&lt;/h3&gt;
-
-&lt;p&gt;GTX1070Tiが出るかも？という話は多数のリークサイトが取り上げていましたが、大手リークサイトである&lt;a href=&quot;https://videocardz.com/&quot;&gt;videocardz.com&lt;/a&gt;が3DMarkベンチマークのスコアを公開しています。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://videocardz.com/73395/nvidia-geforce-gtx-1070-ti-3dmark-performance&quot;&gt;NVIDIA GeForce GTX 1070 Ti 3DMark performance&lt;/a&gt;&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Graphics Card&lt;/th&gt;
-      &lt;th&gt;Fire Strike Extreme(対1070Ti比)&lt;/th&gt;
-      &lt;th&gt;Time Spy(対1070Ti比)&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;GeForce GTX 1080 MSI Gaming X+&lt;/td&gt;
-      &lt;td&gt;11241(118%)&lt;/td&gt;
-      &lt;td&gt;7817(115%)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Radeon RX Vega 64 @ Turbo&lt;/td&gt;
-      &lt;td&gt;10781(114%)&lt;/td&gt;
-      &lt;td&gt;7151(105%)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Radeon RX Vega 64 @ Balanced&lt;/td&gt;
-      &lt;td&gt;10517(110%)&lt;/td&gt;
-      &lt;td&gt;7046(104%)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Radeon RX Vega 56 @ Turbo&lt;/td&gt;
-      &lt;td&gt;9619  (101%)&lt;/td&gt;
-      &lt;td&gt;6423( 95%)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;font color=&quot;Red&quot;&gt;GeForce GTX 1070 Ti #1&lt;/font&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;9546&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;6816&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;font color=&quot;Red&quot;&gt;GeForce GTX 1070 Ti #2&lt;/font&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;9449&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;6777&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Radeon RX Vega 56 @ Balanced&lt;/td&gt;
-      &lt;td&gt;9340 ( 98%)&lt;/td&gt;
-      &lt;td&gt;6201( 91%)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;GeForce GTX 1070 Colorful iGame XTOP&lt;/td&gt;
-      &lt;td&gt;8938 ( 94%)&lt;/td&gt;
-      &lt;td&gt;6130( 90%)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;概ね、1080の&lt;strong&gt;-15%&lt;/strong&gt;、1070の&lt;strong&gt;+10%&lt;/strong&gt;で、よく言われる「RX Vega 56対抗として出す」は正しそうです。&lt;/p&gt;
-
-&lt;p&gt;既に判明しているスペック情報を見る限り、&lt;strong&gt;GTX1080のメモリをGDDR5に置き換えたもの&lt;/strong&gt;と認識するべきですね。&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;GTX 1080Ti&lt;/th&gt;
-      &lt;th&gt;GTX 1080&lt;/th&gt;
-      &lt;th&gt;&lt;font color=&quot;red&quot;&gt;GTX 1070Ti&lt;/font&gt;&lt;/th&gt;
-      &lt;th&gt;GTX 1070&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;CUDA Core(Unit)&lt;/td&gt;
-      &lt;td&gt;3584&lt;/td&gt;
-      &lt;td&gt;2560&lt;/td&gt;
-      &lt;td&gt;2432&lt;/td&gt;
-      &lt;td&gt;1920&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Base Clock(MHz)&lt;/td&gt;
-      &lt;td&gt;1480&lt;/td&gt;
-      &lt;td&gt;1607&lt;/td&gt;
-      &lt;td&gt;1607&lt;/td&gt;
-      &lt;td&gt;1506&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Boost Clock(MHz)&lt;/td&gt;
-      &lt;td&gt;1582&lt;/td&gt;
-      &lt;td&gt;1733&lt;/td&gt;
-      &lt;td&gt;1683&lt;/td&gt;
-      &lt;td&gt;1683&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;メモリ規格&lt;/td&gt;
-      &lt;td&gt;GDDR5X&lt;/td&gt;
-      &lt;td&gt;GDDR5X&lt;/td&gt;
-      &lt;td&gt;GDDR5&lt;/td&gt;
-      &lt;td&gt;GDDR5&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;メモリ容量(GB)&lt;/td&gt;
-      &lt;td&gt;11&lt;/td&gt;
-      &lt;td&gt;8&lt;/td&gt;
-      &lt;td&gt;8&lt;/td&gt;
-      &lt;td&gt;8&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;メモリ周波数(MHz)&lt;/td&gt;
-      &lt;td&gt;1375&lt;/td&gt;
-      &lt;td&gt;1375&lt;/td&gt;
-      &lt;td&gt;2000&lt;/td&gt;
-      &lt;td&gt;2000&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;メモリ帯域(MHz)&lt;/td&gt;
-      &lt;td&gt;11000&lt;/td&gt;
-      &lt;td&gt;11000&lt;/td&gt;
-      &lt;td&gt;8000&lt;/td&gt;
-      &lt;td&gt;8000&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;価格(円)&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;コストパフォーマンスは&quot;&gt;コストパフォーマンスは？&lt;/h3&gt;
-&lt;p&gt;さて、気になるのは発売日と価格ですが、発売日については&lt;strong&gt;10/26(日本だと10/27)&lt;/strong&gt;にローンチ、発売は&lt;strong&gt;11/02(日本は不明)&lt;/strong&gt;との見方が強いようです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://videocardz.com/73052/nvidia-geforce-gtx-1070-ti-to-launch-on-october-26th&quot;&gt;NVIDIA GeForce GTX 1070 Ti to launch on October 26th&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;もう1週間ありませんね。期待しましょう。&lt;/p&gt;
-
-&lt;p&gt;価格は&lt;strong&gt;$429&lt;/strong&gt;が有力視されています。日本だと特殊税込みで5.5万円といったところでしょうか。&lt;br /&gt;
-問題はこの価格が「買い」なのかどうかですが、まず以下のグラフを見てください。&lt;br /&gt;
-3DMark Fire Strike Extreme、Time Spyのスコアと価格のグラフです。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-10-20-gtx1070ti_value.png&quot; alt=&quot;性能価格グラフ&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※横軸は各GPUのリファレンスの価格です。日本ではこの値段に一定のプラスですね。なお、GTX1070Tiに関してはリファレンスがない可能性があります。&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt; &lt;/th&gt;
-      &lt;th&gt;価格（ドル）&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;GTX1080Ti&lt;/td&gt;
-      &lt;td&gt;699&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;RX Vega64&lt;/td&gt;
-      &lt;td&gt;599&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;GTX1080&lt;/td&gt;
-      &lt;td&gt;499&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;GTX1070Ti&lt;/td&gt;
-      &lt;td&gt;429(?)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;RX Vega56&lt;/td&gt;
-      &lt;td&gt;399&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;GTX1070&lt;/td&gt;
-      &lt;td&gt;379&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;
-これを見る限り、GTX1070Tiは安すぎず、高すぎずで絶妙な価格設定と言えるでしょう。&lt;/p&gt;
-
-&lt;p&gt;少なくとも、RX Vega64ほどのズレはなさそうです。&lt;br /&gt;
-丁度いい形で、GTX1070(RX Vega56)とGTX1080の間を埋める形に収まっており、RX Vega56対抗として成立しています。&lt;/p&gt;
-
-&lt;p&gt;このあたりのスペックを求めている人にとっては「買い」で良さそうです。&lt;br /&gt;
-ただし、GTX1070Ti発売に合わせて既存のカードの価格改定がなければ…の話ですが。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-以上、1070Tiについて、スペックリークと価格考察でした。&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#スペックリーク&quot; id=&quot;markdown-toc-スペックリーク&quot;&gt;スペックリーク&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#コストパフォーマンスは&quot; id=&quot;markdown-toc-コストパフォーマンスは&quot;&gt;コストパフォーマンスは？&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 20 Oct 2017 21:30:00 +0900</pubDate>
-        <link>https://www.gaftalk.com/2017/10/20/gtx1070ti_reeked/</link>
-        <guid isPermaLink="true">https://www.gaftalk.com/2017/10/20/gtx1070ti_reeked/</guid>
-        
-        
-        <category>GPU</category>
-        
-        <category>NVIDIA</category>
-        
-        <category>GTX1070Ti</category>
-        
-        <category>リーク</category>
         
       </item>
     
