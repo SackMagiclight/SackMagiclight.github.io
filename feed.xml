@@ -5,9 +5,245 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Jun 2018 03:19:46 +0900</pubDate>
-    <lastBuildDate>Sun, 17 Jun 2018 03:19:46 +0900</lastBuildDate>
+    <pubDate>Sat, 23 Jun 2018 01:21:56 +0900</pubDate>
+    <lastBuildDate>Sat, 23 Jun 2018 01:21:56 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>GPUベンチマーク「Basemark GPU」を試す</title>
+        <description>&lt;p&gt;フィンランドを拠点とする&lt;a href=&quot;https://www.basemark.com/&quot;&gt;Basemark社&lt;/a&gt;が新しいGPUベンチマークである&lt;a href=&quot;https://www.basemark.com/products/basemark-gpu/&quot;&gt;Basemark GPU&lt;/a&gt;を公開しました。
+Basemark社は主にAR/VR用エンジン&lt;a href=&quot;https://www.basemark.com/rocksolid/&quot;&gt;Rocksolid Engine&lt;/a&gt;の開発を行っています。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;概要&quot;&gt;概要&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/basemarkgpu/preview-4.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Basemark GPU Enables Objective Comparisons Between Vulkan, OpenGL and OpenGL ES Graphics Performance Across Multiple Operating Systems&lt;/p&gt;
+
+  &lt;p&gt;Basemark GPUにより、複数のオペレーティングシステム間でのVulkan、OpenGLおよびOpenGL ESグラフィックスのパフォーマンスの客観的な比較が可能。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Helsinki, Finland, June 19, 2018 – Basemark launched today Basemark GPU, a new graphics performance evaluation tool for systems with Vulkan 1.0, OpenGL 4.5 or OpenGL ES 3.1 graphics APIs. This tool enables the industry to objectively and reliably quantify and compare graphics performance of next generation mobile, automotive and desktop processors.&lt;/p&gt;
+
+  &lt;p&gt;ヘルシンキ、フィンランド、2018年6月19日 - Basemarkは本日、Vulkan 1.0、OpenGL 4.5またはOpenGL ES 3.1グラフィックスAPIを搭載したシステム用の新しいグラフィックス性能評価ツールBasemark GPUを発表しました。 このツールにより、業界では、次世代のモバイル、自動車、デスクトッププロセッサのグラフィックス性能を客観的かつ確実に数値化し、比較することができます。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(&lt;a href=&quot;https://www.basemark.com/blog/basemark-debuts-new-graphics-performance-evaluation-tool/&quot;&gt;プレスリリース&lt;/a&gt;より一部抜粋)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+対応OSは Android, Windows(7/8/10), Linux(Debian, Ubuntu)です。&lt;br /&gt;
+無料版と、有料（Corporate)版が存在し、無料版では3DMarkのように機能制限がかかっています。&lt;br /&gt;
+内容は下記のとおりです。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Free&lt;/th&gt;
+      &lt;th&gt;Corporate&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GPU Score (Native and Offscreen) : スコア表示&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Test Score Details : スコア詳細表示&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Select Test : テスト選択&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Forced result submit : (オンラインへの)結果の送信&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Internet Connection Required : 常時オンライン&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Custom Configurations : テスト詳細設定&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Test Automation :  オートテスト&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ability to render arbitrary screen(s) : 任意の画面レンダリング&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data Export : テスト結果のエクスポート&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+テストは&lt;strong&gt;High-Quality mode&lt;/strong&gt;と&lt;strong&gt;Medium Quality mode&lt;/strong&gt;の2種類があります。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Basemark®GPU - 高品質モードは、高解像度のテクスチャ、高度なエフェクト、オブジェクトの数の増加、および今日のAAA PCゲーム規格に基づく厳しいジオメトリを使用するデスクトップシステムを対象としています。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;オフスクリーン解像度&lt;/th&gt;
+      &lt;th&gt;Max Triangles Per Frame&lt;/th&gt;
+      &lt;th&gt;テクスチャ解像度&lt;/th&gt;
+      &lt;th&gt;最大要求メモリ&lt;/th&gt;
+      &lt;th&gt;DrawCall&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3840×2160&lt;/td&gt;
+      &lt;td&gt;~2 M&lt;/td&gt;
+      &lt;td&gt;4096×4096&lt;/td&gt;
+      &lt;td&gt;4 GB&lt;/td&gt;
+      &lt;td&gt;~10k&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Basemark®GPU - 中品質モードは、今日のAAA Mobileゲーム規格に基づいてモバイルシステムをターゲットにしています。 中品質モードは、減少したテクスチャ解像度、オブジェクトの数、幾何学的形状の量および限定された効果に関する高品質モードのサブセットです。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;オフスクリーン解像度&lt;/th&gt;
+      &lt;th&gt;Max Triangles Per Frame&lt;/th&gt;
+      &lt;th&gt;テクスチャ解像度&lt;/th&gt;
+      &lt;th&gt;最大要求メモリ&lt;/th&gt;
+      &lt;th&gt;DrawCall&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1920×1080&lt;/td&gt;
+      &lt;td&gt;~0.7 M&lt;/td&gt;
+      &lt;td&gt;2048×2048&lt;/td&gt;
+      &lt;td&gt;1 GB&lt;/td&gt;
+      &lt;td&gt;~2000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;ベンチマークを試す&quot;&gt;ベンチマークを試す&lt;/h3&gt;
+
+&lt;p&gt;今回はサクッと「Official Test」を試してみます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/basemarkgpu/BasemarkGPULauncher_2018-06-23_00-51-45.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;「Run Official Test」ボタンを押すだけです。&lt;/p&gt;
+
+&lt;p&gt;テスト中はこんな感じ。上の緑のバーは進捗バーです。右端に行ったら終了。&lt;br /&gt;
+テスト自体は1分ほどで意外とかかりません。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/basemarkgpu/BasemarkGPU_vk_2018-06-21_23-37-03.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;テスト結果&quot;&gt;テスト結果&lt;/h3&gt;
+
+&lt;p&gt;無料版ではテスト結果を送信できると、テスト結果が表示されます。&lt;br /&gt;
+テスト結果は &lt;a href=&quot;https://powerboard.basemark.com/&quot;&gt;Basemark Power Board&lt;/a&gt;に送信されます。&lt;br /&gt;
+&lt;strong&gt;送信できないと、テスト結果は表示されません。&lt;/strong&gt;&lt;br /&gt;
+回線不良、送信先サーバー落ちの場合、テストしても意味がありません…&lt;br /&gt;
+（実際、配信直後はサーバー落ちのため、テストをまわしても意味がありませんでした…）&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;gtx-1080-vulkan&quot;&gt;GTX 1080 (Vulkan)&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/basemarkgpu/BasemarkGPULauncher_2018-06-22_23-56-13.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;https://powerboard.basemark.com/hwsubmit/17011/result&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;gtx-1080-opengl&quot;&gt;GTX 1080 (OpenGL)&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/basemarkgpu/BasemarkGPULauncher_2018-06-23_00-08-59.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;https://powerboard.basemark.com/hwsubmit/17059/result&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;rx-vega-64-vulkan&quot;&gt;RX Vega 64 (Vulkan)&lt;/h4&gt;
+&lt;p&gt;ドライバ18.6.1でクラッシュ。 &lt;br /&gt;
+ドライバ18.5.11だと動くらしいが入れ直すのめんどくさかった…&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;rx-vega-64-opengl&quot;&gt;RX Vega 64 (OpenGL)&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/basemarkgpu/BasemarkGPULauncher_2018-06-23_00-35-20.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;https://powerboard.basemark.com/hwsubmit/17115/result&lt;/p&gt;
+
+&lt;p&gt;低すぎるような気がする…&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+因みに、GTX 1080Tiだと9000点ほど出るようです。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;感想&quot;&gt;感想&lt;/h3&gt;
+
+&lt;p&gt;現段階では&lt;strong&gt;未完成&lt;/strong&gt;と言わざるを得ません。&lt;br /&gt;
+AMDGPUは事実上計測できてませんし…&lt;br /&gt;
+特に無料版の制限「スコア送信できないと結果見せない」は致命的です。&lt;br /&gt;
+サーバー落ちが全く考慮されていないのはいかがなものかと…&lt;/p&gt;
+
+&lt;p&gt;テストツール本体のサイズ（展開前ファイル）は約3GBですが、3DMark(3.7GB)より少し少ない程度なのでこんなものでしょう。&lt;/p&gt;
+
+&lt;p&gt;良い点は、テスト自体は早い、ぐらいですかねぇ…&lt;/p&gt;
+
+&lt;p&gt;うーん、今後に期待、かな？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#概要&quot; id=&quot;markdown-toc-概要&quot;&gt;概要&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ベンチマークを試す&quot; id=&quot;markdown-toc-ベンチマークを試す&quot;&gt;ベンチマークを試す&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#テスト結果&quot; id=&quot;markdown-toc-テスト結果&quot;&gt;テスト結果&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#gtx-1080-vulkan&quot; id=&quot;markdown-toc-gtx-1080-vulkan&quot;&gt;GTX 1080 (Vulkan)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#gtx-1080-opengl&quot; id=&quot;markdown-toc-gtx-1080-opengl&quot;&gt;GTX 1080 (OpenGL)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#rx-vega-64-vulkan&quot; id=&quot;markdown-toc-rx-vega-64-vulkan&quot;&gt;RX Vega 64 (Vulkan)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#rx-vega-64-opengl&quot; id=&quot;markdown-toc-rx-vega-64-opengl&quot;&gt;RX Vega 64 (OpenGL)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#感想&quot; id=&quot;markdown-toc-感想&quot;&gt;感想&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 21 Jun 2018 21:30:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2018/06/21/basemarkgpu/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2018/06/21/basemarkgpu/</guid>
+        
+        
+        <category>Benchmark</category>
+        
+        <category>GPU</category>
+        
+      </item>
     
       <item>
         <title>MinIRはどのように作られたか</title>
@@ -1536,73 +1772,6 @@ HBM2を用いる分だけ、消費電力が増える形になります。&lt;/p&
         <category>java</category>
         
         <category>development</category>
-        
-      </item>
-    
-      <item>
-        <title>GTX 1070 Tiは税込59,940円から。2,000円追加で1080買え。</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-10-28-gtx1070ti_value_ref.png&quot; alt=&quot;リファレンス&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;約6万円&quot;&gt;約6万円&lt;/h3&gt;
-
-&lt;p&gt;正式発表された1070Tiですが、早くもドスパラWEB上で予約が開始されています。&lt;br /&gt;
-予約が開始されたモデルは&lt;strong&gt;Palit NE5107T015P2-1043D (GTX1070Ti 8GB DUAL)&lt;/strong&gt;で、価格は税込59,940円となっています。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-10-28-gtx1070ti_value.png&quot; alt=&quot;ドスパラ&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;国内最安値モデルとなります。
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;ドスパラ---palit-の組み合わせが最安値な理由&quot;&gt;ドスパラ - Palit の組み合わせが最安値な理由&lt;/h3&gt;
-&lt;p&gt;答えは単純で、いわゆる&lt;strong&gt;代理店税がほぼ0だからです&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;国内で販売されるPCパーツの多くは代理店を介して卸されるため、（特に発売初期は）海外価格と比べて大きなずれが生じています。&lt;br /&gt;
-（詳しくは &lt;a href=&quot;http://www.4gamer.net/games/999/G999902/20151114005/&quot;&gt;[4Gamer]「アスク税」とは何か ～ゲーマーのためのグラフィックスカード流通事情講座&lt;/a&gt;で。）&lt;/p&gt;
-
-&lt;p&gt;しかし、Palitに関しては、メーカーと一次販売店（ドスパラ）間に代理店が存在しません。&lt;br /&gt;
-ドスパラが代理店とも言えますが…。&lt;/p&gt;
-
-&lt;p&gt;そのため、価格コントロール諸々を自前で行えるので他の代理店を解するメーカーの製品よりも安く提供できる場合があります。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-10-28-gtx1070ti_value_ask.png&quot; alt=&quot;アスク税の有り無し&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※税金が乗っているものに対して安いだけで、税金が乗らない状況に対しては価格は殆ど変わりません。
-&lt;br /&gt;&lt;br /&gt;
-というわけで、（そもそものカードの値段が安い製品が出てこない限りですが）国内最安値モデルと言い切れます。&lt;br /&gt;
-&lt;a href=&quot;https://pc.watch.impress.co.jp/docs/news/1088341.html&quot;&gt;出ている情報を見る限り&lt;/a&gt;、ほぼ間違いないはずです。
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;1080との価格差は現時点で2000円&quot;&gt;1080との価格差は現時点で2,000円&lt;/h3&gt;
-
-&lt;p&gt;同じPalitの1080搭載モデルの値段は&lt;a href=&quot;http://www.dospara.co.jp/5shopping/detail_parts.php?bg=1&amp;amp;br=31&amp;amp;sbr=213&amp;amp;ic=443869&amp;amp;mkr=221&amp;amp;lf=0&quot;&gt;税込61,980円&lt;/a&gt;です。
-&lt;strong&gt;殆ど差がありません。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;これならば、2,000円追加で1080買いましょう。&lt;br /&gt;
-&lt;strong&gt;現時点での1070Tiの購入はおすすめしません&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;なお、1080の発売当初の値段は&lt;a href=&quot;http://kakaku.com/item/K0000943627/pricehistory/&quot;&gt;税込69,999円&lt;/a&gt;でした。&lt;br /&gt;
-大体12%ほどの値下がりです。&lt;/p&gt;
-
-&lt;p&gt;1070Tiも同じように時間が経てば10%ほど値下がりして税込54,000円ほどになりそうです。
-1070の値段は税込45,980円なので1070と1080の間にうまく収まる形でしょうか。&lt;/p&gt;
-
-&lt;p&gt;今後の値下がりに期待しましょう。&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#約6万円&quot; id=&quot;markdown-toc-約6万円&quot;&gt;約6万円&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#ドスパラ---palit-の組み合わせが最安値な理由&quot; id=&quot;markdown-toc-ドスパラ---palit-の組み合わせが最安値な理由&quot;&gt;ドスパラ - Palit の組み合わせが最安値な理由&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#1080との価格差は現時点で2000円&quot; id=&quot;markdown-toc-1080との価格差は現時点で2000円&quot;&gt;1080との価格差は現時点で2,000円&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 28 Oct 2017 20:00:00 +0900</pubDate>
-        <link>https://www.gaftalk.com/2017/10/28/gtx1070ti_value/</link>
-        <guid isPermaLink="true">https://www.gaftalk.com/2017/10/28/gtx1070ti_value/</guid>
-        
-        
-        <category>GPU</category>
-        
-        <category>NVIDIA</category>
-        
-        <category>GTX1070Ti</category>
         
       </item>
     
