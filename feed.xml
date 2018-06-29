@@ -5,9 +5,230 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 23 Jun 2018 01:21:56 +0900</pubDate>
-    <lastBuildDate>Sat, 23 Jun 2018 01:21:56 +0900</lastBuildDate>
+    <pubDate>Sat, 30 Jun 2018 01:34:11 +0900</pubDate>
+    <lastBuildDate>Sat, 30 Jun 2018 01:34:11 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>【簡易レビュー】「シンプル・イズ・ベスト」なゲーミングマウス「PAWN」</title>
+        <description>&lt;p&gt;「日本発のゲーマー向け製品ブランド」を掲げる「&lt;a href=&quot;https://raygaming.jp/&quot;&gt;Ray&lt;/a&gt;」から第1弾となるワイヤードマウス「&lt;a href=&quot;https://raygaming.jp/mouse/&quot;&gt;PAWN&lt;/a&gt;」（ポーン）が発売されました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/DSC_0044.JPG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;今回はこちらのレビューを実施したいと思います。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;製品仕様&quot;&gt;製品仕様&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;搭載センサー&lt;/td&gt;
+      &lt;td&gt;PixArt Imaging PMW3360&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ボタン構成&lt;/td&gt;
+      &lt;td&gt;・左右メイン&lt;br /&gt;・センタークリック付きスクロールホイール&lt;br /&gt;・左サイド×2&lt;br /&gt;・DPI 変更×2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;トラッキング解像度&lt;/td&gt;
+      &lt;td&gt;400/800/1600/2400/3200/12000 DPI&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ポーリングレート（USBレポートレート）&lt;/td&gt;
+      &lt;td&gt;125/500/1000 Hz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;LEDイルミネーション&lt;/td&gt;
+      &lt;td&gt;6色（※常時周期点滅）&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;本体重量&lt;/td&gt;
+      &lt;td&gt;106g（※ケーブル含む）&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ケーブル長&lt;/td&gt;
+      &lt;td&gt;1.8m&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;保証期間&lt;/td&gt;
+      &lt;td&gt;1年間&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;価格&lt;/td&gt;
+      &lt;td&gt;￥4,980（税込）&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+上記画像からも見てわかるように、Xtrfyの「&lt;a href=&quot;http://xtrfy.com/mice/m2&quot;&gt;M2&lt;/a&gt;」と同じODM元の製品となります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/x2.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ただし、センサーは「M2」とは違いPMW3360を利用しています。&lt;br /&gt;
+PMW3360は5,000円以上のゲーミングマウスに搭載されることが多い高性能センサーです。&lt;br /&gt;
+そのセンサーが載った製品を4,000円台の製品として出せてしまうのは素直に驚きです。&lt;br /&gt;
+（まあ「&lt;a href=&quot;http://www.4gamer.net/games/999/G999902/20151114005/&quot;&gt;税☆金&lt;/a&gt;」が載らない分ね…）
+&lt;br /&gt;&lt;br /&gt;
+ボタン構成もシンプルにメイン2つ、ホイールとサイド2つです。&lt;br /&gt;
+また、DPI変更のボタンがマウスホイール下にあります。&lt;br /&gt;
+「無駄なボタンはつけない」という意思が感じられる構成です。
+&lt;br /&gt;&lt;br /&gt;
+ポーリングレートの切り替えスイッチは裏面にあるようです。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;外観中身&quot;&gt;外観・中身&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/DSC_0016.JPG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;外箱です。灰色+白文字のシンプルな構成で、ここでもコストカットを明確にしています。
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/DSC_0017.JPG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;外箱裏面。公式ページにかかれている文言がそのまま載っています。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/DSC_0026.JPG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;表面は開きます。表面裏に書いてある文字も、公式ページそのままの文言です。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/DSC_0029.JPG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;内容物は以下です。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;マウス本体&lt;/li&gt;
+  &lt;li&gt;交換用マウスソール&lt;/li&gt;
+  &lt;li&gt;保証書 兼 説明書&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ドライバレスなマウスなので、最小限です。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/DSC_0031.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/ray_pawn/DSC_0042.JPG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;表面に控えめな主張の「Ray」ロゴ。&lt;br /&gt;
+裏面には製品名・型番・ロゴ及びポーリングレート切り替えスイッチがあります。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/DSC_0045.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/ray_pawn/pawn_led.gif&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;LEDの光り方はこんな感じです。&lt;/p&gt;
+
+&lt;p&gt;LEDの色がDPIの設定値と連動しています。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;赤：400 DPI&lt;/li&gt;
+  &lt;li&gt;青：800 DPI&lt;/li&gt;
+  &lt;li&gt;黄：1600 DPI&lt;/li&gt;
+  &lt;li&gt;橙：2400 DPI&lt;/li&gt;
+  &lt;li&gt;緑：3200 DPI&lt;/li&gt;
+  &lt;li&gt;紫：12000 DPI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;となります。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;実際、持った感想としては、サイドの溝がなかなかいい具合に滑り止めの役割を果たしています。
+自分は手汗が結構出るので、このようにグリップ力が高い製品が良いですね。&lt;/p&gt;
+
+&lt;p&gt;左サイドのボタンは割と「カチッ」と音がなり、人によっては気になるかもしれません。&lt;br /&gt;
+メインボタンに関してはオムロン製スイッチなので、まあ安定です。&lt;/p&gt;
+
+&lt;p&gt;重さも気になるところですが、ワイヤードマウスなので非常に軽いです。&lt;br /&gt;
+（本体だけだと80g台でしょうか）&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;錘については付いていました。&lt;br /&gt;
+ですが不要と判断しましたのでPAWNについては非搭載となっております。&lt;br /&gt;
+https://twitter.com/Raygamingjp/status/1010025614235930624&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;錘の不要化判断は間違っていなかったと思います。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;センサー性能検証&quot;&gt;センサー性能検証&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.overclock.net/t/1201593/mouse-testing-software/10#post_21340703&quot;&gt;MouseTester&lt;/a&gt;
+を用いて、センサー性能を検証してみます。&lt;/p&gt;
+
+&lt;p&gt;＜使い方＞&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/MouseTester.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;cpi値に現在設定しているDPI値を入れます。&lt;/li&gt;
+  &lt;li&gt;[MouseData]-[Collect]ボタンを押します。&lt;/li&gt;
+  &lt;li&gt;マウス左ボタンをクリック＆ホールドしたまま円をすばやく描きます。&lt;/li&gt;
+  &lt;li&gt;マウス左ボタンを放します（ホールドを解除します）&lt;/li&gt;
+  &lt;li&gt;[MouseData]-[Plot]ボタンを押すと、グラフが描画されます。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/400.png&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/ray_pawn/800.png&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/ray_pawn/1600.png&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/ray_pawn/2400.png&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/ray_pawn/3200.png&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/ray_pawn/12000.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;非常に安定した挙動&lt;/strong&gt;と言えるでしょう。
+センサーが良くてもセンサーの調整次第では良くも悪くもなりますが、PAWNは「良い調整」で間違いないです。&lt;/p&gt;
+
+&lt;p&gt;因みに、いくつか点が飛んでいるように見えますが、拡大率のせいなので、下図のように部分拡大してみれば正確なのがよくわかります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/ray_pawn/2400-1000-2.png&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/ray_pawn/2400-1000-3.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;総評&quot;&gt;総評&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;ゲーミングマウス入門機としては文句なし&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;コスパお化け&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;はい、文句なしです。&lt;br /&gt;
+5,000円クラスのゲーミングマウス鉄板機で間違いないでしょう。&lt;/p&gt;
+
+&lt;p&gt;「既存のガワ」と「良いセンサー」を組み合わせただけかもしれませんが、それをうまく製品化し、かつコストパフォーマンスに優れたものになっています。&lt;/p&gt;
+
+&lt;p&gt;ゲーミングマウス入門機として、最初の1台として、申し分ない製品です。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+あ、でも欲を言えば 1200 DPI 設定が欲しかったかなー…&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#製品仕様&quot; id=&quot;markdown-toc-製品仕様&quot;&gt;製品仕様&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#外観中身&quot; id=&quot;markdown-toc-外観中身&quot;&gt;外観・中身&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#センサー性能検証&quot; id=&quot;markdown-toc-センサー性能検証&quot;&gt;センサー性能検証&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#総評&quot; id=&quot;markdown-toc-総評&quot;&gt;総評&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 30 Jun 2018 00:00:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2018/06/30/review_ray_pawn/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2018/06/30/review_ray_pawn/</guid>
+        
+        
+        <category>Ray</category>
+        
+        <category>PAWN</category>
+        
+        <category>レビュー</category>
+        
+      </item>
     
       <item>
         <title>GPUベンチマーク「Basemark GPU」を試す</title>
@@ -1659,119 +1880,6 @@ HBM2を用いる分だけ、消費電力が増える形になります。&lt;/p&
         <category>AMD</category>
         
         <category>Intel</category>
-        
-      </item>
-    
-      <item>
-        <title>beatoraja ビルド＆デバッグ方法</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_b.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;わかってる人向け&quot;&gt;わかってる人向け&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Antビルドしてbat実行。デバッグはIDEから普通に。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Antビルドしてデバッグ構成定義して実行でOK。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;開発環境構築&quot;&gt;開発環境構築&lt;/h3&gt;
-
-&lt;p&gt;いろいろなIDE（統合開発環境）がありますが、一番楽そうなeclipseで進めます。&lt;/p&gt;
-
-&lt;p&gt;※Windows環境での実践です。Mac、Linux環境では適当に読み替えてください。
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;eclipseのダウンロード&quot;&gt;eclipseのダウンロード&lt;/h4&gt;
-
-&lt;p&gt;日本語化等ある程度整備された環境である&lt;strong&gt;&lt;a href=&quot;http://mergedoc.osdn.jp/index.html#/pleiades_distros4.7.html&quot;&gt;Pleiades All in One Eclipse&lt;/a&gt;&lt;/strong&gt;をダウンロードします。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;beatorajaはJavaアプリケーションなので、JavaのFull Editionを選んでください。
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;git-clone&quot;&gt;git clone&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/exch-bms2/beatoraja&quot;&gt;beatorajaのgithub&lt;/a&gt;から最新のコードをcloneします。
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;eclipseへインポート&quot;&gt;eclipseへインポート&lt;/h4&gt;
-
-&lt;p&gt;ワークスペースを適当に作成(デフォルトは “../workspace”)して、eclipseを起動します。&lt;/p&gt;
-
-&lt;p&gt;[ファイル]-[インポート]を選択し、「フォルダまたはアーカイブからプロジェクト」を選択します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_2.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;インポート・ソースにcloneしたbeatorajaのフォルダを選択し、完了します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_3.png&quot; alt=&quot;キャプション&quot; /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;buildの実行&quot;&gt;buildの実行&lt;/h4&gt;
-
-&lt;p&gt;build.xmlを右クリックして、[実行]-[Ant ビルド]を選択します。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_4.png&quot; alt=&quot;キャプション&quot; /&gt;
-&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;実際の起動&quot;&gt;実際の起動&lt;/h4&gt;
-
-&lt;p&gt;cloneしたbeatorajaプロジェクトフォルダの中にある&lt;strong&gt;beatoraja-config.bat&lt;/strong&gt;ファイルを起動してください。
-&lt;br /&gt;
-もしくは下記デバッグ構成から起動できます。&lt;/p&gt;
-
-&lt;h4 id=&quot;デバッグ&quot;&gt;デバッグ&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;eclipseで、beatorajaフォルダを右クリック-[デバッグ]-[デバッグの構成] を選択します。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_7.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;javaアプリケーションを選択し新規ボタンを押します。&lt;/li&gt;
-  &lt;li&gt;下記画像のように設定します。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_5.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-04-beatoraja_build_eclipse_6.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;デバッグ ボタンを押してデバッグを開始します。&lt;/li&gt;
-  &lt;li&gt;beatorajaのコンフィグ画面が起動されるはずです。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;意外とbeatorajaの使い方は書かれてるけど、デバッグとかそこら辺の情報がないので書きました。&lt;/p&gt;
-
-&lt;p&gt;オープンソースで、割りとわかりやすい作りしてるのでGit周りの練習に最適ですね。&lt;/p&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#わかってる人向け&quot; id=&quot;markdown-toc-わかってる人向け&quot;&gt;わかってる人向け&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#開発環境構築&quot; id=&quot;markdown-toc-開発環境構築&quot;&gt;開発環境構築&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#eclipseのダウンロード&quot; id=&quot;markdown-toc-eclipseのダウンロード&quot;&gt;eclipseのダウンロード&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#git-clone&quot; id=&quot;markdown-toc-git-clone&quot;&gt;git clone&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#eclipseへインポート&quot; id=&quot;markdown-toc-eclipseへインポート&quot;&gt;eclipseへインポート&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#buildの実行&quot; id=&quot;markdown-toc-buildの実行&quot;&gt;buildの実行&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#実際の起動&quot; id=&quot;markdown-toc-実際の起動&quot;&gt;実際の起動&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#デバッグ&quot; id=&quot;markdown-toc-デバッグ&quot;&gt;デバッグ&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 04 Nov 2017 22:30:00 +0900</pubDate>
-        <link>https://www.gaftalk.com/2017/11/04/beatoraja_build/</link>
-        <guid isPermaLink="true">https://www.gaftalk.com/2017/11/04/beatoraja_build/</guid>
-        
-        
-        <category>bms</category>
-        
-        <category>java</category>
-        
-        <category>development</category>
         
       </item>
     
