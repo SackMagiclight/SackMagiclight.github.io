@@ -5,9 +5,352 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Jun 2018 01:34:11 +0900</pubDate>
-    <lastBuildDate>Sat, 30 Jun 2018 01:34:11 +0900</lastBuildDate>
+    <pubDate>Sat, 25 Aug 2018 22:46:37 +0900</pubDate>
+    <lastBuildDate>Sat, 25 Aug 2018 22:46:37 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>「RTX」となった Geforce RTX 2080Ti 2080 2070 のおさらい</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/rtx2080/2018-08-25-rtx2080.jpg&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;NVIDIA の GeForceグラフィックカード 最新シリーズである “GeForce RTX 2080Ti” 及び “GeForce RTX 2080”、”GeForce RTX 2070”が発表されました。 &lt;br /&gt;
+自分の復習も兼ねて詳細な解説をしていきたいと思います。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;スペック&quot;&gt;スペック&lt;/h3&gt;
+&lt;p&gt;まずはスペックを見てきましょう。&lt;br /&gt;
+主なスペックは下記の表の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;RTX 2080 Ti&lt;/th&gt;
+      &lt;th&gt;(GTX 1080Ti)&lt;/th&gt;
+      &lt;th&gt;RTX 2080&lt;/th&gt;
+      &lt;th&gt;(GTX 1080)&lt;/th&gt;
+      &lt;th&gt;RTX 2070&lt;/th&gt;
+      &lt;th&gt;(GTX 1070)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CUDA core&lt;/td&gt;
+      &lt;td&gt;4352(+21%)&lt;/td&gt;
+      &lt;td&gt;3584&lt;/td&gt;
+      &lt;td&gt;2944(+15%)&lt;/td&gt;
+      &lt;td&gt;2560&lt;/td&gt;
+      &lt;td&gt;2304(+20%)&lt;/td&gt;
+      &lt;td&gt;1920&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FP32[TFLOPS]&lt;/td&gt;
+      &lt;td&gt;13.45(+19%)&lt;/td&gt;
+      &lt;td&gt;11.34&lt;/td&gt;
+      &lt;td&gt;10.07(+14%)&lt;/td&gt;
+      &lt;td&gt;8.87&lt;/td&gt;
+      &lt;td&gt;7.47(+16%)&lt;/td&gt;
+      &lt;td&gt;6.46&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Base Clock[MHz]&lt;/td&gt;
+      &lt;td&gt;1350(-9%)&lt;/td&gt;
+      &lt;td&gt;1481&lt;/td&gt;
+      &lt;td&gt;1515(-6%)&lt;/td&gt;
+      &lt;td&gt;1607&lt;/td&gt;
+      &lt;td&gt;1410(-6%)&lt;/td&gt;
+      &lt;td&gt;1506&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Boost Clock[MHz]&lt;/td&gt;
+      &lt;td&gt;1545(-2%)&lt;/td&gt;
+      &lt;td&gt;1582&lt;/td&gt;
+      &lt;td&gt;1710(-1%)&lt;/td&gt;
+      &lt;td&gt;1733&lt;/td&gt;
+      &lt;td&gt;1620(-4%)&lt;/td&gt;
+      &lt;td&gt;1683&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Memory&lt;/td&gt;
+      &lt;td&gt;GDDR6 11GB&lt;/td&gt;
+      &lt;td&gt;GDDR5X 11GB&lt;/td&gt;
+      &lt;td&gt;GDDR6 8GB&lt;/td&gt;
+      &lt;td&gt;GDDR5X 8GB&lt;/td&gt;
+      &lt;td&gt;GDDR6 8GB&lt;/td&gt;
+      &lt;td&gt;GDDR5 8GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Memory Bus[GB/s]&lt;/td&gt;
+      &lt;td&gt;616(+27%)&lt;/td&gt;
+      &lt;td&gt;484&lt;/td&gt;
+      &lt;td&gt;448(+40%)&lt;/td&gt;
+      &lt;td&gt;320&lt;/td&gt;
+      &lt;td&gt;448(+75%)&lt;/td&gt;
+      &lt;td&gt;256&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;TDP[W]&lt;/td&gt;
+      &lt;td&gt;250&lt;/td&gt;
+      &lt;td&gt;250&lt;/td&gt;
+      &lt;td&gt;215(+20%)&lt;/td&gt;
+      &lt;td&gt;180&lt;/td&gt;
+      &lt;td&gt;175(+17%)&lt;/td&gt;
+      &lt;td&gt;150&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;GTX シリーズと比べるとCUDAコア数は微増となっています。&lt;br /&gt;
+CUDAコア数基準で考えると単純計算で15%から20%の性能向上と言えるでしょう。&lt;/p&gt;
+
+&lt;p&gt;グラフィックスメモリの仕様が&lt;code class=&quot;highlighter-rouge&quot;&gt;GDDR6&lt;/code&gt;となっています。&lt;code class=&quot;highlighter-rouge&quot;&gt;HBM2&lt;/code&gt;ではありません。&lt;br /&gt;
+注目すべきなのはRTX 2070がGTX 1070に対してメモリバスが&lt;strong&gt;175％&lt;/strong&gt;となっています。&lt;br /&gt;
+その他を見ても、RTX 2080Tiのメモリバスが&lt;strong&gt;600GB/sを突破&lt;/strong&gt;するなど、完全に4K及び高解像度をターゲットにしている構成です。&lt;/p&gt;
+
+&lt;p&gt;これだけを見ると今回のRTXシリーズはメモリバスが増加し、高解像度環境以外の性能が伸びていないような気がするのですが、単純に比較できるようなものではないということが判明しています。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;アーキテクチャの刷新&quot;&gt;アーキテクチャの刷新&lt;/h3&gt;
+&lt;p&gt;現在発売されている GTX 1080 などに利用されているアーキテクチャは &lt;code class=&quot;highlighter-rouge&quot;&gt;Pascal(パスカル)&lt;/code&gt; アーキテクチャですが今回の RTX 2080 などに利用されるアーキテクチャは &lt;code class=&quot;highlighter-rouge&quot;&gt;Turing(チューリング)&lt;/code&gt; となります。&lt;/p&gt;
+
+&lt;p&gt;TuringアーキテクチャにはCUDAコア以外にも2つのコアが搭載されます。&lt;br /&gt;
+その1つが”RTコア”です。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;rtコア&quot;&gt;RTコア&lt;/h4&gt;
+&lt;p&gt;RTコアを説明する前にグラフィックスのレンダリングについて知っておく必要があります。&lt;br /&gt;
+現在のゲームなどのリアルタイムグラフィックスは&lt;strong&gt;ラスタライズ&lt;/strong&gt;というレンダリング手法を用いています。&lt;/p&gt;
+
+&lt;p&gt;単純に言うと平面にポリゴンを投げて、場合によってはレンダリング対象から除外し高速に描画するという手法です。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/rtx2080/ras.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;※&lt;a href=&quot;https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/&quot;&gt;マイクロソフトのレイトレーシング解説記事&lt;/a&gt;より、説明を独自に追加したもの&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;この手法に対しもうひとつのレンダリング手法として&lt;strong&gt;レイトレーシング&lt;/strong&gt;というものが存在します。&lt;/p&gt;
+
+&lt;p&gt;こちらも単純に言うと、視点から描画対象に対してレイ(Ray:光線)を飛ばし描画対象に当たった時点でさらに光源にレイを飛ばし、情報を描画するという手法です。&lt;br /&gt;
+我々が実際に目で見ている情報は、光源から届く光の反射情報を認識しているわけですが、その逆を行っているイメージです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/rtx2080/ray.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;br /&gt;
+※NVIDIAスライドより一部抜粋&lt;/p&gt;
+
+&lt;p&gt;より詳細な解説は、NVIDIAのブログが詳しいので、そちらを参考にしてください。
+https://blogs.nvidia.co.jp/2018/03/26/whats-difference-between-ray-tracing-rasterization/
+https://blogs.nvidia.co.jp/2018/08/14/ray-tracing-global-illumination-turner-whitted/&lt;/p&gt;
+
+&lt;p&gt;RTコアはレイトレーシングにおけるレイの投射専門の演算コアになります。&lt;br /&gt;
+なぜ別コアが搭載されたと言うと単純に今までのCUDAコアによる汎用演算ではリアルタイムのレイトレーシングを行うことが困難だからです。&lt;/p&gt;
+
+&lt;p&gt;従来(GTX 1080Ti)と今回のRTコアにおけるレイの投射本数をまとめたものが下記図です。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Rays per sec&lt;/th&gt;
+      &lt;th&gt;Rays per Pixel (Full HD)&lt;/th&gt;
+      &lt;th&gt;Rays per Pixel Frame (FullHD &amp;amp; 60FPS)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RTX 2080Ti&lt;/td&gt;
+      &lt;td&gt;10Giga&lt;/td&gt;
+      &lt;td&gt;4831&lt;/td&gt;
+      &lt;td&gt;80&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RTX 2080&lt;/td&gt;
+      &lt;td&gt;8Giga&lt;/td&gt;
+      &lt;td&gt;3865&lt;/td&gt;
+      &lt;td&gt;64&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RTX 2070&lt;/td&gt;
+      &lt;td&gt;6Giga&lt;/td&gt;
+      &lt;td&gt;2899&lt;/td&gt;
+      &lt;td&gt;48&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(GTX 1080Ti)&lt;/td&gt;
+      &lt;td&gt;1Giga&lt;/td&gt;
+      &lt;td&gt;483&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rays per sec : レイ投射性能(毎秒)&lt;/li&gt;
+  &lt;li&gt;Rays per Pixel : Full HDの場合に1画素に割り当てることのできるレイの毎秒投射本数&lt;/li&gt;
+  &lt;li&gt;Rays per Pixel Frame : Full HD・1画素における60FPS時の1フレームごとのレイ投射本数&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;従来では不可能だったが専用コアを用いることでなんとか使える程度に持ってきた&lt;/strong&gt;というのが正直な感想です。&lt;br /&gt;
+フルHD画質ならフレームあたり80本のレイの投射が可能になっています。&lt;/p&gt;
+
+&lt;p&gt;リアルタイムグラフィックでレイトレーシングが採用されることでゲームプレイの変化は明らかです。&lt;br /&gt;
+例えばFPSとかであれば&lt;strong&gt;水たまり・車に映った敵兵&lt;/strong&gt;、&lt;strong&gt;ラスタライズでは映らなかった影から敵兵を察知&lt;/strong&gt;し 対応を考えるという新しいプレイングが考えられます。&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Battlefield V&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;PUBG&lt;/code&gt;などではリアルタイムレイトレーシングに対応するとのことなので、もしかしたら&lt;strong&gt;ハードウェアの差で有利不利が決まってしまうかもしれません。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/rtx2080/rtx_game.jpg&quot; alt=&quot;キャプション&quot; /&gt;
+※暫定対応タイトル一覧&lt;/p&gt;
+
+&lt;p&gt;※因みに、実際のゲームプレイでは、ラスタライズとレイトレーシングのハイブリッドで描画されるそうです。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;tensorコア&quot;&gt;Tensorコア&lt;/h4&gt;
+&lt;p&gt;2つ目の別コアは”Tensorコア”です。&lt;/p&gt;
+
+&lt;p&gt;もとは”Titan V”から搭載されたコアで主に機械学習用途に用いられるコアでした。&lt;br /&gt;
+リアルタイムグラフィックスの描画におけるTensorコアの主な役割は、ディープラーニングを用いてグラフィックスからノイズを高速に取り除く（アンチエイリアシングをかけること）です。&lt;/p&gt;
+
+&lt;p&gt;NVIDIA 曰く、Tensorコアを効率的に利用することによって4K高画質でも十分なフレームレートが確保されるとのことです。&lt;br /&gt;
+公式スライドを見ていきましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/rtx2080/2080vs1080.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;（※GTX1080のFPS数値は独自調査したものをスライド内に追記しています。RTX2080の数値はグラフからの予測値です。空欄2つは現時点で未発売。）&lt;/p&gt;
+
+&lt;p&gt;最初は4K解像度でRTX 2080はGTX 1080比2倍の性能を発揮できるという趣旨のスライドです。&lt;br /&gt;
+深緑のバーがDLSSを利用しない場合、黄緑のバーがTensorコアでDLSSを利用した場合の上昇分です。&lt;/p&gt;
+
+&lt;p&gt;TiがつかないRTX 2080でもなんとか4Kが楽しめるということを主張したいのだと思います。&lt;/p&gt;
+
+&lt;p&gt;…全体的に盛っている気がしますが、これが真実だとすればCUDAコア数同士だけの性能比較はあまり意味をなさないであろうというのが結論です。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;RTX 2080：10.07 TFLOPS (+14%)&lt;/li&gt;
+  &lt;li&gt;GTX 1080：8.87 TFLOPS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/rtx2080/rtx_4k.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;このスライドは、4K＆HDR/60fps Overでプレイできるタイトルをアピールするためのものです。&lt;/p&gt;
+
+&lt;p&gt;前述のスライドの通り、従来の “GTX 1080” では”FINAL FANTASY XV”の&lt;code class=&quot;highlighter-rouge&quot;&gt;4K HDR&lt;/code&gt;での平均FPSは約&lt;strong&gt;30FPS&lt;/strong&gt;でしたが、Tensorコアを利用したアンチエイリアシングによってRTX 2080環境下では平均FPSが約&lt;strong&gt;60FPS&lt;/strong&gt;となり”GTX 1080”と比較して快適にゲームができるということを示しています。(微妙に前のスライドが&lt;strong&gt;盛ってる…？&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;p&gt;…とまあこのようにNVIDIAは純粋に微細化でCUDAコアを増やしていく方向から、演算内容別の専用コアを乗っける方向に舵を切りました。&lt;br /&gt;
+実ゲームでの性能はやっぱり動かしてみないとわからなさそうです。&lt;/p&gt;
+
+&lt;p&gt;あと個人的に気になるのは、RTコアとTensorコアがCGレンダラやCUDA上で操作できるかどうかですね。&lt;br /&gt;
+CUDA10ではTuringアーキテクチャに対応するようですが、Geforce RTXでは無効化されているかもしれません。&lt;br /&gt;
+（ゲーム性能よりも、こうした専用コアの説明が多かったので、おそらく利用できるとは思いますが…）&lt;br /&gt;
+https://developer.nvidia.com/announcing-cuda-toolkit-10&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;価格&quot;&gt;価格&lt;/h3&gt;
+
+&lt;p&gt;高いです。間違いなく高い。&lt;br /&gt;
+日本円予測値とともに下表に示します。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;MSRP&lt;/th&gt;
+      &lt;th&gt;日本円予想値／(日本販売当初価格)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RTX 2080Ti&lt;/td&gt;
+      &lt;td&gt;$999&lt;/td&gt;
+      &lt;td&gt;￥159,800&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(GTX 1080Ti)&lt;/td&gt;
+      &lt;td&gt;$699&lt;/td&gt;
+      &lt;td&gt;(￥108,199)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RTX 2080&lt;/td&gt;
+      &lt;td&gt;$699&lt;/td&gt;
+      &lt;td&gt;￥109,800&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(GTX 1080)&lt;/td&gt;
+      &lt;td&gt;$699&lt;/td&gt;
+      &lt;td&gt;(￥108,122)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RTX 2070&lt;/td&gt;
+      &lt;td&gt;$499&lt;/td&gt;
+      &lt;td&gt;￥77,980&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(GTX 1070)&lt;/td&gt;
+      &lt;td&gt;$399&lt;/td&gt;
+      &lt;td&gt;(￥65,907)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;2080Tiに至っては大台の&lt;strong&gt;15万円を超えてきそう&lt;/strong&gt;です。&lt;br /&gt;
+2080も米国MSRPが$699のため、&lt;strong&gt;過去事例より10万円を超えることが確実&lt;/strong&gt;です。&lt;br /&gt;
+&lt;del&gt;10万円超えなかったら木の下に埋めてもらっても構わないよ！&lt;/del&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;フルHDでレイトレは別にいいかな&lt;/li&gt;
+  &lt;li&gt;機械学習とかやんない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;な人は現行のGTX&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;4K・高解像度でFPSもそれなりに出てほしい&lt;/li&gt;
+  &lt;li&gt;機械学習する&lt;/li&gt;
+  &lt;li&gt;3DCGレンダリングする&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;な人はRTX&lt;/p&gt;
+
+&lt;p&gt;のように住み分けされそうです&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;総評&quot;&gt;総評&lt;/h3&gt;
+&lt;p&gt;正直わからんから買って試します。&lt;br /&gt;
+（2080 or 2080Ti）&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#スペック&quot; id=&quot;markdown-toc-スペック&quot;&gt;スペック&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#アーキテクチャの刷新&quot; id=&quot;markdown-toc-アーキテクチャの刷新&quot;&gt;アーキテクチャの刷新&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#rtコア&quot; id=&quot;markdown-toc-rtコア&quot;&gt;RTコア&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#tensorコア&quot; id=&quot;markdown-toc-tensorコア&quot;&gt;Tensorコア&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#価格&quot; id=&quot;markdown-toc-価格&quot;&gt;価格&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#総評&quot; id=&quot;markdown-toc-総評&quot;&gt;総評&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 25 Aug 2018 22:30:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2018/08/25/rtx2080_expectation/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2018/08/25/rtx2080_expectation/</guid>
+        
+        
+        <category>GPU</category>
+        
+        <category>NVIDIA</category>
+        
+        <category>RTX2080Ti</category>
+        
+        <category>RTX2080</category>
+        
+        <category>RTX2070</category>
+        
+        <category>CUDA</category>
+        
+      </item>
     
       <item>
         <title>【簡易レビュー】「シンプル・イズ・ベスト」なゲーミングマウス「PAWN」</title>
@@ -1839,47 +2182,6 @@ LR2と同じくSQL形式です。&lt;/p&gt;
         
         
         <category>bms</category>
-        
-      </item>
-    
-      <item>
-        <title>Intel、Coreプロセッサ + Radeon GPU の開発を発表</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/2017-11-06-core_vega.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;※画像はプレスリリースより。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;今までさんざんリーク・噂されていた、Core+Radeon のグラフィック統合型CPUですが、どうやら本当に出るようです。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;New Intel Core Processor Combines High-Performance CPU with Custom Discrete Graphics from AMD to Enable Sleeker, Thinner Devices&lt;br /&gt;
- (高性能CPUとAMDのカスタムGPUを組み合わせた新しいIntel Coreプロセッサにより、より洗練された薄型デバイスを実現)&lt;br /&gt;&lt;br /&gt;
-&lt;a href=&quot;https://newsroom.intel.com/editorials/new-intel-core-processor-combine-high-performance-cpu-discrete-graphics-sleek-thin-devices/&quot;&gt;プレスリリース全文はこちら&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;プレスリリースを見る限り、薄型化&amp;amp;省電力にするためにAMDと手を組んだ感じですね。&lt;br /&gt;
-とは言え、イメージCGを見る限り、薄いけど大型？な感じですね。&lt;/p&gt;
-
-&lt;p&gt;Ryzen Mobileとの違いは&lt;strong&gt;HBM2を組み込み搭載&lt;/strong&gt;することです。&lt;br /&gt;
-HBM2を用いる分だけ、消費電力が増える形になります。&lt;/p&gt;
-
-&lt;p&gt;おそらく、ハイエンドノートはこちら（Core+Radeon）で、ミドルスペック以下はRyzen Mobileということなのでしょう。&lt;br /&gt;
-&lt;strong&gt;搭載PCの発売日は2018年1-3月&lt;/strong&gt;らしいので、年末にはリークがありそうです。楽しみに待ちましょう。&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 06 Nov 2017 23:30:00 +0900</pubDate>
-        <link>https://www.gaftalk.com/2017/11/06/core_vega/</link>
-        <guid isPermaLink="true">https://www.gaftalk.com/2017/11/06/core_vega/</guid>
-        
-        
-        <category>CPU</category>
-        
-        <category>Radeon</category>
-        
-        <category>AMD</category>
-        
-        <category>Intel</category>
         
       </item>
     
