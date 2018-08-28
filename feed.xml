@@ -5,9 +5,143 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Aug 2018 22:46:37 +0900</pubDate>
-    <lastBuildDate>Sat, 25 Aug 2018 22:46:37 +0900</lastBuildDate>
+    <pubDate>Tue, 28 Aug 2018 20:44:49 +0900</pubDate>
+    <lastBuildDate>Tue, 28 Aug 2018 20:44:49 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>代理店の無言の圧力　RTX2080Ti、2080がWeb先行の訳</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/rtx2080/2080_msi.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;※ 本記事は、有識者の情報をもとに、筆者の予想を含めた記事です。記述内容が事実である保証はしません。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;rtx-2080tirtx-2080の価格が横並び&quot;&gt;RTX 2080Ti、RTX 2080の価格が横並び&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Amazon&lt;/th&gt;
+      &lt;th&gt;パソコン工房&lt;/th&gt;
+      &lt;th&gt;Ark&lt;/th&gt;
+      &lt;th&gt;ドスパラ&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ZOTAC RTX 2080 Ti AMP&lt;/td&gt;
+      &lt;td&gt;￥183,384&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ZOTAC RTX 2080 AMP&lt;/td&gt;
+      &lt;td&gt;￥125,064&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;MSI RTX 2080Ti GAMING X TRIO&lt;/td&gt;
+      &lt;td&gt;￥188,784&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ASUS DUAL-RTX2080TI-O11G&lt;/td&gt;
+      &lt;td&gt;￥183,384&lt;/td&gt;
+      &lt;td&gt;￥183,384&lt;/td&gt;
+      &lt;td&gt;￥183,384&lt;/td&gt;
+      &lt;td&gt;￥183,384&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ASUS ROG-STRIX RTX2080-O8G-GAMING&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;￥140,184&lt;/td&gt;
+      &lt;td&gt;￥140,184&lt;/td&gt;
+      &lt;td&gt;￥140,184&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ASUS DUAL-RTX2080-O8G&lt;/td&gt;
+      &lt;td&gt;￥129,384&lt;/td&gt;
+      &lt;td&gt;￥129,384&lt;/td&gt;
+      &lt;td&gt;￥129,384&lt;/td&gt;
+      &lt;td&gt;￥129,384&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;あれれーおかしいねー横並びだねー&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;何が起こってるの&quot;&gt;何が起こってるの？&lt;/h3&gt;
+
+&lt;p&gt;代理店「うちは￥148,580で卸します。まあ、そちらはだいたい￥188,784ぐらいで売るといいんじゃないですかね？」&lt;/p&gt;
+
+&lt;p&gt;販売店たち「「「はい」」」&lt;/p&gt;
+
+&lt;p&gt;代理店「あ、あとWeb先行でお願いします。店頭での予約は受け付けないでね。」&lt;/p&gt;
+
+&lt;p&gt;販売店たち「「「…………………はい」」」&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;翻訳&quot;&gt;（翻訳）&lt;/h3&gt;
+
+&lt;p&gt;代理店「うちは￥148,580で卸します。まあ、そちらはだいたい￥188,784ぐらいで売るといいんじゃないですかね？」&lt;/p&gt;
+
+&lt;p&gt;代理店（値引きしたら割当に対して全然出荷しないでやろう。A店の2080の割当は50本か… もし値引きしたら5本出荷制限のペナルティだ。理由は適当に「物が来なかった」でいいだろ。これなら独禁法に引っかからない。）&lt;/p&gt;
+
+&lt;p&gt;販売店たち「「「はい」」」&lt;/p&gt;
+
+&lt;p&gt;販売店たち（あー値引きしないでこの値段で売れってことね。値引きしたら、たぶん出荷本数絞られそうだな… 絞られて顧客からの「なんで発売日にないんだ」クレーム処理するのも面倒だ…。 まあ初物とはいえ売れるだろうし従っとくか。うちも十分儲かる値付けだし。）&lt;/p&gt;
+
+&lt;p&gt;代理店「あ、あとWeb先行でお願いします。店頭での予約は受け付けないでね。」&lt;/p&gt;
+
+&lt;p&gt;代理店（Web先行なのはなんでかって？ そりゃ監視が楽だからに決まってるだろ。9/20の発売日以降は、まあ自由に値段つければいいさ。）&lt;/p&gt;
+
+&lt;p&gt;販売店たち「「「…………………はい」」」&lt;/p&gt;
+
+&lt;p&gt;販売店たち（あーそーゆーことね。完全に理解した。まあ顧客から問い合わせ来たらWebと同じ値段で売れば問題ないだろ。）&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;要約&quot;&gt;要約&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;9/20までは店頭、Webでの値段は変わらない。&lt;/li&gt;
+  &lt;li&gt;9/20以降は売れなければすぐ値下がり（店の利益を削って処理）、売れたら値段据え置きで売り続けると思うよ。&lt;/li&gt;
+  &lt;li&gt;事実上の再販売価格の拘束が発生中。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#rtx-2080tirtx-2080の価格が横並び&quot; id=&quot;markdown-toc-rtx-2080tirtx-2080の価格が横並び&quot;&gt;RTX 2080Ti、RTX 2080の価格が横並び&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#何が起こってるの&quot; id=&quot;markdown-toc-何が起こってるの&quot;&gt;何が起こってるの？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#翻訳&quot; id=&quot;markdown-toc-翻訳&quot;&gt;（翻訳）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#要約&quot; id=&quot;markdown-toc-要約&quot;&gt;要約&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 28 Aug 2018 12:30:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2018/08/28/rtx2080_expensive/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2018/08/28/rtx2080_expensive/</guid>
+        
+        
+        <category>GPU</category>
+        
+        <category>NVIDIA</category>
+        
+        <category>RTX2080Ti</category>
+        
+        <category>RTX2080</category>
+        
+      </item>
     
       <item>
         <title>「RTX」となった Geforce RTX 2080Ti 2080 2070 のおさらい</title>
@@ -2020,165 +2154,6 @@ DPはスクラッチレーンに寄るようになりました。&lt;/p&gt;
         <pubDate>Fri, 01 Dec 2017 21:30:00 +0900</pubDate>
         <link>https://www.gaftalk.com/2017/12/01/beatoraja_0_5_2/</link>
         <guid isPermaLink="true">https://www.gaftalk.com/2017/12/01/beatoraja_0_5_2/</guid>
-        
-        
-        <category>bms</category>
-        
-      </item>
-    
-      <item>
-        <title>beatoraja トラブルシューティング</title>
-        <description>&lt;h3 id=&quot;これは何&quot;&gt;これは何？&lt;/h3&gt;
-
-&lt;p&gt;beatorajaのエゴサでよく見かけたトラブルのまとめ。&lt;br /&gt;
-v0.5.4 が対象。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;qa&quot;&gt;Q&amp;amp;A&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;h4 id=&quot;qぶっちゃけ重くね&quot;&gt;Q:ぶっちゃけ重くね？&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;A:下記の理由が考えられます&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;LITONE5を利用している
-    &lt;ul&gt;
-      &lt;li&gt;結構&lt;strong&gt;重い&lt;/strong&gt;スキンです&lt;/li&gt;
-      &lt;li&gt;特に、選曲画面の背景が動画だとつらい
-        &lt;ul&gt;
-          &lt;li&gt;背景を画像にするだけでかなり軽くなります&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://twitter.com/desout2_litone/status/972839623197048832&quot;&gt;今後改善予定らしい&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;メモリ搭載量が少ない
-    &lt;ul&gt;
-      &lt;li&gt;8GB以上を推奨します&lt;/li&gt;
-      &lt;li&gt;(Windowsの場合)&lt;code class=&quot;highlighter-rouge&quot;&gt;beatoraja-config.bat&lt;/code&gt;から起動しないと、メモリ周りの最適化がないので注意
-        &lt;ul&gt;
-          &lt;li&gt;興味があれば&lt;a href=&quot;http://d.hatena.ne.jp/ogin_s57/20120709/1341836704&quot;&gt;このあたり&lt;/a&gt;を参考にどうぞ&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ぶっちゃけAtomとかのモバイル向けCPUでなければ60FPS以上は問題なく出せるはず。&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h4 id=&quot;q選曲したらなんか画面いっぱいにコーヒー豆が&quot;&gt;Q:選曲したらなんか画面いっぱいにコーヒー豆が…&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;A:プレイスキンを設定していないのが理由です&lt;/strong&gt;&lt;br /&gt;
-起動時のコンフィグで[Skin]タブを確認してください。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-23-beatoraja_qa1.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;「スキン」欄が空欄であれば設定されていません。&lt;br /&gt;
-最低限下記のモードについて設定することをおすすめします。&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;7KEYS&lt;/li&gt;
-  &lt;li&gt;5KEYS&lt;/li&gt;
-  &lt;li&gt;14KEYS&lt;/li&gt;
-  &lt;li&gt;MUSIC SELECT&lt;/li&gt;
-  &lt;li&gt;DESIDE (選曲決定時)&lt;/li&gt;
-  &lt;li&gt;RESULT&lt;/li&gt;
-  &lt;li&gt;COURCE RESULT&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h4 id=&quot;q判定位置ノーツ表示時間って選曲画面とかで変えられないのいちいち再起動するの面倒なんだけど&quot;&gt;Q:判定位置、ノーツ表示時間って選曲画面とかで変えられないの？…いちいち再起動するの面倒なんだけど…&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;A:START+SELECT同時長押し or 数字[5]キー長押し で詳細設定オプションが開きます&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/postimg/bms/2017-11-23-beatoraja_qa2.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;DURATION : ノーツ表示時間&lt;/li&gt;
-  &lt;li&gt;JUDGE TIMING：判定位置&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;となります。&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h4 id=&quot;qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう&quot;&gt;Q:LR2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう…&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;A:選曲時にキーボードで選曲決定していませんか？&lt;/strong&gt;&lt;br /&gt;
-専コンで選曲決定しましょう。&lt;br /&gt;
-確か不正対策による仕様だったはず。&lt;br /&gt;
-（選曲時に利用した形式(コントローラorKB)以外は無効化される…はず）&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h4 id=&quot;q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい&quot;&gt;Q:起動時に専コンが効かないんだけど… というかなんかキーアサインがおかしい？&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;A:コントローラーごとのキーコンフィグが可能なので、まずそこを見直そう&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;キーコンフィグ([6]キー)を開く&lt;/li&gt;
-  &lt;li&gt;[2]キーで使用するデバイス（専コン）を選択できます&lt;/li&gt;
-  &lt;li&gt;複数コントローラーを挿している場合、動かしたいコントローラーが選択されているか確認してください&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h4 id=&quot;qカスタムフォルダ無いの&quot;&gt;Q:カスタムフォルダ無いの？&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;A:あるよ&lt;/strong&gt;&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;folder\default.json&lt;/code&gt;を参考に真似して作ってみて、どうぞ。&lt;br /&gt;
-LR2と同じくSQL形式です。&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h4 id=&quot;q楽曲追加の仕方は&quot;&gt;Q:楽曲追加の仕方は？&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;A:コンフィグ起動から&lt;code class=&quot;highlighter-rouge&quot;&gt;[リソース]-&amp;gt;[BMS Path]&lt;/code&gt;で[+]ボタンを押すか、フォルダをリスト領域にD&amp;amp;Dする&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h4 id=&quot;qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない&quot;&gt;Q:&lt;code class=&quot;highlighter-rouge&quot;&gt;[リソース]-&amp;gt;[BMS Path]&lt;/code&gt;にフォルダ追加したけど、楽曲読み込んでくれない…&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;A1:&lt;code class=&quot;highlighter-rouge&quot;&gt;起動直後にバックグラウンドで楽曲更新を実行&lt;/code&gt;にチェックを入れるか、手動で楽曲更新する&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;A2:起動後、選曲画面でフォルダ選択中に[F2]キーを押す&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h4 id=&quot;q357鍵盤で選曲するとなんかプレイできないんだけど&quot;&gt;Q:3,5,7鍵盤で選曲するとなんかプレイできないんだけど…&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;A:鍵盤の機能の割当がLR2とは異なります&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;1鍵：プレイ&lt;/li&gt;
-  &lt;li&gt;3鍵：練習モード（Practice Mode)&lt;/li&gt;
-  &lt;li&gt;5鍵：オートプレイ&lt;/li&gt;
-  &lt;li&gt;7鍵：リプレイ&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-&lt;h4 id=&quot;qinfコンとかdaoのinfモードのコントローラ使えないの&quot;&gt;Q:INFコンとかDAOのINFモードのコントローラ使えないの？&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;A:使えるはずです&lt;/strong&gt;&lt;br /&gt;
-コンフィグ起動から&lt;code class=&quot;highlighter-rouge&quot;&gt;[Input] -&amp;gt; アナログスクラッチ&lt;/code&gt; のチェックボックスをオンで対応します。&lt;br /&gt;
-コントローラー別の設定がないので、&lt;strong&gt;混ぜて利用できない&lt;/strong&gt;のは注意です。&lt;br /&gt;
-(例)：INFコンと虹コン、INFコンと専コンコンバータ など&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#これは何&quot; id=&quot;markdown-toc-これは何&quot;&gt;これは何？&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#qa&quot; id=&quot;markdown-toc-qa&quot;&gt;Q&amp;amp;A&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#qぶっちゃけ重くね&quot; id=&quot;markdown-toc-qぶっちゃけ重くね&quot;&gt;Q:ぶっちゃけ重くね？&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#q選曲したらなんか画面いっぱいにコーヒー豆が&quot; id=&quot;markdown-toc-q選曲したらなんか画面いっぱいにコーヒー豆が&quot;&gt;Q:選曲したらなんか画面いっぱいにコーヒー豆が…&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#q判定位置ノーツ表示時間って選曲画面とかで変えられないのいちいち再起動するの面倒なんだけど&quot; id=&quot;markdown-toc-q判定位置ノーツ表示時間って選曲画面とかで変えられないのいちいち再起動するの面倒なんだけど&quot;&gt;Q:判定位置、ノーツ表示時間って選曲画面とかで変えられないの？…いちいち再起動するの面倒なんだけど…&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう&quot; id=&quot;markdown-toc-qlr2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう&quot;&gt;Q:LR2では動いてbeatorajaも選曲時までは動くんだけどプレイ画面になった瞬間スタートボタン以外効かなくなってしまう…&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい&quot; id=&quot;markdown-toc-q起動時に専コンが効かないんだけど-というかなんかキーアサインがおかしい&quot;&gt;Q:起動時に専コンが効かないんだけど… というかなんかキーアサインがおかしい？&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#qカスタムフォルダ無いの&quot; id=&quot;markdown-toc-qカスタムフォルダ無いの&quot;&gt;Q:カスタムフォルダ無いの？&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#q楽曲追加の仕方は&quot; id=&quot;markdown-toc-q楽曲追加の仕方は&quot;&gt;Q:楽曲追加の仕方は？&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない&quot; id=&quot;markdown-toc-qリソース-bms-pathにフォルダ追加したけど楽曲読み込んでくれない&quot;&gt;Q:&lt;code class=&quot;highlighter-rouge&quot;&gt;[リソース]-&amp;gt;[BMS Path]&lt;/code&gt;にフォルダ追加したけど、楽曲読み込んでくれない…&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#q357鍵盤で選曲するとなんかプレイできないんだけど&quot; id=&quot;markdown-toc-q357鍵盤で選曲するとなんかプレイできないんだけど&quot;&gt;Q:3,5,7鍵盤で選曲するとなんかプレイできないんだけど…&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#qinfコンとかdaoのinfモードのコントローラ使えないの&quot; id=&quot;markdown-toc-qinfコンとかdaoのinfモードのコントローラ使えないの&quot;&gt;Q:INFコンとかDAOのINFモードのコントローラ使えないの？&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 23 Nov 2017 13:00:00 +0900</pubDate>
-        <link>https://www.gaftalk.com/2017/11/23/beatoraja_qa/</link>
-        <guid isPermaLink="true">https://www.gaftalk.com/2017/11/23/beatoraja_qa/</guid>
         
         
         <category>bms</category>
