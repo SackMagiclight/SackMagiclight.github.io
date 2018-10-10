@@ -5,8 +5,8 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 10 Oct 2018 23:56:23 +0900</pubDate>
-    <lastBuildDate>Wed, 10 Oct 2018 23:56:23 +0900</lastBuildDate>
+    <pubDate>Thu, 11 Oct 2018 00:20:14 +0900</pubDate>
+    <lastBuildDate>Thu, 11 Oct 2018 00:20:14 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -309,7 +309,7 @@ GPU以外の共通構成は以下の通りです。&lt;/p&gt;
 
 &lt;h4 id=&quot;basemark-gpu&quot;&gt;BASEMARK GPU&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_BMGPU.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_BMGPU.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;総合 : 9528&lt;/p&gt;
 
@@ -323,7 +323,7 @@ GPU以外の共通構成は以下の通りです。&lt;/p&gt;
 基本的に、1画面に映るノーツ数が多ければ多いほどFPSが下がる。&lt;br /&gt;
 環境は&lt;code class=&quot;highlighter-rouge&quot;&gt;1920*1080&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;LITONE5&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;プレイグラフ表示あり&lt;/code&gt;の最重設定。&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/BMS_beatoraja_FPS.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/BMS_beatoraja_FPS.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -342,7 +342,7 @@ GPU以外の共通構成は以下の通りです。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;異次元に冷える&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/TEMP.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/TEMP.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ファン90%で回せばフルロード時60℃ほどで推移します。&lt;br /&gt;
 グリスを変えているとはいえ、ちょっと驚きです。&lt;/p&gt;
