@@ -5,9 +5,406 @@
     <description>ゲームとかガジェットとかその他好きなこと</description>
     <link>https://www.gaftalk.com/</link>
     <atom:link href="https://www.gaftalk.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Aug 2018 20:44:49 +0900</pubDate>
-    <lastBuildDate>Tue, 28 Aug 2018 20:44:49 +0900</lastBuildDate>
+    <pubDate>Wed, 10 Oct 2018 23:56:23 +0900</pubDate>
+    <lastBuildDate>Wed, 10 Oct 2018 23:56:23 +0900</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
+    
+      <item>
+        <title>【簡易レビュー】EVGA GeForce RTX 2080 XC ULTRA GAMING</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/08G-P4-2183-KR_LG_1.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;米尼で、EVGAの&lt;strong&gt;RTX 2080 XC ULTRA GAMING&lt;/strong&gt; を買いました。&lt;/p&gt;
+
+&lt;p&gt;発売が遅延するなど、ハプニングも有りましたが、とりあえず届いて一安心です。&lt;/p&gt;
+
+&lt;p&gt;すでに大手レビューサイトがRTX2080の製品レビューはしているので、製品のざっくりとした外観とベンチマーク結果のみの簡易レビューをお届けします。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;事前知識-性能&quot;&gt;(事前知識) 性能&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;RTX 2080 ULTRA GAMING&lt;/th&gt;
+      &lt;th&gt;GTX 1080&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CUDA core&lt;/td&gt;
+      &lt;td&gt;2944&lt;/td&gt;
+      &lt;td&gt;2560&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;FP32[TFLOPS]&lt;/td&gt;
+      &lt;td&gt;10.687&lt;/td&gt;
+      &lt;td&gt;8.87&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Base Clock[MHz]&lt;/td&gt;
+      &lt;td&gt;1515&lt;/td&gt;
+      &lt;td&gt;1607&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Boost Clock[MHz]&lt;/td&gt;
+      &lt;td&gt;1815&lt;/td&gt;
+      &lt;td&gt;1733&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Memory&lt;/td&gt;
+      &lt;td&gt;GDDR6 8GB&lt;/td&gt;
+      &lt;td&gt;GDDR5X 8GB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Memory Bus[GB/s]&lt;/td&gt;
+      &lt;td&gt;448&lt;/td&gt;
+      &lt;td&gt;320&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;TDP[W]&lt;/td&gt;
+      &lt;td&gt;215&lt;/td&gt;
+      &lt;td&gt;180&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;————–&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;———————&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;——–&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Value&lt;/td&gt;
+      &lt;td&gt;$849.99&lt;/td&gt;
+      &lt;td&gt;\65,000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;————–&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;———————&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;——–&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;スペックとしては、前世代XX80と比較してメモリ帯域が大幅増です。&lt;br /&gt;
+現状、検証が不可能なので表には載せていませんが、RTコアとTensorコアが載っています。&lt;br /&gt;
+（詳しくは &lt;a href=&quot;/2018/08/25/rtx2080_expectation/&quot;&gt;過去記事&lt;/a&gt;で)&lt;/p&gt;
+
+&lt;p&gt;EVGA社はアメリカの企業で、NVIDIA系のグラフィックボードやマザーボード、電源などのパソコンパーツを販売しています。&lt;br /&gt;
+米国Amazonではシェアトップの人気があり、グローバル保証(正規販売代理店からなら世界中どこで買っても同じ保証)を行っているのが特徴です。&lt;del&gt;日本も見習え&lt;/del&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.evga.com/products/product.aspx?pn=08G-P4-2183-KR&quot;&gt;EVGA GeForce RTX 2080 XC ULTRA GAMING&lt;/a&gt;は&lt;strong&gt;グローバル3年保証&lt;/strong&gt;で、&lt;strong&gt;商品出荷時の状態に戻せれば分解OK&lt;/strong&gt;という特徴があります。&lt;br /&gt;
+（EVGAのグラフィックボード全般に言えることですが）&lt;/p&gt;
+
+&lt;p&gt;輸入するとだいたい$950程度(\110,000程度)になります。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Order Summary&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Item(s) Subtotal&lt;/td&gt;
+      &lt;td&gt;$849.99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Shipping &amp;amp; Handling&lt;/td&gt;
+      &lt;td&gt;$32.68&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Total before tax&lt;/td&gt;
+      &lt;td&gt;$882.67&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Estimated tax to be collected&lt;/td&gt;
+      &lt;td&gt;$0.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Import Fees Deposit&lt;/td&gt;
+      &lt;td&gt;$70.61&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Grand Total&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;$953.28&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;外観中身&quot;&gt;外観・中身&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0001.JPG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;箱がでかい&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0003.JPG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;聖剣仕様&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0005.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0006.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0007.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0008.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0010.JPG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ファン周りはプラスチックでちょっとチープ感が出ますが、その分ヒートシンクとバックプレートとかに予算回してる感じがします。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0018.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0020.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0022.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+&lt;a href=&quot;https://jp.msi.com/Graphics-card/GeForce-GTX-1080-GAMING-X-8G.html&quot;&gt;GeForce GTX 1080 GAMING X 8G&lt;/a&gt;と比較するとこんな感じになります。&lt;br /&gt;
+縦横はほとんど変わりませんが2スロと3スロではやはり圧倒的な厚みの差があります。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;分解&quot;&gt;分解&lt;/h3&gt;
+&lt;p&gt;せっかく分解OKなので、分解してみましょう。&lt;br /&gt;
+日本で買うグラボじゃできないですからね。&lt;/p&gt;
+
+&lt;p&gt;手順は以下の通りです。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;PCIブラケットを取り外します。
+&lt;img src=&quot;/postimg/pc/review_rtx_2080/b1.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;バックプレートを取り外します。
+&lt;img src=&quot;/postimg/pc/review_rtx_2080/b2.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;こんな感じになりました。&lt;br /&gt;
+バックプレートにサーマルパッドがギッシリです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0013.JPG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ヒートシンクを外すにはこの4つのネジを取り外せばOKです
+&lt;img src=&quot;/postimg/pc/review_rtx_2080/b3.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0014.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+取り外すとこんな感じに。VRMにもサーマルパッドが。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/DSC_0016.JPG&quot; alt=&quot;キャプション&quot; /&gt;
+コアを拡大するとこんな感じです。&lt;code class=&quot;highlighter-rouge&quot;&gt;TU104-400A-A1&lt;/code&gt;はTU104コアのファクトリーOC可能モデルになります。&lt;br /&gt;
+（因みに、ブロアーファンを搭載しているモデルは&lt;code class=&quot;highlighter-rouge&quot;&gt;TU104-400-A1&lt;/code&gt;で、ファクトリーOC不可能）&lt;/p&gt;
+
+&lt;p&gt;分解したついでにグリスを&lt;a href=&quot;https://www.ark-pc.co.jp/news/article?id=300159&quot;&gt;Thermal Grizzly&lt;/a&gt;を塗り直しました。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;ベンチマーク測定&quot;&gt;ベンチマーク測定&lt;/h3&gt;
+
+&lt;p&gt;いろいろ取っていきます。&lt;br /&gt;
+GPU以外の共通構成は以下の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Motherboard&lt;/td&gt;
+      &lt;td&gt;Asrock Fatal1ty X370 Gaming K4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Memory&lt;/td&gt;
+      &lt;td&gt;Samsung M378A1K43BB2-CRC 8G × 2 (DDR4-2400)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CPU&lt;/td&gt;
+      &lt;td&gt;AMD Ryzen 7 2700X&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PSU&lt;/td&gt;
+      &lt;td&gt;HX750 CP-9020031-JP&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CPU Cooler&lt;/td&gt;
+      &lt;td&gt;Corsair H100i&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;fire-strike&quot;&gt;Fire Strike&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_FS.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;グラフィックス : 27523&lt;br /&gt;
+総合 : 19781&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.3dmark.com/3dm/29229199&quot;&gt;https://www.3dmark.com/3dm/29229199&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;fire-strike-extream&quot;&gt;Fire Strike Extream&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_FSEX.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;グラフィックス : 13248&lt;br /&gt;
+総合 : 12192&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.3dmark.com/3dm/29229516&quot;&gt;https://www.3dmark.com/3dm/29229516&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;fire-strike-ultra&quot;&gt;Fire Strike Ultra&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_FSUL.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;グラフィックス : 6475&lt;br /&gt;
+総合 : 6607&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.3dmark.com/3dm/29229749&quot;&gt;https://www.3dmark.com/3dm/29229749&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;time-spy&quot;&gt;Time Spy&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_TS.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;グラフィックス : 10938&lt;br /&gt;
+総合 : 10391&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.3dmark.com/3dm/29230401&quot;&gt;https://www.3dmark.com/3dm/29230401&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;※通称&lt;strong&gt;10万円の実績&lt;/strong&gt;を手に入れました
+&lt;img src=&quot;/postimg/pc/review_rtx_2080/TS.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;vrmark-orange-room&quot;&gt;VRMark Orange Room&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_VROR.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;平均FPS : 195.36&lt;br /&gt;
+総合 : 8962&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.3dmark.com/vrm/29231432&quot;&gt;https://www.3dmark.com/vrm/29231432&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;vrmark-cyan-room&quot;&gt;VRMark Cyan Room&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_VRCR.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;平均FPS : 214.26&lt;br /&gt;
+総合 : 9828&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.3dmark.com/vrm/29231850&quot;&gt;https://www.3dmark.com/vrm/29231850&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;vrmark-blue-room&quot;&gt;VRMark Blue Room&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_VRBR.PNG&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;平均FPS : 77.60&lt;br /&gt;
+総合 : 3560&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.3dmark.com/vrm/29231988&quot;&gt;https://www.3dmark.com/vrm/29231850&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;mining&quot;&gt;Mining&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_mining.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;basemark-gpu&quot;&gt;BASEMARK GPU&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/2080_BMGPU.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;総合 : 9528&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://powerboard.basemark.com/hwsubmit/36524/result&quot;&gt;https://powerboard.basemark.com/hwsubmit/36524/result&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;beatoraja-fps&quot;&gt;beatoraja FPS&lt;/h4&gt;
+
+&lt;p&gt;L9999999999999^99999999999とFREEDOM DiVE [FOUR DIMENSIONS]のオートプレイで測定。&lt;br /&gt;
+基本的に、1画面に映るノーツ数が多ければ多いほどFPSが下がる。&lt;br /&gt;
+環境は&lt;code class=&quot;highlighter-rouge&quot;&gt;1920*1080&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;LITONE5&lt;/code&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;プレイグラフ表示あり&lt;/code&gt;の最重設定。&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/BMS_beatoraja_FPS.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;消費電力&quot;&gt;消費電力&lt;/h3&gt;
+
+&lt;p&gt;ワットチェッカーが微妙に破損していたので、正確には取得できていませんがこんな感じでした。&lt;/p&gt;
+
+&lt;p&gt;アイドル時：90W &lt;br /&gt;
+フルロード時：330W (+240W)&lt;/p&gt;
+
+&lt;p&gt;CPUが2700Xであることを考えると、2080はほぼTDP通りと言えるのではないでしょうか。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;発熱&quot;&gt;発熱&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;異次元に冷える&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/TEMP.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ファン90%で回せばフルロード時60℃ほどで推移します。&lt;br /&gt;
+グリスを変えているとはいえ、ちょっと驚きです。&lt;/p&gt;
+
+&lt;p&gt;因みに、冷えている間は1965MHzまでOCします。また、冷えてる間はファンが完全停止します。（オート制御時）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/postimg/pc/review_rtx_2080/OC.png&quot; alt=&quot;キャプション&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;総評&quot;&gt;総評&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;性能Up、消費電力もUp&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;4Kなど高解像度環境だと1つの選択肢&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;現段階ではRT、Tensorの力が発揮できていないので様子見&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;XC ULTRA は 冷えるぞ&lt;/strong&gt; &lt;br /&gt;
+&lt;strong&gt;3年保証は いいぞ&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;現状、RTXシリーズの値下がり傾向は無く、年末まではこの水準が続きそうです。&lt;br /&gt;
+値下がっても10万円強ぐらいに落ち着くと思われるのでしばらくは個人輸入が良さそうです。&lt;/p&gt;
+
+&lt;p&gt;ぶっちゃけ、1080TiにRT,Tensorコア乗っけたぐらいの性能なので、FHD環境やRTを考えない人は1080Tiで良いでしょう。&lt;br /&gt;
+将来性に対して投資できるか、が争点のGPUとなりそうです。&lt;/p&gt;
+
+&lt;p&gt;XC ULTRAという単体製品で見れば&lt;strong&gt;厚いけどめっちゃ冷える&lt;/strong&gt;ですね。&lt;br /&gt;
+空冷でここまで冷えるんだ…って感覚です。&lt;br /&gt;
+素直にすごいなと思いました。これなら水冷化も必要ないかな…？&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#事前知識-性能&quot; id=&quot;markdown-toc-事前知識-性能&quot;&gt;(事前知識) 性能&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#外観中身&quot; id=&quot;markdown-toc-外観中身&quot;&gt;外観・中身&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#分解&quot; id=&quot;markdown-toc-分解&quot;&gt;分解&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ベンチマーク測定&quot; id=&quot;markdown-toc-ベンチマーク測定&quot;&gt;ベンチマーク測定&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#fire-strike&quot; id=&quot;markdown-toc-fire-strike&quot;&gt;Fire Strike&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#fire-strike-extream&quot; id=&quot;markdown-toc-fire-strike-extream&quot;&gt;Fire Strike Extream&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#fire-strike-ultra&quot; id=&quot;markdown-toc-fire-strike-ultra&quot;&gt;Fire Strike Ultra&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#time-spy&quot; id=&quot;markdown-toc-time-spy&quot;&gt;Time Spy&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#vrmark-orange-room&quot; id=&quot;markdown-toc-vrmark-orange-room&quot;&gt;VRMark Orange Room&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#vrmark-cyan-room&quot; id=&quot;markdown-toc-vrmark-cyan-room&quot;&gt;VRMark Cyan Room&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#vrmark-blue-room&quot; id=&quot;markdown-toc-vrmark-blue-room&quot;&gt;VRMark Blue Room&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#mining&quot; id=&quot;markdown-toc-mining&quot;&gt;Mining&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#basemark-gpu&quot; id=&quot;markdown-toc-basemark-gpu&quot;&gt;BASEMARK GPU&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#beatoraja-fps&quot; id=&quot;markdown-toc-beatoraja-fps&quot;&gt;beatoraja FPS&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#消費電力&quot; id=&quot;markdown-toc-消費電力&quot;&gt;消費電力&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#発熱&quot; id=&quot;markdown-toc-発熱&quot;&gt;発熱&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#総評&quot; id=&quot;markdown-toc-総評&quot;&gt;総評&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 10 Oct 2018 23:55:00 +0900</pubDate>
+        <link>https://www.gaftalk.com/2018/10/10/review_rtx_2080/</link>
+        <guid isPermaLink="true">https://www.gaftalk.com/2018/10/10/review_rtx_2080/</guid>
+        
+        
+        <category>Geforce</category>
+        
+        <category>RTX2080</category>
+        
+        <category>レビュー</category>
+        
+      </item>
     
       <item>
         <title>代理店の無言の圧力　RTX2080Ti、2080がWeb先行の訳</title>
@@ -2043,120 +2440,6 @@ GTX1070は製造中止（ディスコン）が確定し、流通在庫のみの�
         <category>GTX1070</category>
         
         <category>GTX1070ti</category>
-        
-      </item>
-    
-      <item>
-        <title>beatoraja 0.5.2 リリースノートもどき</title>
-        <description>&lt;p&gt;beatoraja 0.5.2 がリリースされました。&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;ja&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;We&amp;#39;ve released beatoraja 0.5.2. It supports 2dx premium controller, enhances rendering performance and response of loading skins, fixes many problems.&lt;a href=&quot;https://t.co/xG37VrY81A&quot;&gt;https://t.co/xG37VrY81A&lt;/a&gt;&lt;/p&gt;&amp;mdash; 両替侍 (@ryougae_samurai) &lt;a href=&quot;https://twitter.com/ryougae_samurai/status/936244061672955904?ref_src=twsrc%5Etfw&quot;&gt;2017年11月30日&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;以下は0.5.1 からの変更点です。&lt;br /&gt;
-Gitログから追ったのでちょっと間違ってるかも…&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;beatmania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot;&gt;beatmania IIDX INFINITAS プレミアムコントローラーがサポートされました&lt;/h2&gt;
-&lt;p&gt;オプションの[Input]-&amp;gt;[アナログスクラッチ] をチェックすることで動作します。&lt;br /&gt;
-&lt;strong&gt;アルゴリズムが異なるコントローラーを併用することはできません。&lt;/strong&gt;&lt;br /&gt;
-（例：INFコンと虹コン、DAO INFモードと専コンPADなど）&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;検索バー追加&quot;&gt;検索バー追加&lt;/h2&gt;
-&lt;p&gt;(LITONE5の導入をおすすめします)&lt;br /&gt;
-楽曲検索バーが追加されました。 検索結果はフォルダにまとめられ、起動中はいつでも参照できます。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;irを正式にサポート&quot;&gt;IRを正式にサポート&lt;/h2&gt;
-&lt;p&gt;記述段階では Chroma IRがβテスト中です。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;コースモードのゲージにlr2を追加&quot;&gt;コースモードのゲージに「LR2」を追加&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gauge_lr2&lt;/code&gt;が追加されました。&lt;br /&gt;
-この制約で指定されたコースは、LR2のゲージで演奏されます。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;042以前で読めていたlr2互換のpmsスキンが読み込めなかったのを修正&quot;&gt;0.4.2以前で読めていたLR2互換のPMSスキンが読み込めなかったのを修正&lt;/h2&gt;
-&lt;p&gt;LPEX、Light Pop等。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;空poor範囲の修正&quot;&gt;空POOR範囲の修正&lt;/h2&gt;
-&lt;p&gt;0.5.1と比較して空POORが減少します。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;コンボ重視のアルゴリズムが変更されました&quot;&gt;&lt;strong&gt;コンボ重視&lt;/strong&gt;のアルゴリズムが変更されました&lt;/h2&gt;
-&lt;p&gt;0.5.1と比較して繋がるようになりました。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;all-scrのスクラッチ以外のノーツ配置が易しくなりました&quot;&gt;ALL-SCRのスクラッチ以外のノーツ配置が易しくなりました&lt;/h2&gt;
-&lt;p&gt;LR2みたいに128分皿とかはなくなりました。  &lt;br /&gt;
-DPはスクラッチレーンに寄るようになりました。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;選曲bgm決定音リザルトbgmのランダム再生が正式に可能になりました&quot;&gt;選曲BGM、決定音、リザルトBGMのランダム再生が正式に可能になりました&lt;/h2&gt;
-&lt;p&gt;手っ取り早く体験するのであればLITONE5(v0.7)の導入をおすすめします。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;スキンのlr2互換を向上&quot;&gt;スキンのLR2互換を向上&lt;/h2&gt;
-&lt;p&gt;OADX等の描画に関して修正されています。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;コンフィグ周りの不具合修正&quot;&gt;コンフィグ周りの不具合修正&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;起動時にキーコンフィグが読み込まれない問題&lt;/li&gt;
-  &lt;li&gt;初回起動時にjarファイルからの起動で2回目以降起動しない問題&lt;/li&gt;
-  &lt;li&gt;複数の外部コントローラー利用時の対応&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;操作性能の向上&quot;&gt;操作性能の向上&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;選曲画面のスクロール速度の改善&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;音声動画再生の不具合修正&quot;&gt;音声・動画再生の不具合修正&lt;/h2&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;その他軽微な不具合修正&quot;&gt;その他軽微な不具合修正&lt;/h2&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#beatmania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot; id=&quot;markdown-toc-beatmania-iidx-infinitas-プレミアムコントローラーがサポートされました&quot;&gt;beatmania IIDX INFINITAS プレミアムコントローラーがサポートされました&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#検索バー追加&quot; id=&quot;markdown-toc-検索バー追加&quot;&gt;検索バー追加&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#irを正式にサポート&quot; id=&quot;markdown-toc-irを正式にサポート&quot;&gt;IRを正式にサポート&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#コースモードのゲージにlr2を追加&quot; id=&quot;markdown-toc-コースモードのゲージにlr2を追加&quot;&gt;コースモードのゲージに「LR2」を追加&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#042以前で読めていたlr2互換のpmsスキンが読み込めなかったのを修正&quot; id=&quot;markdown-toc-042以前で読めていたlr2互換のpmsスキンが読み込めなかったのを修正&quot;&gt;0.4.2以前で読めていたLR2互換のPMSスキンが読み込めなかったのを修正&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#空poor範囲の修正&quot; id=&quot;markdown-toc-空poor範囲の修正&quot;&gt;空POOR範囲の修正&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#コンボ重視のアルゴリズムが変更されました&quot; id=&quot;markdown-toc-コンボ重視のアルゴリズムが変更されました&quot;&gt;&lt;strong&gt;コンボ重視&lt;/strong&gt;のアルゴリズムが変更されました&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#all-scrのスクラッチ以外のノーツ配置が易しくなりました&quot; id=&quot;markdown-toc-all-scrのスクラッチ以外のノーツ配置が易しくなりました&quot;&gt;ALL-SCRのスクラッチ以外のノーツ配置が易しくなりました&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#選曲bgm決定音リザルトbgmのランダム再生が正式に可能になりました&quot; id=&quot;markdown-toc-選曲bgm決定音リザルトbgmのランダム再生が正式に可能になりました&quot;&gt;選曲BGM、決定音、リザルトBGMのランダム再生が正式に可能になりました&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#スキンのlr2互換を向上&quot; id=&quot;markdown-toc-スキンのlr2互換を向上&quot;&gt;スキンのLR2互換を向上&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#コンフィグ周りの不具合修正&quot; id=&quot;markdown-toc-コンフィグ周りの不具合修正&quot;&gt;コンフィグ周りの不具合修正&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#操作性能の向上&quot; id=&quot;markdown-toc-操作性能の向上&quot;&gt;操作性能の向上&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#音声動画再生の不具合修正&quot; id=&quot;markdown-toc-音声動画再生の不具合修正&quot;&gt;音声・動画再生の不具合修正&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#その他軽微な不具合修正&quot; id=&quot;markdown-toc-その他軽微な不具合修正&quot;&gt;その他軽微な不具合修正&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 01 Dec 2017 21:30:00 +0900</pubDate>
-        <link>https://www.gaftalk.com/2017/12/01/beatoraja_0_5_2/</link>
-        <guid isPermaLink="true">https://www.gaftalk.com/2017/12/01/beatoraja_0_5_2/</guid>
-        
-        
-        <category>bms</category>
         
       </item>
     
