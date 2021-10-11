@@ -6,7 +6,7 @@ categories:
   - RTX2060
   - RTX2070
   - RTX2080
-
+alias: '/2019/07/04/rtx-super/'
 og:title: 'RTX Superシリーズざっくりまとめ'
 og:image: 'https://www.gaftalk.com/blog/img/002_o.jpg'
 ---

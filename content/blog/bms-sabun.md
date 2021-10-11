@@ -4,7 +4,7 @@ createdAt:   2019-03-15 21:40:00 +0900
 categories: 
   - BMS
   - 差分
-
+alias: '/2019/03/15/bms-sabun/'
 og:title: 'BMS差分'
 ---
 

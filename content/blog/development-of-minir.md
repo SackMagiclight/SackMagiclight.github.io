@@ -5,7 +5,7 @@ categories:
   - bms
   - beatoraja
   - MinIR
-
+alias: '/2018/06/16/development-of-minir/'
 og:title: 'MinIRはどのように作られたか'
 og:image: 'https://www.gaftalk.com/blog/img/aws.png'
 ---

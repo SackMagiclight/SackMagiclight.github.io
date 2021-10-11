@@ -6,7 +6,7 @@ categories:
   - NVIDIA
   - GTX1070Ti
   - リーク
-
+alias: '/2017/10/20/gtx1070ti-reeked/'
 og:title: 'GTX 1070 Ti はいくらならば「買い」なのか？'
 og:image: 'https://www.gaftalk.com/blog/img/2017-10-20-gtx1070ti_reeked.png'
 ---

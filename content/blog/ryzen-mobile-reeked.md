@@ -7,7 +7,7 @@ categories:
   - RyzenMobile
   - Radeon
   - AMD
-
+alias: '/2017/10/19/ryzen-mobile-reeked/'
 og:title: 'Ryzen Mobile 性能・発売時期のリーク -結局どのぐらい？-'
 og:image: 'https://www.gaftalk.com/blog/img/2017-10-19-ryzen_mobile_reeked.jpg'
 ---

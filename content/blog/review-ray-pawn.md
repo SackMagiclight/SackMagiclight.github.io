@@ -5,7 +5,7 @@ categories:
   - Ray
   - PAWN
   - レビュー
-
+alias: '/2018/06/30/review-ray-pawn/'
 og:title: '【簡易レビュー】「シンプル・イズ・ベスト」なゲーミングマウス「PAWN」'
 og:image: 'https://www.gaftalk.com/blog/img/DSC_0044.png'
 ---

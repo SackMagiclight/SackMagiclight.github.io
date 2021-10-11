@@ -8,6 +8,7 @@ categories:
   - GPU
   - Radeon
   - Navi
+alias: '/2019/05/28/computex2019-amd/'
 og:title: 'Zen2とかの話 一般向けCPUがついに2桁コアに -Computex2019 AMD基調講演-'
 og:image: 'https://www.gaftalk.com/blog/img/ryzen3000SeriesReadiness.jpg'
 ---

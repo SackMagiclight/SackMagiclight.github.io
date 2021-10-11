@@ -103,13 +103,4 @@ export default {
             plugins: [tailwindTypography],
         },
     },
-
-    router: {
-        extendRoutes(routes) {
-            routes.push({
-                path: '/:year/:month/:day/:slug/',
-                redirect: '/blog/items/:slug/',
-            })
-        },
-    },
 }

@@ -8,7 +8,7 @@ categories:
   - RTX2080
   - RTX2070
   - CUDA
-
+alias: '/2018/08/25/rtx2080-expectation/'
 og:title: '「RTX」となった Geforce RTX 2080Ti 2080 2070 のおさらい'
 og:image: 'https://www.gaftalk.com/blog/img/2018-08-25-rtx2080.jpg'
 ---

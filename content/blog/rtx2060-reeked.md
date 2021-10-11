@@ -6,7 +6,7 @@ categories:
   - NVIDIA
   - RTX2060
   - リーク
-
+alias: '/2019/01/06/rtx2060-reeked/'
 og:title: 'RTX2060のリーク情報'
 og:image: 'https://www.gaftalk.com/blog/img/rtx2060_logo.jpg'
 ---

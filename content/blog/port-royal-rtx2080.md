@@ -6,7 +6,7 @@ categories:
   - RTX2080
   - Benchmark
   - GPU
-
+alias: '/2019/01/09/port-royal-rtx2080/'
 og:title: '3DMark Port Royal 1.0 RTX2080 ベンチマーク'
 og:image: 'https://www.gaftalk.com/blog/img/portroyal_slim.png'
 ---

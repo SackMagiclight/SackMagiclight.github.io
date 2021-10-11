@@ -5,7 +5,7 @@ categories:
   - bms
   - java
   - development
-
+alias: '/2017/11/04/beatoraja-build/'
 og:title: 'beatoraja ビルド＆デバッグ方法'
 og:image: 'https://www.gaftalk.com/blog/img/2017-11-04-beatoraja_build_b.png'
 ---

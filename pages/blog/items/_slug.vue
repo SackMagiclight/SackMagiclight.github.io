@@ -1,6 +1,7 @@
 <template>
     <div class="container mx-auto">
         <Card :article="article" />
+        <a v-if="article.alias" :href="article.alias" />
     </div>
 </template>
 

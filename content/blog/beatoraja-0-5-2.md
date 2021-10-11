@@ -1,7 +1,7 @@
 ---
 title:  "beatoraja 0.5.2 リリースノートもどき"
 createdAt: '2017-12-01 21:30:00 +0900'
-
+alias: '/2017/12/01/beatoraja-0-5-2/'
 og:title: 'beatoraja 0.5.2 リリースノートもどき'
 ---
 

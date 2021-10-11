@@ -4,7 +4,7 @@ createdAt:   2017-11-23 13:00:00 +0900
 categories: 
   - bms
   - beatoraja
-
+alias: '/2017/11/23/beatoraja-qa/'
 og:title: 'beatoraja トラブルシューティング'
 og:image: 'https://www.gaftalk.com/blog/img/2017-11-23-beatoraja_qa1.png'
 ---

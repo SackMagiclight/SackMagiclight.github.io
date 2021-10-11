@@ -8,7 +8,7 @@ categories:
   - CPU
   - Asrock
   - レビュー
-
+alias: '/2019/02/08/review-DeskMini-A300/'
 og:title: '【簡易レビュー】Asrock DeskMini A300はBMS PCの夢を見るか？'
 og:image: 'https://www.gaftalk.com/blog/img/dsc_0047.jpg'
 ---

@@ -7,7 +7,7 @@ categories:
   - Ryzen
   - CPU
   - レビュー
-
+alias: '/2018/04/22/review-ryzen7-2700X/'
 og:title: '【簡易レビュー】Ryzen 7 2700X はX370マザーボードでも性能を発揮できるのか'
 og:image: 'https://www.gaftalk.com/blog/img/DbOZkUMV4AExUmp.jpg'
 ---

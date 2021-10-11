@@ -4,7 +4,7 @@ createdAt:   2018-06-21 21:30:00 +0900
 categories: 
   - Benchmark
   - GPU
-
+alias: '/2018/06/21/basemarkgpu/'
 og:title: 'GPUベンチマーク「Basemark GPU」を試す'
 og:image: 'https://www.gaftalk.com/blog/img/preview-4.jpg'
 ---

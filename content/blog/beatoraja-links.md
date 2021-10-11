@@ -4,7 +4,7 @@ createdAt:   2019-01-07 00:00:00 +0900
 categories: 
   - BMS
   - beatoraja
-
+alias: '/2019/01/07/beatoraja-links/'
 og:title: 'beatoraja リンク集'
 ---
 

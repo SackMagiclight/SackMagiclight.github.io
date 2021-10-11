@@ -5,7 +5,7 @@ categories:
   - AMD
   - Ryzen
   - CPU
-
+alias: '/2018/01/22/ryzen2400g/'
 og:title: 'Ryzen 5 2400Gが思ったより安くて強そう'
 og:image: 'https://www.gaftalk.com/blog/img/2018-01-22-ryzen5_2400g.png'
 ---

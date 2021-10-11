@@ -5,7 +5,7 @@ categories:
   - GPU
   - AMD
   - Radeon
-
+alias: '/2019/01/19/rx470-mining-model-sale/'
 og:title: 'RX470 マイニングモデルを動かす'
 og:image: 'https://www.gaftalk.com/blog/img/dxQAsxMU0AIf8a1.jpg'
 ---

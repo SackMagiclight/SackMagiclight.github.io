@@ -8,7 +8,7 @@ categories:
   - CPU
   - レビュー
   - ASRock
-
+alias: '/2019/07/08/review-ryzen9-3900/'
 og:title: '【ベンチまとめ】Ryzen 9 3900X + ASRock X570 Phantom Gaming X'
 og:image: 'https://www.gaftalk.com/blog/img/r939001.jpg'
 ---

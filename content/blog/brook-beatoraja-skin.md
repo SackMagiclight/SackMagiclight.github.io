@@ -5,7 +5,7 @@ categories:
   - BMS
   - beatoraja
   - Skin
-
+alias: '/2019/01/14/brook-beatoraja-skin/'
 og:title: 'Brook v1.0.0 - beatoraja SKIN'
 og:image: 'https://www.gaftalk.com/blog/img/Dw02RiSW0AALdAq.jpg'
 ---

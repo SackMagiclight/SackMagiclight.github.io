@@ -6,7 +6,7 @@ categories:
   - NVIDIA
   - RTX2080Ti
   - RTX2080
-
+alias: '/2018/08/28/rtx2080-expensive/'
 og:title: '代理店の無言の圧力　RTX2080Ti、2080がWeb先行の訳'
 og:image: 'https://www.gaftalk.com/blog/img/2080_msi.png'
 ---

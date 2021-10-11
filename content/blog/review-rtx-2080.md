@@ -5,7 +5,7 @@ categories:
   - Geforce
   - RTX2080
   - レビュー
-
+alias: '/2018/10/10/review-rtx-2080/'
 og:title: '【簡易レビュー】EVGA GeForce RTX 2080 XC ULTRA GAMING'
 og:image: 'https://www.gaftalk.com/blog/img/08G-P4-2183-KR_LG_1.png'
 ---

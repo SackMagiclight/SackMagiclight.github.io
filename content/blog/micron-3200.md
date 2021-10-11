@@ -3,7 +3,7 @@ title:  "3200MHz ネイティブメモリを買いました"
 createdAt: 2019-06-07 21:30:00 +0900
 categories: 
   - メモリ
-
+alias: '/2019/06/07/micron-3200/'
 og:title: '3200MHz ネイティブメモリを買いました'
 og:image: 'https://www.gaftalk.com/blog/img/cl.jpg'
 ---

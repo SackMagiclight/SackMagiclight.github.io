@@ -5,7 +5,7 @@ categories:
   - AMD
   - NVIDIA
   - Ryzen
-
+alias: '/2019/01/07/rtx-2060-ryzen-mobile-3xxx/'
 og:title: 'RTX2060 発表と Ryzen Mobile 3000シリーズ'
 og:image: 'https://www.gaftalk.com/blog/img/DwSItaBUYAERooX.jpg'
 ---
