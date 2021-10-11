@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto my-8">
+    <div class="container mx-auto">
         <Card :article="article" />
     </div>
 </template>
@@ -9,6 +9,7 @@ import { IContentDocument } from '@nuxt/content/types/content'
 import {
     computed,
     defineComponent,
+    ref,
     useAsync,
     useContext,
     useMeta,
@@ -20,36 +21,50 @@ export default defineComponent({
         const $content = useContext().$content
         const $route = useRoute()
         const slug = computed(() => $route.value.params.slug)
-        const data = useAsync(async () => {
-            const path = $route.value.path
-            const domain = 'https://www.gaftalk.com'
-            const val = (await $content(
+        const domain = 'https://www.gaftalk.com'
+        const article = ref({})
+        useAsync(async () => {
+            const _article = (await $content(
                 'blog',
                 slug.value
             ).fetch()) as IContentDocument
-            title.value = val.title
+            article.value = _article
+            title.value = _article.title
             meta.value = [
+                {
+                    hid: 'description',
+                    property: 'description',
+                    content: _article['og:description'] || 'いろいろなこと',
+                },
                 {
                     hid: 'og:description',
                     property: 'og:description',
-                    content: '',
+                    content: _article['og:description'] || 'いろいろなこと',
+                },
+                {
+                    hid: 'og:title',
+                    property: 'og:title',
+                    content: `${_article.title}`,
                 },
                 {
                     hid: 'og:url',
                     property: 'og:url',
-                    content: `${domain}/${path}`,
+                    content: `${domain}/blog/items/${slug.value}`,
                 },
                 {
                     hid: 'og:image',
                     property: 'og:image',
-                    content: `${val['og:image']}`,
+                    content: `${_article['og:image']}`,
+                },
+                {
+                    hid: 'twitter:card',
+                    property: 'twitter:card',
+                    content: `summary`,
                 },
             ]
-
-            return val
         })
         return {
-            article: data,
+            article,
         }
     },
     head: {},

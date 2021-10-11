@@ -18,8 +18,54 @@ export default {
             },
             { hid: 'description', name: 'description', content: '' },
             { name: 'format-detection', content: 'telephone=no' },
+            {
+                hid: 'description',
+                name: 'description',
+                content: 'なんかいろいろ',
+            },
+            {
+                hid: 'og:site_name',
+                property: 'og:site_name',
+                content: 'GAFTALK',
+            },
+            { hid: 'og:type', property: 'og:type', content: 'website' },
+            {
+                hid: 'og:url',
+                property: 'og:url',
+                content: 'https://www.gaftalk.com',
+            },
+            {
+                hid: 'og:title',
+                property: 'og:title',
+                content: 'GAFTALK',
+            },
+            {
+                hid: 'og:description',
+                property: 'og:description',
+                content: 'なんかいろいろ',
+            },
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        link: [
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            {
+                rel: 'apple-touch-icon',
+                sizes: '180x180',
+                href: '/apple-touch-icon.png',
+            },
+            {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '32x32',
+                href: '/favicon-32x32.png',
+            },
+            {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '16x16',
+                href: '/favicon-16x16.png',
+            },
+            { rel: 'manifest', href: '/site.webmanifest' },
+        ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css

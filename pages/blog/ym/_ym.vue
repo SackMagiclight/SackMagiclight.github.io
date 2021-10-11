@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto my-8">
+    <div class="container mx-auto">
         <Card
             v-for="(article, index) in articles"
             :key="index"
@@ -10,7 +10,9 @@
 
 <script lang="ts">
 import {
+    computed,
     defineComponent,
+    ref,
     useAsync,
     useContext,
     useRoute,
@@ -19,27 +21,34 @@ export default defineComponent({
     setup() {
         const $content = useContext().$content
         const $route = useRoute()
-        const ym = $route.value.params.ym
-        const ymStart = new Date(ym + '-01')
-        const monthStart = ymStart.getTime()
-        const monthEnd = new Date(
-            ymStart.getFullYear(),
-            ymStart.getMonth() + 1,
-            0
-        ).getTime()
-        const data = useAsync(async () => {
-            const articles = await $content('blog')
+        const ym = computed(() => $route.value.params.ym)
+        const ymStart = computed(() => new Date(ym.value + '-01'))
+        const monthStart = computed(() => ymStart.value?.getTime())
+        const monthEnd = computed(() =>
+            new Date(
+                ymStart.value?.getFullYear(),
+                ymStart.value?.getMonth() + 1,
+                0
+            ).getTime()
+        )
+
+        const articles = ref({})
+        useAsync(async () => {
+            const _articles = await $content('blog')
                 .where({
                     createdAt: {
-                        $and: [{ $gte: monthStart }, { $lte: monthEnd }],
+                        $and: [
+                            { $gte: monthStart.value },
+                            { $lte: monthEnd.value },
+                        ],
                     },
                 })
                 .sortBy('createdAt', 'desc')
                 .fetch()
-            return { articles }
+            articles.value = _articles
         })
         return {
-            articles: data.value?.articles,
+            articles,
         }
     },
 })

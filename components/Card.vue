@@ -1,6 +1,7 @@
 <template>
     <div>
-        <article class="border-t-2 p-4 my-4">
+        <article class="border-t-2 p-4">
+            <nuxt-link v-show="false" :to="`/blog/items/${slug}`" />
             <time class="text-right text-sm text-gray-700">{{ date }}🕥</time>
             <h2 class="text-xl font-bold">{{ article.title }}</h2>
             <nuxt-content :document="article" class="prose" />
@@ -49,6 +50,7 @@ export default defineComponent({
             return `https://twitter.com/intent/tweet?url=${path}&text=${prop.article.title}`
         })
         return {
+            slug,
             date,
             twitterUrl,
         }

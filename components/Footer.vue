@@ -1,5 +1,5 @@
 <template>
-    <div class="container w-9/12 mx-auto py-2">
+    <div class="container w-9/12 mx-auto py-4">
         <div class="flex flex-col">
             <h2>記事</h2>
             <div class="flex text-sm mx-2">
