@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1633982746",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002Fitems\u002Freview-ryzen9-3900",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"903fc800"}},globalRefs:{}}}(null));
