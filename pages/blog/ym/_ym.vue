@@ -13,8 +13,8 @@ import {
     computed,
     defineComponent,
     ref,
-    useAsync,
     useContext,
+    useFetch,
     useRoute,
 } from '@nuxtjs/composition-api'
 export default defineComponent({
@@ -33,7 +33,7 @@ export default defineComponent({
         )
 
         const articles = ref({})
-        useAsync(async () => {
+        useFetch(async () => {
             const _articles = await $content('blog')
                 .where({
                     createdAt: {

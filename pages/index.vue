@@ -12,14 +12,14 @@
 import {
     defineComponent,
     ref,
-    useAsync,
+    useFetch,
     useContext,
 } from '@nuxtjs/composition-api'
 export default defineComponent({
     setup() {
         const $content = useContext().$content
         const articles = ref({})
-        useAsync(async () => {
+        useFetch(async () => {
             const _articles = await $content('blog')
                 .sortBy('createdAt', 'desc')
                 .limit(1)

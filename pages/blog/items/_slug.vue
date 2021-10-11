@@ -10,8 +10,8 @@ import {
     computed,
     defineComponent,
     ref,
-    useAsync,
     useContext,
+    useFetch,
     useMeta,
     useRoute,
 } from '@nuxtjs/composition-api'
@@ -23,7 +23,7 @@ export default defineComponent({
         const slug = computed(() => $route.value.params.slug)
         const domain = 'https://www.gaftalk.com'
         const article = ref({})
-        useAsync(async () => {
+        useFetch(async () => {
             const _article = (await $content(
                 'blog',
                 slug.value

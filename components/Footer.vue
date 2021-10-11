@@ -6,7 +6,7 @@
                 <div class="flex flex-wrap">
                     <div v-for="(yearMonth, index) of yearMonths" :key="index">
                         <nuxt-link
-                            :to="`/blog/ym/${yearMonth}`"
+                            :to="`/blog/ym/${yearMonth}/`"
                             class="mx-2 text-blue-500 whitespace-nowrap"
                             >{{ yearMonth }}</nuxt-link
                         >
@@ -53,25 +53,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, useAsync, useContext } from '@nuxtjs/composition-api'
-import { groupBy } from 'lodash'
+import { defineComponent } from '@nuxtjs/composition-api'
 export default defineComponent({
-    setup() {
-        const $content = useContext().$content
-        const data = useAsync(async () => {
-            const articles = (await $content('blog')
-                .only(['createdAt', 'slug'])
-                .fetch()) as unknown as { createdAt: String }[]
-            const groups = groupBy(articles, (item) => {
-                const strs = item.createdAt.split('-')
-                return `${strs[0]}-${strs[1]}`
-            })
-            const result = Object.keys(groups).sort().reverse()
-            return { yearMonths: result }
-        })
-        return {
-            yearMonths: data.value?.yearMonths,
-        }
+    props: {
+        yearMonths: { type: Array, default: () => [] },
     },
 })
 </script>
