@@ -5,10 +5,10 @@
             <div class="flex text-sm mx-2">
                 <div class="flex flex-wrap">
                     <div v-for="(yearMonth, index) of yearMonths" :key="index">
-                        <nuxt-link
-                            :to="`/blog/ym/${yearMonth}/`"
+                        <a
+                            :href="`/blog/ym/${yearMonth}`"
                             class="mx-2 text-blue-500 whitespace-nowrap"
-                            >{{ yearMonth }}</nuxt-link
+                            >{{ yearMonth }}</a
                         >
                     </div>
                 </div>
