@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1633983995",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002Fitems\u002Fgtx1070ti-reeked",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"af1f79d8"}},globalRefs:{},ssrRefs:{"jhnxrBdym872b0L0/19Bzg==":void 0}}}(null));
