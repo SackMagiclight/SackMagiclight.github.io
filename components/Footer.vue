@@ -6,7 +6,7 @@
                 <div class="flex flex-wrap">
                     <div v-for="(yearMonth, index) of yearMonths" :key="index">
                         <a
-                            :href="`/blog/ym/${yearMonth}`"
+                            :href="`/blog/ym/${yearMonth}/`"
                             class="mx-2 text-blue-500 whitespace-nowrap"
                             >{{ yearMonth }}</a
                         >

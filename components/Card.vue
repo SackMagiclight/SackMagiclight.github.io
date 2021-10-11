@@ -45,7 +45,7 @@ export default defineComponent({
                 : ''
         })
 
-        const path = 'https://www.gaftalk.com' + '/blog/items/' + slug.value
+        const path = `https://www.gaftalk.com/blog/items/${slug.value}/`
         const twitterUrl = computed(() => {
             return `https://twitter.com/intent/tweet?url=${path}&text=${prop.article.title}`
         })
