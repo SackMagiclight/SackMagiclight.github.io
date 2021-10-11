@@ -107,8 +107,8 @@ export default {
     router: {
         extendRoutes(routes) {
             routes.push({
-                path: '/:year/:month/:day/:slug',
-                redirect: '/blog/items/:slug',
+                path: '/:year/:month/:day/:slug/',
+                redirect: '/blog/items/:slug/',
             })
         },
     },
