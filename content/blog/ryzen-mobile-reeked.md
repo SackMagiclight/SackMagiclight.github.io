@@ -9,7 +9,7 @@ categories:
   - AMD
 
 og:title: 'Ryzen Mobile 性能・発売時期のリーク -結局どのぐらい？-'
-og:image: 'https://www.gaftalk.com/blog/img/ryzen_mobile_reeked/2017-10-19-ryzen_mobile_reeked.jpg'
+og:image: 'https://www.gaftalk.com/blog/img/2017-10-19-ryzen_mobile_reeked.jpg'
 ---
 
 ![](/blog/img/2017-10-19-ryzen_mobile_reeked.jpg)

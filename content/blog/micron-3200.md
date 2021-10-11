@@ -5,7 +5,7 @@ categories:
   - メモリ
 
 og:title: '3200MHz ネイティブメモリを買いました'
-og:image: 'https://www.gaftalk.com/blog/img/micron_3200/cl.jpg'
+og:image: 'https://www.gaftalk.com/blog/img/cl.jpg'
 ---
 
 ![](/blog/img/c8cCwUYAAskvR.jpg)

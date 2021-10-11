@@ -8,7 +8,7 @@ categories:
   - RTX2080
 
 og:title: '代理店の無言の圧力　RTX2080Ti、2080がWeb先行の訳'
-og:image: 'https://www.gaftalk.com/blog/img/rtx2080_expensive/2080_msi.png'
+og:image: 'https://www.gaftalk.com/blog/img/2080_msi.png'
 ---
 
 ![](/blog/img/2080_msi.png)

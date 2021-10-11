@@ -7,7 +7,7 @@ categories:
   - Skin
 
 og:title: 'Brook v1.0.0 - beatoraja SKIN'
-og:image: 'https://www.gaftalk.com/blog/img/brook_beatoraja_skin/Dw02RiSW0AALdAq.jpg'
+og:image: 'https://www.gaftalk.com/blog/img/Dw02RiSW0AALdAq.jpg'
 ---
 
 beatorajaスキンである**Brook**が`v1.0.0`となりました。  

@@ -10,7 +10,7 @@ categories:
   - ASRock
 
 og:title: '【ベンチまとめ】Ryzen 9 3900X + ASRock X570 Phantom Gaming X'
-og:image: 'https://www.gaftalk.com/blog/img/review_ryzen9_3900/r939001.jpg'
+og:image: 'https://www.gaftalk.com/blog/img/r939001.jpg'
 ---
 
 ![](/blog/img/r939001.jpg)

@@ -8,7 +8,7 @@ categories:
   - Intel
 
 og:title: 'Intel、Coreプロセッサ + Radeon GPU の開発を発表'
-og:image: 'https://www.gaftalk.com/blog/img/core_vega/2017-11-06-core_vega.png'
+og:image: 'https://www.gaftalk.com/blog/img/2017-11-06-core_vega.png'
 ---
 
 ![](/blog/img/2017-11-06-core_vega.png)

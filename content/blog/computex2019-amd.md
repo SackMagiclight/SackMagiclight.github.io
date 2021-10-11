@@ -9,7 +9,7 @@ categories:
   - Radeon
   - Navi
 og:title: 'Zen2とかの話 一般向けCPUがついに2桁コアに -Computex2019 AMD基調講演-'
-og:image: 'https://www.gaftalk.com/blog/img/computex2019_amd/ryzen3000SeriesReadiness.jpg'
+og:image: 'https://www.gaftalk.com/blog/img/ryzen3000SeriesReadiness.jpg'
 ---
 
 ## 7nm Zen2 Ryzen 3000シリーズ

@@ -7,7 +7,7 @@ categories:
   - GTX1070Ti
 
 og:title: 'GTX 1070 Tiは税込59,940円から。2,000円追加で1080買え。'
-og:image: 'https://www.gaftalk.com/blog/img/gtx1070ti_value/2017-10-28-gtx1070ti_value_ref.png'
+og:image: 'https://www.gaftalk.com/blog/img/2017-10-28-gtx1070ti_value_ref.png'
 ---
 ![リファレンス](./2017-10-28-gtx1070ti_value_ref.png)
 

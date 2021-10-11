@@ -7,7 +7,7 @@ categories:
   - CPU
 
 og:title: 'Ryzen 5 2400Gが思ったより安くて強そう'
-og:image: 'https://www.gaftalk.com/blog/img/ryzen2400g/2018-01-22-ryzen5_2400g.png'
+og:image: 'https://www.gaftalk.com/blog/img/2018-01-22-ryzen5_2400g.png'
 ---
 
 ![](/blog/img/2018-01-22-ryzen5_2400g.png)

@@ -7,7 +7,7 @@ categories:
   - Radeon
 
 og:title: 'RX470 マイニングモデルを動かす'
-og:image: 'https://www.gaftalk.com/blog/img/rx470_mining_model_sale/dxQAsxMU0AIf8a1.jpg'
+og:image: 'https://www.gaftalk.com/blog/img/dxQAsxMU0AIf8a1.jpg'
 ---
 
 <br>

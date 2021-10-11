@@ -6,7 +6,7 @@ categories:
   - GPU
 
 og:title: 'GPUベンチマーク「Basemark GPU」を試す'
-og:image: 'https://www.gaftalk.com/blog/img/basemarkgpu/preview-4.jpg'
+og:image: 'https://www.gaftalk.com/blog/img/preview-4.jpg'
 ---
 
 フィンランドを拠点とする[Basemark社](https://www.basemark.com/)が新しいGPUベンチマークである[Basemark GPU](https://www.basemark.com/products/basemark-gpu/)を公開しました。

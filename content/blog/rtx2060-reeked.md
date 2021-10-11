@@ -8,7 +8,7 @@ categories:
   - リーク
 
 og:title: 'RTX2060のリーク情報'
-og:image: 'https://www.gaftalk.com/blog/img/rtx2060_reeked/rtx2060_logo.jpg'
+og:image: 'https://www.gaftalk.com/blog/img/rtx2060_logo.jpg'
 ---
 
 ![](/blog/img/rtx2060_logo.jpg)

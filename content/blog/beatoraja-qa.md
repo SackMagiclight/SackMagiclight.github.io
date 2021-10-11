@@ -6,7 +6,7 @@ categories:
   - beatoraja
 
 og:title: 'beatoraja トラブルシューティング'
-og:image: 'https://www.gaftalk.com/blog/img/beatoraja_qa/2017-11-23-beatoraja_qa1.png'
+og:image: 'https://www.gaftalk.com/blog/img/2017-11-23-beatoraja_qa1.png'
 ---
 
 ### これは何？

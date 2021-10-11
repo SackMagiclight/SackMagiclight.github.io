@@ -8,7 +8,7 @@ categories:
   - GPU
 
 og:title: '3DMark Port Royal 1.0 RTX2080 ベンチマーク'
-og:image: 'https://www.gaftalk.com/blog/img/port_royal_rtx2080/portroyal_slim.png'
+og:image: 'https://www.gaftalk.com/blog/img/portroyal_slim.png'
 ---
 
 ![](/blog/img/portroyal_slim.png)

@@ -8,7 +8,7 @@ categories:
   - RTX2080
 
 og:title: 'RTX Superシリーズざっくりまとめ'
-og:image: 'https://www.gaftalk.com/blog/img/rtx_super/002_o.jpg'
+og:image: 'https://www.gaftalk.com/blog/img/002_o.jpg'
 ---
 
 ![](/blog/img/002_o.jpg)

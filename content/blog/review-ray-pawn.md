@@ -7,7 +7,7 @@ categories:
   - レビュー
 
 og:title: '【簡易レビュー】「シンプル・イズ・ベスト」なゲーミングマウス「PAWN」'
-og:image: 'https://www.gaftalk.com/blog/img/review_ray_pawn/DSC_0044.png'
+og:image: 'https://www.gaftalk.com/blog/img/DSC_0044.png'
 ---
 
 「日本発のゲーマー向け製品ブランド」を掲げる「[Ray](https://raygaming.jp/)」から第1弾となるワイヤードマウス「[PAWN](https://raygaming.jp/mouse/)」（ポーン）が発売されました。

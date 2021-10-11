@@ -7,7 +7,7 @@ categories:
   - MinIR
 
 og:title: 'MinIRはどのように作られたか'
-og:image: 'https://www.gaftalk.com/blog/img/development_of_minir/aws.png'
+og:image: 'https://www.gaftalk.com/blog/img/aws.png'
 ---
 
 ## はじめに

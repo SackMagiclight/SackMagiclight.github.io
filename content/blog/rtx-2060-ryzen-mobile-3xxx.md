@@ -7,7 +7,7 @@ categories:
   - Ryzen
 
 og:title: 'RTX2060 発表と Ryzen Mobile 3000シリーズ'
-og:image: 'https://www.gaftalk.com/blog/img/rtx_2060_ryzen_mobile_3xxx/DwSItaBUYAERooX.jpg'
+og:image: 'https://www.gaftalk.com/blog/img/DwSItaBUYAERooX.jpg'
 ---
 
 ## RTX2060
