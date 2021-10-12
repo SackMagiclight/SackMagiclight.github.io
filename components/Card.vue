@@ -7,7 +7,7 @@
             <nuxt-content :document="article" class="prose" />
             <div class="mt-4">
                 <div class="w-8 h-8">
-                    <a :href="twitterUrl" target="_blank">
+                    <a :href="twitterUrl" title="twitter" target="_blank" rel="noopener">
                         <svg
                             class="w-8 h-8 text-gray-600 hover:text-gray-800"
                             xmlns="http://www.w3.org/2000/svg"

@@ -13,7 +13,7 @@ import {
     useContext,
     ref,
 } from '@nuxtjs/composition-api'
-import { groupBy } from 'lodash'
+import groupBy from 'lodash/groupBy'
 export default defineComponent({
     setup() {
         const $content = useContext().$content

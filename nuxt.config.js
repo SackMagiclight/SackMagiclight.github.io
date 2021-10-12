@@ -16,7 +16,6 @@ export default {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1',
             },
-            { hid: 'description', name: 'description', content: '' },
             { name: 'format-detection', content: 'telephone=no' },
             {
                 hid: 'description',
@@ -97,7 +96,9 @@ export default {
     content: {},
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
+    build: {
+        analyze: false,
+    },
 
     tailwindcss: {
         config: {
@@ -107,5 +108,9 @@ export default {
 
     googleAnalytics: {
         id: 'UA-83617244-3',
+    },
+
+    render: {
+        injectScripts: false,
     },
 }

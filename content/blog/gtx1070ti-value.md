@@ -9,7 +9,7 @@ alias: '/2017/10/28/gtx1070ti-value/'
 og:title: 'GTX 1070 Tiは税込59,940円から。2,000円追加で1080買え。'
 og:image: 'https://www.gaftalk.com/blog/img/2017-10-28-gtx1070ti_value_ref.png'
 ---
-![リファレンス](./2017-10-28-gtx1070ti_value_ref.png)
+![リファレンス](/blog/img/2017-10-28-gtx1070ti_value_ref.png)
 
 <br>
 ### 約6万円
@@ -17,7 +17,7 @@ og:image: 'https://www.gaftalk.com/blog/img/2017-10-28-gtx1070ti_value_ref.png'
 正式発表された1070Tiですが、早くもドスパラWEB上で予約が開始されています。  
 予約が開始されたモデルは**Palit NE5107T015P2-1043D (GTX1070Ti 8GB DUAL)**で、価格は税込59,940円となっています。
 
-![ドスパラ](./2017-10-28-gtx1070ti_value.png)
+![ドスパラ](/blog/img/2017-10-28-gtx1070ti_value.png)
 
 国内最安値モデルとなります。
 <br><br>
@@ -32,7 +32,7 @@ og:image: 'https://www.gaftalk.com/blog/img/2017-10-28-gtx1070ti_value_ref.png'
 
 そのため、価格コントロール諸々を自前で行えるので他の代理店を解するメーカーの製品よりも安く提供できる場合があります。
 
-![アスク税の有り無し](./2017-10-28-gtx1070ti_value_ask.png)
+![アスク税の有り無し](/blog/img/2017-10-28-gtx1070ti_value_ask.png)
 
 ※税金が乗っているものに対して安いだけで、税金が乗らない状況に対しては価格は殆ど変わりません。
 <br><br>

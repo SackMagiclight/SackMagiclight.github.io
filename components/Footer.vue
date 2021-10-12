@@ -7,7 +7,7 @@
                     <div v-for="(yearMonth, index) of yearMonths" :key="index">
                         <a
                             :href="`/blog/ym/${yearMonth}/`"
-                            class="mx-2 text-blue-500 whitespace-nowrap"
+                            class="block p-2 text-blue-700 whitespace-nowrap"
                             >{{ yearMonth }}</a
                         >
                     </div>
@@ -21,7 +21,7 @@
                     <div>
                         <a
                             href="https://www.gaftalk.com/1to24_2nd/"
-                            class="underline mx-2"
+                            class="block underline p-2"
                             >1to24 2nd</a
                         >
                     </div>
@@ -35,14 +35,14 @@
                     <div>
                         <a
                             href="https://twitter.com/sack_magiclight"
-                            class="underline mx-2"
+                            class="block underline p-2"
                             >twitter</a
                         >
                     </div>
                     <div>
                         <a
                             href="https://github.com/SackMagiclight"
-                            class="underline mx-2"
+                            class="block underline p-2"
                             >github</a
                         >
                     </div>
