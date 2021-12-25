@@ -8,27 +8,29 @@ alias: '/2019/01/07/beatoraja-links/'
 og:title: 'beatoraja リンク集'
 ---
 
-(Latest : 2019/01/14)
+(Latest : 2020/07/23)
 
 ## 本体
 
 ### [github](https://github.com/exch-bms2/beatoraja)  
-ソースコード及びビルドした本体の置き場所。  
-本体落としたいとか、自分でビルドしたい場合はここ。
+ソースコードの置き場所。  
+
+### [プレイアブルバイナリ](https://mocha-repository.info/download.php)  
+起動できる本体の置き場所。  
+基本的に、ここにおいてあるバイナリが各リポジトリ送信(IR送信)に対応する。
 
 ## スキン
-### [LITONE](http://desout2.freeiz.com/)  
+### [ModernChic](https://www.kasacontent.com/musicgame/beatoraja/4194/)
+### [ModernChicPlay(SCURO)](https://www.kasacontent.com/musicgame/beatoraja/4226/)
 * Select
 * Decide
-* Result
-* Cource Result
-* AC 7KEYS
-* CS 7KEYS 
-* HALFWIDE 7KEYS
-* AC 14KEYS
-* AC 9KEYS
+* 5KEYS
+* 7KEYS
+* 10KEYS
+* 14KEYS
 
-一通り揃ってるので、**とりあえずこれ入れとけ** なスキン。
+次世代感あふれるモダンスキン。  
+現状の一番のおすすめ。
 
 ### [Brook](https://twitter.com/isocosa/status/1126109967407353856)
 * Select
@@ -50,25 +52,22 @@ v1.0.0より一通り揃うようになったので、**あまり寄せてない
 [LR2の同名選曲スキン](https://www.nicovideo.jp/watch/sm23679106)のbeatoraja移植版。  
 主にbeatoraja独自情報が追加。
 
-### [beatoraja用24鍵スキン](https://www.pixiv.net/fanbox/creator/19364814/post/106199)
-* 5KEYS
+### [beatoraja用独自スキン](https://drive.google.com/drive/u/0/folders/1ugqMTKVnSIlYY8VT8F615DzbvqNfJDak)
+* Select
 * 7KEYS
-* 9KEYS
-* 10KEYS
-* 14KEYS
 * 24KEYS
 
-珍しい24KEYSプレイスキン。  
-配布場所がpixiv fanbox + R18設定クリエイターなので**pixivアカウント必須**。  
-アップデートにて5～14KEYまで対応した。  
-[最新情報はTwitterで](https://twitter.com/mnpyprrn/status/1127385396076109824)
+珍しい24KEYSプレイスキン。7KEYSも配布中。   
+[最新情報はTwitterで](https://twitter.com/mnpyprrn)
 
-### [【開発中】BEAT BREAK BOOTH2](https://twitter.com/nitorock/status/1070743938376421376)
-* 7KEYS
+### [beatoraja用FullHD選曲スキン](https://tori-blog.net/bms/1002/)
+### [beatoraja用FullHD決定スキン](https://tori-blog.net/bms/2238/)
+* Select
+* Decide
 
-EZ2DJ風スキン。  
-開発中で現状未公開。  
-デモプレイ動画は[こちら](https://www.youtube.com/watch?v=Ya_HB8fAT58)
+ソシャゲ風ポップ調の選曲スキン。  
+経験値蓄積など、独自要素多め。  
+[最新情報はTwitterで](https://twitter.com/souki2021)
 
 ## 解説
 
