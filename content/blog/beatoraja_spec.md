@@ -3,7 +3,7 @@ title:  "beatorajaの最低動作環境 - 重いと感じる原因を探る"
 createdAt: 2020-04-25 17:30:00 +0900
 categories: 
   - beatoraja
-alias: '/2020/04/25/beatoraja_spec/'
+alias: '/2020/04/25/beatoraja-spec/'
 og:title: 'beatorajaの最低動作環境 - 重いと感じる原因を探る'
 og:image: 'https://www.gaftalk.com/blog/img/logo.png'
 ---

@@ -4,7 +4,7 @@ createdAt:   2021-02-08 21:30:00 +0900
 categories: 
   - Minecraft
   - Cloud
-alias: '/2021/02/08/oracle_minecraft/'
+alias: '/2021/02/08/oracle-minecraft/'
 og:title: 'Oracle Cloud の Always FreeなインスタンスでMinecraftサーバーを建ててみるテスト'
 og:image: 'https://www.gaftalk.com/blog/img/img_mc.png'
 ---

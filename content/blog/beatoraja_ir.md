@@ -4,7 +4,7 @@ createdAt:   2019-10-22 16:00:00 +0900
 categories: 
   - BMS
   - beatoraja
-alias: '/2019/10/22/beatoraja_ir/'
+alias: '/2019/10/22/beatoraja-ir/'
 og:title: 'beatoraja IRの登録方法・各IR特色'
 og:image: 'https://www.gaftalk.com/blog/img/logo.png'
 ---

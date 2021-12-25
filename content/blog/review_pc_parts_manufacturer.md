@@ -3,7 +3,7 @@ title:  "PCパーツメーカー 1行レビュー"
 createdAt:   2019-10-12 16:00:00 +0900
 categories: 
   - レビュー
-alias: '/2019/10/12/review_ pc_parts_manufacturer/'
+alias: '/2019/10/12/review-pc-parts-manufacturer/'
 og:title: 'PCパーツメーカー 1行レビュー'
 ---
 

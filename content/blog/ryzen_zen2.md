@@ -4,7 +4,7 @@ createdAt:   2020-07-23 18:30:00 +0900
 categories: 
   - AMD
   - Ryzen
-alias: '/2020/07/23/ryzen_zen2/'
+alias: '/2020/07/23/ryzen-zen2/'
 og:title: 'Zen2 メインストリーム帯 ざっくり総まとめ'
 og:image: 'https://www.gaftalk.com/blog/img/ryzen_RGB.png'
 ---
