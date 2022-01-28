@@ -111,7 +111,8 @@ export default {
     },
 
     gtm: {
-        id: 'G-XXSKL77RNW',
+        enabled: true,
+        id: 'GTM-T46K9H7',
         pageTracking: true,
     },
 }
