@@ -83,13 +83,19 @@ export default {
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
         '@nuxtjs/composition-api/module',
-        '@nuxtjs/google-analytics',
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         // https://go.nuxtjs.dev/content
         '@nuxt/content',
+        [
+            '@nuxtjs/google-gtag',
+            {
+                id: 'G-XXSKL77RNW',
+                debug: true,
+            },
+        ],
     ],
 
     // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -104,10 +110,6 @@ export default {
         config: {
             plugins: [tailwindTypography],
         },
-    },
-
-    googleAnalytics: {
-        id: 'UA-83617244-3',
     },
 
     render: {
