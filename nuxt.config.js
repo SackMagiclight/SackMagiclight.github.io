@@ -112,5 +112,6 @@ export default {
 
     gtm: {
         id: 'G-XXSKL77RNW',
+        pageTracking: true,
     },
 }
