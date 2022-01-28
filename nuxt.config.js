@@ -89,13 +89,7 @@ export default {
     modules: [
         // https://go.nuxtjs.dev/content
         '@nuxt/content',
-        [
-            '@nuxtjs/google-gtag',
-            {
-                id: 'G-XXSKL77RNW',
-                debug: true,
-            },
-        ],
+        '@nuxtjs/gtm',
     ],
 
     // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -114,5 +108,9 @@ export default {
 
     render: {
         injectScripts: false,
+    },
+
+    gtm: {
+        id: 'G-XXSKL77RNW',
     },
 }
