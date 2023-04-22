@@ -6,9 +6,6 @@ categories:
   - PSU
   - MSI
 ---
-  
-  
-
 ## 結論から
 
 「ATX 3.0 Ready」と「ATX 3.0 Compatible」はどちらも「一般的には」ATX3.0電源。  

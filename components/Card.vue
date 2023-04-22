@@ -4,7 +4,7 @@
             <nuxt-link v-show="false" :to="`/blog/items/${slug}`" />
             <time class="text-right text-sm text-gray-700">{{ date }}🕥</time>
             <h2 class="text-xl font-bold">{{ article.title }}</h2>
-            <nuxt-content :document="article" class="prose" />
+            <nuxt-content :document="article" class="prose my-4" />
             <div class="mt-4">
                 <div class="w-8 h-8">
                     <a :href="twitterUrl" title="twitter" target="_blank" rel="noopener">
